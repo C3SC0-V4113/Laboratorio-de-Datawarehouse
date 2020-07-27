@@ -163,4 +163,32 @@ GROUP BY EJEMPLARES.Ubicacion
 
 --PARTE 3
 --CREANDO TABLAS AUTORES ESPAÑA
-select*from AUTORES where Nacionalidad='ESPAÑOLA'
+--select*from AUTORES where Nacionalidad='ESPAÑOLA'
+CREATE TABLE AUTORES_ESPAÑA
+(
+CodAutor varchar(4) NOT NULL,
+Nombres varchar(max),
+Apellidos varchar(max),
+Nacionalidad varchar(max)
+)
+
+INSERT INTO AUTORES_ESPAÑA
+SELECT*FROM AUTORES
+WHERE Nacionalidad='ESPAÑOLA'
+
+--select*from AUTORES_ESPAÑA
+
+use Library
+GO
+CREATE VIEW COPIA_LIBRO
+AS SELECT TOP 99.99 PERCENT c.isbn as 'ISBN',c.copy_no AS 'No. Copias',c.on_loan as 'Prestados',t.title as 'Titulo',i.translation as 'Traducción',i.cover as 'Portada'
+FROM [dbo].[copy] as c INNER JOIN item as i
+ON c.isbn=i.isbn
+INNER JOIN title as t
+ON i.title_no=t.title_no
+WHERE c.isbn=1 OR c.isbn=500 OR c.isbn=1000
+ORDER BY c.isbn ASC
+GO
+--DROP VIEW COPIA_LIBRO
+
+select*from COPIA_LIBRO
