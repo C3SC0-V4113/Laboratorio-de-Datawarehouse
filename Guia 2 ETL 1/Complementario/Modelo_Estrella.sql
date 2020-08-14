@@ -22,10 +22,10 @@ constraint pk_id_lugar_compra primary key(id_lugar_compra)
 CREATE TABLE SECTOR_VENTA
 (
 id_sector_venta int not null,
-canal_1 varchar(30),
-canal_2 varchar(30),
-cod_zona varchar(5),
-zona varchar(100)
+canal_1 int,
+canal_2 int,
+cod_zona int,
+zona int
 constraint pk_id_sector_venta primary key(id_sector_venta)
 )
 
@@ -46,7 +46,7 @@ constraint pk_id_vendedor primary key(id_vendedor)
 CREATE TABLE PRODUCTO
 (
 id_producto int not null,
-invtid varchar(6),
+inv_id varchar(6),
 descr_producto varchar(100),
 cod_marca varchar(6),
 descr_marcha varchar(100),
@@ -62,14 +62,14 @@ constraint pk_id_producto primary key(id_producto)
 CREATE TABLE FECHA
 (
 id_fecha int not null,
-año date,
+año int,
 mes_nombre varchar(15),
-mes date,
+mes int,
 semestres int,
 trimestre int,
 semana int,
 dia_nombre varchar(15),
-dia date,
+dia varchar(15),
 fecha_completa datetime
 constraint pk_id_fecha primary key(id_fecha)
 )
@@ -121,3 +121,53 @@ ALTER TABLE VENTA
 ADD CONSTRAINT fk_id_fecha
 FOREIGN KEY(id_fecha)
 REFERENCES FECHA(id_fecha)
+
+--INSERT INTO LUGAR_COMPRA VALUES ('1','2','Central','San Salvador','San Salvador','San Salvador')
+--INSERT INTO LUGAR_COMPRA VALUES ('2','2','Central','La Libertad','Santa Tecla','Santa Tecla')
+--INSERT INTO LUGAR_COMPRA VALUES ('3','1','Oriental','San Miguel','San Miguel','San Miguel')
+--INSERT INTO LUGAR_COMPRA VALUES ('4','3','Occidental','Sonsonate','Acajutla','Acajutla')
+--INSERT INTO LUGAR_COMPRA VALUES ('5','3','Santa Ana','Santa Ana','Santa Ana','Santa Ana')
+--select*from LUGAR_COMPRA
+
+
+--INSERT INTO SECTOR_VENTA VALUES ('1','1','2','1','2')
+--INSERT INTO SECTOR_VENTA VALUES ('2','3','4','3','2')
+--INSERT INTO SECTOR_VENTA VALUES ('3','2','4','2','2')
+--INSERT INTO SECTOR_VENTA VALUES ('4','3','1','5','2')
+--INSERT INTO SECTOR_VENTA VALUES ('5','2','1','1','3')
+--select*from SECTOR_VENTA
+
+--INSERT INTO VENDEDOR VALUES('1','VA1920','PJ2019','Juanito Alcachofa','Ruben Doblas','Guillermo Diaz','Samuel deLuque')
+--INSERT INTO VENDEDOR VALUES('2','VH3022','PI2230','Ian Hecox','Anthony Padilla','Guillermo Diaz','John Romero')
+--INSERT INTO VENDEDOR VALUES('3','VG1309','PG0913','German Garmendia','Ruben Doblas','Guillermo Diaz','Samuel deLuque')
+--INSERT INTO VENDEDOR VALUES('4','VM5673','PR7356','Rosario Martin','Raul Genes','Guillermo Diaz','Samuel deLuque')
+--INSERT INTO VENDEDOR VALUES('5','VF9345','PL4593','Luis Flores','Ruben Doblas','Guillermo Diaz','Samuel deLuque')
+--Select*from VENDEDOR
+
+--INSERT INTO PRODUCTO VALUES('1','CT3256','Alcohol gel','ER9245','farmaceutica','salud','QR4324','salud','2.15','0.2')
+--INSERT INTO PRODUCTO VALUES('2','RE3256','Corn Flakes','WQ9245','Cereales','Alimentos','AR4324','alimentos','2.15','0.2')
+--INSERT INTO PRODUCTO VALUES('3','FF3256','Leche','WQ9245','Cereales','Alimentos','AR4324','alimentos','2.15','0.2')
+--INSERT INTO PRODUCTO VALUES('4','ET3256','Paracetamol','ER9245','farmaceutica','salud','QR4324','salud','2.15','0.2')
+--INSERT INTO PRODUCTO VALUES('5','YT3256','Hot Wheels','UV9245','juguetes','infantil','QR4324','infantil','2.15','0.2')
+--select*FROM PRODUCTO
+
+--INSERT INTO FECHA VALUES('1','2020','agosto','8','2','3','33','jueves','13','10-08-2020')
+--INSERT INTO FECHA VALUES('2','2020','agosto','8','2','3','33','jueves','13','10-08-2020')
+--INSERT INTO FECHA VALUES('3','2020','agosto','8','2','3','33','jueves','13','10-08-2020')
+--INSERT INTO FECHA VALUES('4','2020','agosto','8','2','3','33','jueves','13','10-08-2020')
+--INSERT INTO FECHA VALUES('5','2020','agosto','8','2','3','33','jueves','13','10-08-2020')
+--select*from FECHA
+
+--INSERT INTO VENTA VALUES(1,1,1,1,1,1,1,360,340,20,4,25.32,30)
+--INSERT INTO VENTA VALUES(2,3,1,4,1,2,2,360,340,20,4,25.32,30)
+--INSERT INTO VENTA VALUES(1,4,5,1,2,3,3,360,340,20,4,25.32,30)
+--INSERT INTO VENTA VALUES(4,1,2,1,2,4,4,360,340,20,4,25.32,30)
+--INSERT INTO VENTA VALUES(1,2,1,2,5,5,5,360,340,20,4,25.32,30)
+--SELECT*FROM VENTA
+
+--DELETE FROM VENTA
+--DELETE FROM FECHA
+--DELETE FROM LUGAR_COMPRA
+--DELETE FROM PRODUCTO
+--DELETE FROM SECTOR_VENTA
+--DELETE FROM VENDEDOR
