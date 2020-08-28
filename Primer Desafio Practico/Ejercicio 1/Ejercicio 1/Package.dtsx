@@ -11,8 +11,8 @@
   DTS:LocaleID="22538"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="8"
-  DTS:VersionGUID="{70E9D369-8891-49C7-8855-B955E513BD08}">
+  DTS:VersionBuild="9"
+  DTS:VersionGUID="{14394A0D-3EF2-404E-ADE4-730D5DF7679C}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -1282,6 +1282,26 @@
                       cachedDataType="decimal"
                       cachedName="Copia de PromVisit"
                       lineageId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[Copia de PromVisit]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input].Columns[Copia de Sauna]"
+                      cachedDataType="bool"
+                      cachedName="Copia de Sauna"
+                      lineageId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[Copia de Sauna]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input].Columns[Copia de Masaje]"
+                      cachedDataType="bool"
+                      cachedName="Copia de Masaje"
+                      lineageId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[Copia de Masaje]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input].Columns[Copia de Hidro]"
+                      cachedDataType="bool"
+                      cachedName="Copia de Hidro"
+                      lineageId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[Copia de Hidro]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input].Columns[Copia de Yoga]"
+                      cachedDataType="bool"
+                      cachedName="Copia de Yoga"
+                      lineageId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[Copia de Yoga]" />
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
@@ -1339,6 +1359,29 @@
                           description="Derived Column Friendly Expression"
                           expressionType="Notify"
                           name="FriendlyExpression">[Copia de ingresos] * [Copia de PromVisit]</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[Uso de Institucion]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      length="2"
+                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[Uso de Institucion]"
+                      name="Uso de Institucion"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">#{Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[Copia de Sauna]} || #{Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[Copia de Masaje]} || #{Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[Copia de Hidro]} || #{Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[Copia de Yoga]} ==  TRUE  ? "Si" : "No"</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">[Copia de Sauna] || [Copia de Masaje] || [Copia de Hidro] || [Copia de Yoga] ==  TRUE  ? "Si" : "No"</property>
                       </properties>
                     </outputColumn>
                   </outputColumns>
