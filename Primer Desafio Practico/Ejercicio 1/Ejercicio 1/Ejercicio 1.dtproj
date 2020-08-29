@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">LAPTOP-SEV4FTSO</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA8KvKOLOr5kemw/5Aqym9cwAAAAACAAAAAAAQZgAAAAEAACAAAABoZlnmd06EPEu+kgCjrAj1qK3P/FB/cbA+1U5YbX8sHQAAAAAOgAAAAAIAACAAAAAEgELlJ7cUO+naxnQDJHuJneD7nRjU8YL7zB63qqoHxZAAAACf9MSEtlEPHEOmvK9wE0+1DhrLsq0bAhFDgx1RDq+DtGNh2qgX72fAlrmtG9VpWPUpBlVn4z/xOWxF2IWY7h3jHMOZGj/G8a+J01FEWcPRw0LXmlgYDZIfFXvWPkH4AZUFqoznYTMbAn8fw/A59DO2upmuKXbKhyC7i6ksUpsrRzOuIw5v3ExI1N4+EINrGshAAAAAN/JCpYp3lAoTE7gaKB9Ls7lGbDOtZUQxG07/UdlYtf8y6Huq9fWoeJklS8qv7st4bYUITHa+yEkZpHMb+U6VGQ==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA8KvKOLOr5kemw/5Aqym9cwAAAAACAAAAAAAQZgAAAAEAACAAAABJR7OtMWejcywFIfY44CfoQw+7in8dg+1yo4wadqi49wAAAAAOgAAAAAIAACAAAACfavOdFsTzu1Mgolrw3SP69uft0+8yBwVkBXCCi1gcOZAAAABHmAPrGhe/aynJS0VVTJBanYT3TD5LCZKIgMUdKag7y5qDZwXLhM2R2Yg1QhuwI2SdoHX6ivIYSosoaghvyTz3EVDhZcSLlBcIAppC2kywJ73fxSX1TWTuzelXYzkSRi5NBLBLqo1DYmoCHlX2xYG0HHG/0Pg4MGuH0MF8thq/diFcf3bNV0iPwI8mziZ4iYlAAAAAiMRhTBNzZeqEFg/XWZUFpLvL9Z9PxTeldz4Xzi7NVepDzhRKdIPK8tgYw66RvKaPj0fdK7thhCe8npV+kSfRgA==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -42,10 +42,10 @@
                 <SSIS:Property SSIS:Name="Name">Package</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">5</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">7</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{ED376351-5C75-48E6-B72F-C9142C1F379F}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{99CD9AD1-5669-40E8-80A7-B209A12C4D92}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -63,7 +63,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">Provider=Microsoft.Jet.OLEDB.4.0;Data Source=F:\DOCUMENTOS CUQUIS\UNIVERSIDAD\CICLO 04\Dataware Y Mineria de datos\Laboratorio-de-Datawarehouse\Primer Desafio Practico\Ejercicio 1\Los Top 100 97.xls;Extended Properties="Excel 8.0;HDR=YES";</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">Provider=Microsoft.Jet.OLEDB.4.0;Data Source=F:\DOCUMENTOS CUQUIS\UNIVERSIDAD\CICLO 04\Dataware Y Mineria de datos\Laboratorio-de-Datawarehouse\Primer Desafio Practico\Ejercicio 1\Clientes Ordenados.xls;Extended Properties="Excel 8.0;HDR=YES";</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -78,7 +78,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">F:\DOCUMENTOS CUQUIS\UNIVERSIDAD\CICLO 04\Dataware Y Mineria de datos\Laboratorio-de-Datawarehouse\Primer Desafio Practico\Ejercicio 1\Los Top 100 97.xls</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">F:\DOCUMENTOS CUQUIS\UNIVERSIDAD\CICLO 04\Dataware Y Mineria de datos\Laboratorio-de-Datawarehouse\Primer Desafio Practico\Ejercicio 1\Clientes Ordenados.xls</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -151,7 +151,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">F:\DOCUMENTOS CUQUIS\UNIVERSIDAD\CICLO 04\Dataware Y Mineria de datos\Laboratorio-de-Datawarehouse\Primer Desafio Practico\Ejercicio 1\Los Top 100 97.xls</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">F:\DOCUMENTOS CUQUIS\UNIVERSIDAD\CICLO 04\Dataware Y Mineria de datos\Laboratorio-de-Datawarehouse\Primer Desafio Practico\Ejercicio 1\Clientes Ordenados.xls</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
