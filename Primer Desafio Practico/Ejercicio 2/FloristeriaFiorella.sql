@@ -22,3 +22,5 @@ Listón int
 )
 
 select*from Compras
+--DELETE FROM Compras
+select * from Compras ORDER BY id

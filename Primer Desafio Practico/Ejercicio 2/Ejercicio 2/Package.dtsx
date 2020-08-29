@@ -11,11 +11,21 @@
   DTS:LocaleID="22538"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="2"
-  DTS:VersionGUID="{82D494B9-57FB-4F39-B2B1-34466CC719C8}">
+  DTS:VersionBuild="7"
+  DTS:VersionGUID="{3D40E89C-B6ED-41EB-9500-3FF35A553226}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Administrador de conexiones con Excel]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{8C2654CD-B947-4F9F-AC4F-96E7BE212047}"
+      DTS:ObjectName="Administrador de conexiones con Excel">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=F:\DOCUMENTOS CUQUIS\UNIVERSIDAD\CICLO 04\Dataware Y Mineria de datos\Laboratorio-de-Datawarehouse\Primer Desafio Practico\Ejercicio 2\Division_Departamentos.xls;Extended Properties=&quot;Excel 8.0;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[LAPTOP-SEV4FTSO.Floristeria_Fiorella]"
       DTS:CreationName="OLEDB"
@@ -621,6 +631,20 @@
                       cachedDataType="bool"
                       cachedName="LISTÓN"
                       lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[LISTÓN]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Aggregate.Inputs[Aggregate Input 1].Columns[Copia de Departamento]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="150"
+                      cachedName="Copia de Departamento"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Departamento]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Aggregate.Inputs[Aggregate Input 1].Columns[id]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="id"
+                      lineageId="Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[id]" />
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
@@ -643,7 +667,7 @@
                   <outputColumns>
                     <outputColumn
                       refId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[AURORA]"
-                      dataType="ui8"
+                      dataType="bool"
                       lineageId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[AURORA]"
                       name="AURORA">
                       <properties>
@@ -656,7 +680,7 @@
                           dataType="System.Int32"
                           description="Specifies the type of aggregation."
                           name="AggregationType"
-                          typeConverter="AggregationType">1</property>
+                          typeConverter="AggregationType">0</property>
                         <property
                           dataType="System.Int32"
                           description="Indicates whether the column requires special handling because it may contain oversized data or it requires precision beyond a float data type."
@@ -669,7 +693,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[CARMELIAS]"
-                      dataType="ui8"
+                      dataType="bool"
                       lineageId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[CARMELIAS]"
                       name="CARMELIAS">
                       <properties>
@@ -682,7 +706,7 @@
                           dataType="System.Int32"
                           description="Specifies the type of aggregation."
                           name="AggregationType"
-                          typeConverter="AggregationType">1</property>
+                          typeConverter="AggregationType">0</property>
                         <property
                           dataType="System.Int32"
                           description="Indicates whether the column requires special handling because it may contain oversized data or it requires precision beyond a float data type."
@@ -695,7 +719,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[CLAVELES]"
-                      dataType="ui8"
+                      dataType="bool"
                       lineageId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[CLAVELES]"
                       name="CLAVELES">
                       <properties>
@@ -708,7 +732,7 @@
                           dataType="System.Int32"
                           description="Specifies the type of aggregation."
                           name="AggregationType"
-                          typeConverter="AggregationType">1</property>
+                          typeConverter="AggregationType">0</property>
                         <property
                           dataType="System.Int32"
                           description="Indicates whether the column requires special handling because it may contain oversized data or it requires precision beyond a float data type."
@@ -721,7 +745,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[GIRASOLES]"
-                      dataType="ui8"
+                      dataType="bool"
                       lineageId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[GIRASOLES]"
                       name="GIRASOLES">
                       <properties>
@@ -734,7 +758,7 @@
                           dataType="System.Int32"
                           description="Specifies the type of aggregation."
                           name="AggregationType"
-                          typeConverter="AggregationType">1</property>
+                          typeConverter="AggregationType">0</property>
                         <property
                           dataType="System.Int32"
                           description="Indicates whether the column requires special handling because it may contain oversized data or it requires precision beyond a float data type."
@@ -747,7 +771,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[GLOBOS]"
-                      dataType="ui8"
+                      dataType="bool"
                       lineageId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[GLOBOS]"
                       name="GLOBOS">
                       <properties>
@@ -760,7 +784,7 @@
                           dataType="System.Int32"
                           description="Specifies the type of aggregation."
                           name="AggregationType"
-                          typeConverter="AggregationType">1</property>
+                          typeConverter="AggregationType">0</property>
                         <property
                           dataType="System.Int32"
                           description="Indicates whether the column requires special handling because it may contain oversized data or it requires precision beyond a float data type."
@@ -773,7 +797,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[HORTENCIA]"
-                      dataType="ui8"
+                      dataType="bool"
                       lineageId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[HORTENCIA]"
                       name="HORTENCIA">
                       <properties>
@@ -786,7 +810,7 @@
                           dataType="System.Int32"
                           description="Specifies the type of aggregation."
                           name="AggregationType"
-                          typeConverter="AggregationType">1</property>
+                          typeConverter="AggregationType">0</property>
                         <property
                           dataType="System.Int32"
                           description="Indicates whether the column requires special handling because it may contain oversized data or it requires precision beyond a float data type."
@@ -827,7 +851,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[LIRIOS]"
-                      dataType="ui8"
+                      dataType="bool"
                       lineageId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[LIRIOS]"
                       name="LIRIOS">
                       <properties>
@@ -840,7 +864,7 @@
                           dataType="System.Int32"
                           description="Specifies the type of aggregation."
                           name="AggregationType"
-                          typeConverter="AggregationType">1</property>
+                          typeConverter="AggregationType">0</property>
                         <property
                           dataType="System.Int32"
                           description="Indicates whether the column requires special handling because it may contain oversized data or it requires precision beyond a float data type."
@@ -853,7 +877,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[LISTÓN]"
-                      dataType="ui8"
+                      dataType="bool"
                       lineageId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[LISTÓN]"
                       name="LISTÓN">
                       <properties>
@@ -866,7 +890,7 @@
                           dataType="System.Int32"
                           description="Specifies the type of aggregation."
                           name="AggregationType"
-                          typeConverter="AggregationType">1</property>
+                          typeConverter="AggregationType">0</property>
                         <property
                           dataType="System.Int32"
                           description="Indicates whether the column requires special handling because it may contain oversized data or it requires precision beyond a float data type."
@@ -879,7 +903,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[MACETAS]"
-                      dataType="ui8"
+                      dataType="bool"
                       lineageId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[MACETAS]"
                       name="MACETAS">
                       <properties>
@@ -892,7 +916,7 @@
                           dataType="System.Int32"
                           description="Specifies the type of aggregation."
                           name="AggregationType"
-                          typeConverter="AggregationType">1</property>
+                          typeConverter="AggregationType">0</property>
                         <property
                           dataType="System.Int32"
                           description="Indicates whether the column requires special handling because it may contain oversized data or it requires precision beyond a float data type."
@@ -905,7 +929,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[ORQUIDEAS]"
-                      dataType="ui8"
+                      dataType="bool"
                       lineageId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[ORQUIDEAS]"
                       name="ORQUIDEAS">
                       <properties>
@@ -918,7 +942,7 @@
                           dataType="System.Int32"
                           description="Specifies the type of aggregation."
                           name="AggregationType"
-                          typeConverter="AggregationType">1</property>
+                          typeConverter="AggregationType">0</property>
                         <property
                           dataType="System.Int32"
                           description="Indicates whether the column requires special handling because it may contain oversized data or it requires precision beyond a float data type."
@@ -931,7 +955,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[ROSAS]"
-                      dataType="ui8"
+                      dataType="bool"
                       lineageId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[ROSAS]"
                       name="ROSAS">
                       <properties>
@@ -944,7 +968,7 @@
                           dataType="System.Int32"
                           description="Specifies the type of aggregation."
                           name="AggregationType"
-                          typeConverter="AggregationType">1</property>
+                          typeConverter="AggregationType">0</property>
                         <property
                           dataType="System.Int32"
                           description="Indicates whether the column requires special handling because it may contain oversized data or it requires precision beyond a float data type."
@@ -957,7 +981,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[TARJETAS]"
-                      dataType="ui8"
+                      dataType="bool"
                       lineageId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[TARJETAS]"
                       name="TARJETAS">
                       <properties>
@@ -970,7 +994,7 @@
                           dataType="System.Int32"
                           description="Specifies the type of aggregation."
                           name="AggregationType"
-                          typeConverter="AggregationType">1</property>
+                          typeConverter="AggregationType">0</property>
                         <property
                           dataType="System.Int32"
                           description="Indicates whether the column requires special handling because it may contain oversized data or it requires precision beyond a float data type."
@@ -983,7 +1007,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[TIERRA]"
-                      dataType="ui8"
+                      dataType="bool"
                       lineageId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[TIERRA]"
                       name="TIERRA">
                       <properties>
@@ -996,7 +1020,7 @@
                           dataType="System.Int32"
                           description="Specifies the type of aggregation."
                           name="AggregationType"
-                          typeConverter="AggregationType">1</property>
+                          typeConverter="AggregationType">0</property>
                         <property
                           dataType="System.Int32"
                           description="Indicates whether the column requires special handling because it may contain oversized data or it requires precision beyond a float data type."
@@ -1009,7 +1033,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[TULIPANES]"
-                      dataType="ui8"
+                      dataType="bool"
                       lineageId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[TULIPANES]"
                       name="TULIPANES">
                       <properties>
@@ -1022,7 +1046,7 @@
                           dataType="System.Int32"
                           description="Specifies the type of aggregation."
                           name="AggregationType"
-                          typeConverter="AggregationType">1</property>
+                          typeConverter="AggregationType">0</property>
                         <property
                           dataType="System.Int32"
                           description="Indicates whether the column requires special handling because it may contain oversized data or it requires precision beyond a float data type."
@@ -1033,6 +1057,216 @@
                           name="AggregationComparisonFlags">0</property>
                       </properties>
                     </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[Copia de Departamento]"
+                      codePage="1252"
+                      dataType="str"
+                      length="150"
+                      lineageId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[Copia de Departamento]"
+                      name="Copia de Departamento">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the ID of the input column used in the aggregation."
+                          name="AggregationColumnId">#{Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Departamento]}</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the type of aggregation."
+                          name="AggregationType"
+                          typeConverter="AggregationType">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Indicates whether the column requires special handling because it may contain oversized data or it requires precision beyond a float data type."
+                          name="IsBig">1</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the string comparison options."
+                          name="AggregationComparisonFlags">0</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[id]"
+                      name="id">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the ID of the input column used in the aggregation."
+                          name="AggregationColumnId">#{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[id]}</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the type of aggregation."
+                          name="AggregationType"
+                          typeConverter="AggregationType">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Indicates whether the column requires special handling because it may contain oversized data or it requires precision beyond a float data type."
+                          name="IsBig">1</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the string comparison options."
+                          name="AggregationComparisonFlags">0</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\Conditional Split"
+              componentClassID="Microsoft.ConditionalSplit"
+              contactInfo="Conditional Split;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Routes data rows to different outputs depending on the content of the data. Use conditions (SSIS expressions) to specify which rows are routed. For example, separate records that need to be cleaned from those that are ready to be loaded or route only a subset of records."
+              name="Conditional Split"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\Conditional Split.Inputs[Conditional Split Input]"
+                  description="Input to the Conditional Split Transformation"
+                  name="Conditional Split Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Conditional Split.Inputs[Conditional Split Input].Columns[ID]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="ID"
+                      lineageId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[ID]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Conditional Split.Inputs[Conditional Split Input].Columns[Copia de Departamento]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="150"
+                      cachedName="Copia de Departamento"
+                      lineageId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[Copia de Departamento]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\Conditional Split.Outputs[Santa Ana]"
+                  description="Output 1 of the Conditional Split Transformation"
+                  errorOrTruncationOperation="Computation"
+                  errorRowDisposition="FailComponent"
+                  exclusionGroup="1"
+                  name="Santa Ana"
+                  synchronousInputId="Package\Data Flow Task\Conditional Split.Inputs[Conditional Split Input]"
+                  truncationRowDisposition="FailComponent">
+                  <properties>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
+                      name="Expression">#{Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[ID]} == #{Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[Copia de Departamento]}</property>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the friendly version of the expression. This expression version uses column names."
+                      expressionType="Notify"
+                      name="FriendlyExpression">ID == [Copia de Departamento]</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
+                      name="EvaluationOrder">0</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task\Conditional Split.Outputs[San Salvador]"
+                  description="Output 2 of the Conditional Split Transformation"
+                  errorOrTruncationOperation="Computation"
+                  errorRowDisposition="FailComponent"
+                  exclusionGroup="1"
+                  name="San Salvador"
+                  synchronousInputId="Package\Data Flow Task\Conditional Split.Inputs[Conditional Split Input]"
+                  truncationRowDisposition="FailComponent">
+                  <properties>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
+                      name="Expression">#{Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[Copia de Departamento]} == #{Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[ID]} + #{Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[ID]} + #{Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[ID]}</property>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the friendly version of the expression. This expression version uses column names."
+                      expressionType="Notify"
+                      name="FriendlyExpression">[Copia de Departamento] == ID + ID + ID</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
+                      name="EvaluationOrder">1</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task\Conditional Split.Outputs[San Miguel]"
+                  description="Output 3 of the Conditional Split Transformation"
+                  errorOrTruncationOperation="Computation"
+                  errorRowDisposition="FailComponent"
+                  exclusionGroup="1"
+                  name="San Miguel"
+                  synchronousInputId="Package\Data Flow Task\Conditional Split.Inputs[Conditional Split Input]"
+                  truncationRowDisposition="FailComponent">
+                  <properties>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
+                      name="Expression">#{Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[Copia de Departamento]} == #{Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[ID]} + #{Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[ID]}</property>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the friendly version of the expression. This expression version uses column names."
+                      expressionType="Notify"
+                      name="FriendlyExpression">[Copia de Departamento] == ID + ID</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
+                      name="EvaluationOrder">2</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task\Conditional Split.Outputs[Conditional Split Default Output]"
+                  description="Default Output of the Conditional Split Transformation"
+                  exclusionGroup="1"
+                  name="Conditional Split Default Output"
+                  synchronousInputId="Package\Data Flow Task\Conditional Split.Inputs[Conditional Split Input]">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      name="IsDefaultOut">true</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task\Conditional Split.Outputs[Conditional Split Error Output]"
+                  description="Error Output of the Conditional Split Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Conditional Split Error Output"
+                  synchronousInputId="Package\Data Flow Task\Conditional Split.Inputs[Conditional Split Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
                   </outputColumns>
                   <externalMetadataColumns />
                 </output>
@@ -1155,6 +1389,12 @@
                       cachedLength="50"
                       cachedName="ListÃ³n"
                       lineageId="Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[ListÃ³n]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Data Conversion.Inputs[Data Conversion Input].Columns[Departamento]"
+                      cachedDataType="wstr"
+                      cachedLength="150"
+                      cachedName="Departamento"
+                      lineageId="Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[Departamento]" />
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
@@ -1468,6 +1708,28 @@
                           name="FastParse">false</property>
                       </properties>
                     </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Departamento]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="150"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Departamento]"
+                      name="Copia de Departamento"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[Departamento]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
                   </outputColumns>
                   <externalMetadataColumns />
                 </output>
@@ -1491,6 +1753,293 @@
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\Derived Column"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Derived Column"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input].Columns[id]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="id"
+                      lineageId="Package\Data Flow Task\San Miguel.Outputs[Flat File Source Output].Columns[id]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[Departamento]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      length="100"
+                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[Departamento]"
+                      name="Departamento"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">#{Package\Data Flow Task\San Miguel.Outputs[Flat File Source Output].Columns[id]} + #{Package\Data Flow Task\San Miguel.Outputs[Flat File Source Output].Columns[id]}</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">id + id</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\Derived Column 1"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Derived Column 1"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\Derived Column 1.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Derived Column 1.Inputs[Derived Column Input].Columns[id]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="id"
+                      lineageId="Package\Data Flow Task\San Salvador.Outputs[Flat File Source Output].Columns[id]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\Derived Column 1.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\Data Flow Task\Derived Column 1.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Derived Column 1.Outputs[Derived Column Output].Columns[Departamento]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      length="150"
+                      lineageId="Package\Data Flow Task\Derived Column 1.Outputs[Derived Column Output].Columns[Departamento]"
+                      name="Departamento"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">#{Package\Data Flow Task\San Salvador.Outputs[Flat File Source Output].Columns[id]} + #{Package\Data Flow Task\San Salvador.Outputs[Flat File Source Output].Columns[id]} + #{Package\Data Flow Task\San Salvador.Outputs[Flat File Source Output].Columns[id]}</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">id + id + id</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task\Derived Column 1.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\Data Flow Task\Derived Column 1.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Derived Column 1.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Derived Column 1.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Derived Column 1.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Derived Column 1.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\Derived Column 2"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Derived Column 2"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\Derived Column 2.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Derived Column 2.Inputs[Derived Column Input].Columns[id]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="id"
+                      lineageId="Package\Data Flow Task\Santa Ana.Outputs[Flat File Source Output].Columns[id]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\Derived Column 2.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\Data Flow Task\Derived Column 2.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Derived Column 2.Outputs[Derived Column Output].Columns[Departamento]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Data Flow Task\Derived Column 2.Outputs[Derived Column Output].Columns[Departamento]"
+                      name="Departamento"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">#{Package\Data Flow Task\Santa Ana.Outputs[Flat File Source Output].Columns[id]}</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">id</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task\Derived Column 2.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\Data Flow Task\Derived Column 2.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Derived Column 2.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Derived Column 2.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Derived Column 2.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Derived Column 2.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\Multicast"
+              componentClassID="Microsoft.Multicast"
+              contactInfo="Multicast;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Distributes every input row to every row in one or more outputs. For example, branch your data flow to make a copy of data so that some values can be masked before sharing with external partners."
+              name="Multicast">
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\Multicast.Inputs[Multicast Input 1]"
+                  name="Multicast Input 1">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\Multicast.Outputs[Multicast Output 1]"
+                  deleteOutputOnPathDetached="true"
+                  name="Multicast Output 1"
+                  synchronousInputId="Package\Data Flow Task\Multicast.Inputs[Multicast Input 1]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task\Multicast.Outputs[Multicast Output 2]"
+                  deleteOutputOnPathDetached="true"
+                  name="Multicast Output 2"
+                  synchronousInputId="Package\Data Flow Task\Multicast.Inputs[Multicast Input 1]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task\Multicast.Outputs[Multicast Output 3]"
+                  dangling="true"
+                  deleteOutputOnPathDetached="true"
+                  name="Multicast Output 3"
+                  synchronousInputId="Package\Data Flow Task\Multicast.Inputs[Multicast Input 1]">
                   <externalMetadataColumns />
                 </output>
               </outputs>
@@ -1569,31 +2118,31 @@
                   <inputColumns>
                     <inputColumn
                       refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[AURORA]"
-                      cachedDataType="ui8"
+                      cachedDataType="bool"
                       cachedName="AURORA"
                       externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Aurora]"
                       lineageId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[AURORA]" />
                     <inputColumn
                       refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CARMELIAS]"
-                      cachedDataType="ui8"
+                      cachedDataType="bool"
                       cachedName="CARMELIAS"
                       externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Carmelias]"
                       lineageId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[CARMELIAS]" />
                     <inputColumn
                       refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CLAVELES]"
-                      cachedDataType="ui8"
+                      cachedDataType="bool"
                       cachedName="CLAVELES"
                       externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Claveles]"
                       lineageId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[CLAVELES]" />
                     <inputColumn
                       refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[GIRASOLES]"
-                      cachedDataType="ui8"
+                      cachedDataType="bool"
                       cachedName="GIRASOLES"
                       externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Girasoles]"
                       lineageId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[GIRASOLES]" />
                     <inputColumn
                       refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[GLOBOS]"
-                      cachedDataType="ui8"
+                      cachedDataType="bool"
                       cachedName="GLOBOS"
                       externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Globos]"
                       lineageId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[GLOBOS]" />
@@ -1607,55 +2156,55 @@
                       lineageId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[ID]" />
                     <inputColumn
                       refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[LIRIOS]"
-                      cachedDataType="ui8"
+                      cachedDataType="bool"
                       cachedName="LIRIOS"
                       externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Lirios]"
                       lineageId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[LIRIOS]" />
                     <inputColumn
                       refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[LISTÓN]"
-                      cachedDataType="ui8"
+                      cachedDataType="bool"
                       cachedName="LISTÓN"
                       externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Listón]"
                       lineageId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[LISTÓN]" />
                     <inputColumn
                       refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[MACETAS]"
-                      cachedDataType="ui8"
+                      cachedDataType="bool"
                       cachedName="MACETAS"
                       externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Macetas]"
                       lineageId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[MACETAS]" />
                     <inputColumn
                       refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ROSAS]"
-                      cachedDataType="ui8"
+                      cachedDataType="bool"
                       cachedName="ROSAS"
                       externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Rosas]"
                       lineageId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[ROSAS]" />
                     <inputColumn
                       refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TARJETAS]"
-                      cachedDataType="ui8"
+                      cachedDataType="bool"
                       cachedName="TARJETAS"
                       externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Tarjetas]"
                       lineageId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[TARJETAS]" />
                     <inputColumn
                       refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TIERRA]"
-                      cachedDataType="ui8"
+                      cachedDataType="bool"
                       cachedName="TIERRA"
                       externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Tierra]"
                       lineageId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[TIERRA]" />
                     <inputColumn
                       refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TULIPANES]"
-                      cachedDataType="ui8"
+                      cachedDataType="bool"
                       cachedName="TULIPANES"
                       externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Tulipanes]"
                       lineageId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[TULIPANES]" />
                     <inputColumn
                       refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[HORTENCIA]"
-                      cachedDataType="ui8"
+                      cachedDataType="bool"
                       cachedName="HORTENCIA"
                       externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Hortensia]"
                       lineageId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[HORTENCIA]" />
                     <inputColumn
                       refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ORQUIDEAS]"
-                      cachedDataType="ui8"
+                      cachedDataType="bool"
                       cachedName="ORQUIDEAS"
                       externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Orquidias]"
                       lineageId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[ORQUIDEAS]" />
@@ -3208,6 +3757,750 @@
               </outputs>
             </component>
             <component
+              refId="Package\Data Flow Task\San_ta_Ana"
+              componentClassID="Microsoft.ExcelDestination"
+              contactInfo="Excel Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Excel Destination"
+              name="San_ta_Ana"
+              usesDispositions="true">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">'Santa Ana$'</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\San_ta_Ana.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Administrador de conexiones con Excel]"
+                  connectionManagerRefId="Package.ConnectionManagers[Administrador de conexiones con Excel]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\San_ta_Ana.Inputs[Excel Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Excel Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\San_ta_Ana.Inputs[Excel Destination Input].Columns[AURORA]"
+                      cachedDataType="bool"
+                      cachedName="AURORA"
+                      externalMetadataColumnId="Package\Data Flow Task\San_ta_Ana.Inputs[Excel Destination Input].ExternalColumns[AURORA]"
+                      lineageId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[AURORA]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\San_ta_Ana.Inputs[Excel Destination Input].Columns[CARMELIAS]"
+                      cachedDataType="bool"
+                      cachedName="CARMELIAS"
+                      externalMetadataColumnId="Package\Data Flow Task\San_ta_Ana.Inputs[Excel Destination Input].ExternalColumns[CARMELIAS]"
+                      lineageId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[CARMELIAS]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\San_ta_Ana.Inputs[Excel Destination Input].Columns[CLAVELES]"
+                      cachedDataType="bool"
+                      cachedName="CLAVELES"
+                      externalMetadataColumnId="Package\Data Flow Task\San_ta_Ana.Inputs[Excel Destination Input].ExternalColumns[CLAVELES]"
+                      lineageId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[CLAVELES]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\San_ta_Ana.Inputs[Excel Destination Input].Columns[GIRASOLES]"
+                      cachedDataType="bool"
+                      cachedName="GIRASOLES"
+                      externalMetadataColumnId="Package\Data Flow Task\San_ta_Ana.Inputs[Excel Destination Input].ExternalColumns[GIRASOLES]"
+                      lineageId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[GIRASOLES]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\San_ta_Ana.Inputs[Excel Destination Input].Columns[GLOBOS]"
+                      cachedDataType="bool"
+                      cachedName="GLOBOS"
+                      externalMetadataColumnId="Package\Data Flow Task\San_ta_Ana.Inputs[Excel Destination Input].ExternalColumns[GLOBOS]"
+                      lineageId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[GLOBOS]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\San_ta_Ana.Inputs[Excel Destination Input].Columns[LIRIOS]"
+                      cachedDataType="bool"
+                      cachedName="LIRIOS"
+                      externalMetadataColumnId="Package\Data Flow Task\San_ta_Ana.Inputs[Excel Destination Input].ExternalColumns[LIRIOS]"
+                      lineageId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[LIRIOS]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\San_ta_Ana.Inputs[Excel Destination Input].Columns[LISTÓN]"
+                      cachedDataType="bool"
+                      cachedName="LISTÓN"
+                      externalMetadataColumnId="Package\Data Flow Task\San_ta_Ana.Inputs[Excel Destination Input].ExternalColumns[LISTÓN]"
+                      lineageId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[LISTÓN]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\San_ta_Ana.Inputs[Excel Destination Input].Columns[MACETAS]"
+                      cachedDataType="bool"
+                      cachedName="MACETAS"
+                      externalMetadataColumnId="Package\Data Flow Task\San_ta_Ana.Inputs[Excel Destination Input].ExternalColumns[MACETAS]"
+                      lineageId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[MACETAS]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\San_ta_Ana.Inputs[Excel Destination Input].Columns[ROSAS]"
+                      cachedDataType="bool"
+                      cachedName="ROSAS"
+                      externalMetadataColumnId="Package\Data Flow Task\San_ta_Ana.Inputs[Excel Destination Input].ExternalColumns[ROSAS]"
+                      lineageId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[ROSAS]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\San_ta_Ana.Inputs[Excel Destination Input].Columns[TARJETAS]"
+                      cachedDataType="bool"
+                      cachedName="TARJETAS"
+                      externalMetadataColumnId="Package\Data Flow Task\San_ta_Ana.Inputs[Excel Destination Input].ExternalColumns[TARJETAS]"
+                      lineageId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[TARJETAS]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\San_ta_Ana.Inputs[Excel Destination Input].Columns[TIERRA]"
+                      cachedDataType="bool"
+                      cachedName="TIERRA"
+                      externalMetadataColumnId="Package\Data Flow Task\San_ta_Ana.Inputs[Excel Destination Input].ExternalColumns[TIERRA]"
+                      lineageId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[TIERRA]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\San_ta_Ana.Inputs[Excel Destination Input].Columns[TULIPANES]"
+                      cachedDataType="bool"
+                      cachedName="TULIPANES"
+                      externalMetadataColumnId="Package\Data Flow Task\San_ta_Ana.Inputs[Excel Destination Input].ExternalColumns[TULIPANES]"
+                      lineageId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[TULIPANES]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\San_ta_Ana.Inputs[Excel Destination Input].Columns[ORQUIDEAS]"
+                      cachedDataType="bool"
+                      cachedName="ORQUIDEAS"
+                      externalMetadataColumnId="Package\Data Flow Task\San_ta_Ana.Inputs[Excel Destination Input].ExternalColumns[ORQUIDIAS]"
+                      lineageId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[ORQUIDEAS]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\San_ta_Ana.Inputs[Excel Destination Input].Columns[HORTENCIA]"
+                      cachedDataType="bool"
+                      cachedName="HORTENCIA"
+                      externalMetadataColumnId="Package\Data Flow Task\San_ta_Ana.Inputs[Excel Destination Input].ExternalColumns[HORTENSIA]"
+                      lineageId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[HORTENCIA]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\San_ta_Ana.Inputs[Excel Destination Input].ExternalColumns[ROSAS]"
+                      dataType="wstr"
+                      length="255"
+                      name="ROSAS" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\San_ta_Ana.Inputs[Excel Destination Input].ExternalColumns[CLAVELES]"
+                      dataType="wstr"
+                      length="255"
+                      name="CLAVELES" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\San_ta_Ana.Inputs[Excel Destination Input].ExternalColumns[MACETAS]"
+                      dataType="wstr"
+                      length="255"
+                      name="MACETAS" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\San_ta_Ana.Inputs[Excel Destination Input].ExternalColumns[TIERRA]"
+                      dataType="wstr"
+                      length="255"
+                      name="TIERRA" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\San_ta_Ana.Inputs[Excel Destination Input].ExternalColumns[GIRASOLES]"
+                      dataType="wstr"
+                      length="255"
+                      name="GIRASOLES" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\San_ta_Ana.Inputs[Excel Destination Input].ExternalColumns[HORTENSIA]"
+                      dataType="wstr"
+                      length="255"
+                      name="HORTENSIA" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\San_ta_Ana.Inputs[Excel Destination Input].ExternalColumns[GLOBOS]"
+                      dataType="wstr"
+                      length="255"
+                      name="GLOBOS" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\San_ta_Ana.Inputs[Excel Destination Input].ExternalColumns[TARJETAS]"
+                      dataType="wstr"
+                      length="255"
+                      name="TARJETAS" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\San_ta_Ana.Inputs[Excel Destination Input].ExternalColumns[CARMELIAS]"
+                      dataType="wstr"
+                      length="255"
+                      name="CARMELIAS" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\San_ta_Ana.Inputs[Excel Destination Input].ExternalColumns[ORQUIDIAS]"
+                      dataType="wstr"
+                      length="255"
+                      name="ORQUIDIAS" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\San_ta_Ana.Inputs[Excel Destination Input].ExternalColumns[LIRIOS]"
+                      dataType="wstr"
+                      length="255"
+                      name="LIRIOS" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\San_ta_Ana.Inputs[Excel Destination Input].ExternalColumns[AURORA]"
+                      dataType="wstr"
+                      length="255"
+                      name="AURORA" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\San_ta_Ana.Inputs[Excel Destination Input].ExternalColumns[TULIPANES]"
+                      dataType="wstr"
+                      length="255"
+                      name="TULIPANES" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\San_ta_Ana.Inputs[Excel Destination Input].ExternalColumns[LISTÓN]"
+                      dataType="wstr"
+                      length="255"
+                      name="LISTÓN" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\San_ta_Ana.Outputs[Excel Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Excel Destination Error Output"
+                  synchronousInputId="Package\Data Flow Task\San_ta_Ana.Inputs[Excel Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\San_ta_Ana.Outputs[Excel Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\San_ta_Ana.Outputs[Excel Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\San_ta_Ana.Outputs[Excel Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\San_ta_Ana.Outputs[Excel Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\Sa_n_Miguel"
+              componentClassID="Microsoft.ExcelDestination"
+              contactInfo="Excel Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Excel Destination"
+              name="Sa_n_Miguel"
+              usesDispositions="true">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">'San Miguel$'</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\Sa_n_Miguel.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Administrador de conexiones con Excel]"
+                  connectionManagerRefId="Package.ConnectionManagers[Administrador de conexiones con Excel]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\Sa_n_Miguel.Inputs[Excel Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Excel Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Sa_n_Miguel.Inputs[Excel Destination Input].Columns[AURORA]"
+                      cachedDataType="bool"
+                      cachedName="AURORA"
+                      externalMetadataColumnId="Package\Data Flow Task\Sa_n_Miguel.Inputs[Excel Destination Input].ExternalColumns[AURORA]"
+                      lineageId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[AURORA]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Sa_n_Miguel.Inputs[Excel Destination Input].Columns[CARMELIAS]"
+                      cachedDataType="bool"
+                      cachedName="CARMELIAS"
+                      externalMetadataColumnId="Package\Data Flow Task\Sa_n_Miguel.Inputs[Excel Destination Input].ExternalColumns[CARMELIAS]"
+                      lineageId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[CARMELIAS]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Sa_n_Miguel.Inputs[Excel Destination Input].Columns[CLAVELES]"
+                      cachedDataType="bool"
+                      cachedName="CLAVELES"
+                      externalMetadataColumnId="Package\Data Flow Task\Sa_n_Miguel.Inputs[Excel Destination Input].ExternalColumns[CLAVELES]"
+                      lineageId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[CLAVELES]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Sa_n_Miguel.Inputs[Excel Destination Input].Columns[GIRASOLES]"
+                      cachedDataType="bool"
+                      cachedName="GIRASOLES"
+                      externalMetadataColumnId="Package\Data Flow Task\Sa_n_Miguel.Inputs[Excel Destination Input].ExternalColumns[GIRASOLES]"
+                      lineageId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[GIRASOLES]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Sa_n_Miguel.Inputs[Excel Destination Input].Columns[GLOBOS]"
+                      cachedDataType="bool"
+                      cachedName="GLOBOS"
+                      externalMetadataColumnId="Package\Data Flow Task\Sa_n_Miguel.Inputs[Excel Destination Input].ExternalColumns[GLOBOS]"
+                      lineageId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[GLOBOS]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Sa_n_Miguel.Inputs[Excel Destination Input].Columns[LIRIOS]"
+                      cachedDataType="bool"
+                      cachedName="LIRIOS"
+                      externalMetadataColumnId="Package\Data Flow Task\Sa_n_Miguel.Inputs[Excel Destination Input].ExternalColumns[LIRIOS]"
+                      lineageId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[LIRIOS]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Sa_n_Miguel.Inputs[Excel Destination Input].Columns[LISTÓN]"
+                      cachedDataType="bool"
+                      cachedName="LISTÓN"
+                      externalMetadataColumnId="Package\Data Flow Task\Sa_n_Miguel.Inputs[Excel Destination Input].ExternalColumns[LISTÓN]"
+                      lineageId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[LISTÓN]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Sa_n_Miguel.Inputs[Excel Destination Input].Columns[MACETAS]"
+                      cachedDataType="bool"
+                      cachedName="MACETAS"
+                      externalMetadataColumnId="Package\Data Flow Task\Sa_n_Miguel.Inputs[Excel Destination Input].ExternalColumns[MACETAS]"
+                      lineageId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[MACETAS]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Sa_n_Miguel.Inputs[Excel Destination Input].Columns[ROSAS]"
+                      cachedDataType="bool"
+                      cachedName="ROSAS"
+                      externalMetadataColumnId="Package\Data Flow Task\Sa_n_Miguel.Inputs[Excel Destination Input].ExternalColumns[ROSAS]"
+                      lineageId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[ROSAS]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Sa_n_Miguel.Inputs[Excel Destination Input].Columns[TARJETAS]"
+                      cachedDataType="bool"
+                      cachedName="TARJETAS"
+                      externalMetadataColumnId="Package\Data Flow Task\Sa_n_Miguel.Inputs[Excel Destination Input].ExternalColumns[TARJETAS]"
+                      lineageId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[TARJETAS]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Sa_n_Miguel.Inputs[Excel Destination Input].Columns[TIERRA]"
+                      cachedDataType="bool"
+                      cachedName="TIERRA"
+                      externalMetadataColumnId="Package\Data Flow Task\Sa_n_Miguel.Inputs[Excel Destination Input].ExternalColumns[TIERRA]"
+                      lineageId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[TIERRA]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Sa_n_Miguel.Inputs[Excel Destination Input].Columns[TULIPANES]"
+                      cachedDataType="bool"
+                      cachedName="TULIPANES"
+                      externalMetadataColumnId="Package\Data Flow Task\Sa_n_Miguel.Inputs[Excel Destination Input].ExternalColumns[TULIPANES]"
+                      lineageId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[TULIPANES]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Sa_n_Miguel.Inputs[Excel Destination Input].Columns[HORTENCIA]"
+                      cachedDataType="bool"
+                      cachedName="HORTENCIA"
+                      externalMetadataColumnId="Package\Data Flow Task\Sa_n_Miguel.Inputs[Excel Destination Input].ExternalColumns[HORTENSIA]"
+                      lineageId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[HORTENCIA]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Sa_n_Miguel.Inputs[Excel Destination Input].Columns[ORQUIDEAS]"
+                      cachedDataType="bool"
+                      cachedName="ORQUIDEAS"
+                      externalMetadataColumnId="Package\Data Flow Task\Sa_n_Miguel.Inputs[Excel Destination Input].ExternalColumns[ORQUIDIAS]"
+                      lineageId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[ORQUIDEAS]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Sa_n_Miguel.Inputs[Excel Destination Input].ExternalColumns[ROSAS]"
+                      dataType="wstr"
+                      length="255"
+                      name="ROSAS" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Sa_n_Miguel.Inputs[Excel Destination Input].ExternalColumns[CLAVELES]"
+                      dataType="wstr"
+                      length="255"
+                      name="CLAVELES" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Sa_n_Miguel.Inputs[Excel Destination Input].ExternalColumns[MACETAS]"
+                      dataType="wstr"
+                      length="255"
+                      name="MACETAS" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Sa_n_Miguel.Inputs[Excel Destination Input].ExternalColumns[TIERRA]"
+                      dataType="wstr"
+                      length="255"
+                      name="TIERRA" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Sa_n_Miguel.Inputs[Excel Destination Input].ExternalColumns[GIRASOLES]"
+                      dataType="wstr"
+                      length="255"
+                      name="GIRASOLES" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Sa_n_Miguel.Inputs[Excel Destination Input].ExternalColumns[HORTENSIA]"
+                      dataType="wstr"
+                      length="255"
+                      name="HORTENSIA" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Sa_n_Miguel.Inputs[Excel Destination Input].ExternalColumns[GLOBOS]"
+                      dataType="wstr"
+                      length="255"
+                      name="GLOBOS" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Sa_n_Miguel.Inputs[Excel Destination Input].ExternalColumns[TARJETAS]"
+                      dataType="wstr"
+                      length="255"
+                      name="TARJETAS" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Sa_n_Miguel.Inputs[Excel Destination Input].ExternalColumns[CARMELIAS]"
+                      dataType="wstr"
+                      length="255"
+                      name="CARMELIAS" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Sa_n_Miguel.Inputs[Excel Destination Input].ExternalColumns[ORQUIDIAS]"
+                      dataType="wstr"
+                      length="255"
+                      name="ORQUIDIAS" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Sa_n_Miguel.Inputs[Excel Destination Input].ExternalColumns[LIRIOS]"
+                      dataType="wstr"
+                      length="255"
+                      name="LIRIOS" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Sa_n_Miguel.Inputs[Excel Destination Input].ExternalColumns[AURORA]"
+                      dataType="wstr"
+                      length="255"
+                      name="AURORA" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Sa_n_Miguel.Inputs[Excel Destination Input].ExternalColumns[TULIPANES]"
+                      dataType="wstr"
+                      length="255"
+                      name="TULIPANES" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Sa_n_Miguel.Inputs[Excel Destination Input].ExternalColumns[LISTÓN]"
+                      dataType="wstr"
+                      length="255"
+                      name="LISTÓN" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\Sa_n_Miguel.Outputs[Excel Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Excel Destination Error Output"
+                  synchronousInputId="Package\Data Flow Task\Sa_n_Miguel.Inputs[Excel Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Sa_n_Miguel.Outputs[Excel Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Sa_n_Miguel.Outputs[Excel Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Sa_n_Miguel.Outputs[Excel Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Sa_n_Miguel.Outputs[Excel Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\Sa_n_Salvador"
+              componentClassID="Microsoft.ExcelDestination"
+              contactInfo="Excel Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Excel Destination"
+              name="Sa_n_Salvador"
+              usesDispositions="true">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">'San Salvador$'</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\Sa_n_Salvador.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Administrador de conexiones con Excel]"
+                  connectionManagerRefId="Package.ConnectionManagers[Administrador de conexiones con Excel]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\Sa_n_Salvador.Inputs[Excel Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Excel Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Sa_n_Salvador.Inputs[Excel Destination Input].Columns[AURORA]"
+                      cachedDataType="bool"
+                      cachedName="AURORA"
+                      externalMetadataColumnId="Package\Data Flow Task\Sa_n_Salvador.Inputs[Excel Destination Input].ExternalColumns[AURORA]"
+                      lineageId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[AURORA]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Sa_n_Salvador.Inputs[Excel Destination Input].Columns[CARMELIAS]"
+                      cachedDataType="bool"
+                      cachedName="CARMELIAS"
+                      externalMetadataColumnId="Package\Data Flow Task\Sa_n_Salvador.Inputs[Excel Destination Input].ExternalColumns[CARMELIAS]"
+                      lineageId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[CARMELIAS]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Sa_n_Salvador.Inputs[Excel Destination Input].Columns[CLAVELES]"
+                      cachedDataType="bool"
+                      cachedName="CLAVELES"
+                      externalMetadataColumnId="Package\Data Flow Task\Sa_n_Salvador.Inputs[Excel Destination Input].ExternalColumns[CLAVELES]"
+                      lineageId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[CLAVELES]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Sa_n_Salvador.Inputs[Excel Destination Input].Columns[GIRASOLES]"
+                      cachedDataType="bool"
+                      cachedName="GIRASOLES"
+                      externalMetadataColumnId="Package\Data Flow Task\Sa_n_Salvador.Inputs[Excel Destination Input].ExternalColumns[GIRASOLES]"
+                      lineageId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[GIRASOLES]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Sa_n_Salvador.Inputs[Excel Destination Input].Columns[GLOBOS]"
+                      cachedDataType="bool"
+                      cachedName="GLOBOS"
+                      externalMetadataColumnId="Package\Data Flow Task\Sa_n_Salvador.Inputs[Excel Destination Input].ExternalColumns[GLOBOS]"
+                      lineageId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[GLOBOS]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Sa_n_Salvador.Inputs[Excel Destination Input].Columns[LIRIOS]"
+                      cachedDataType="bool"
+                      cachedName="LIRIOS"
+                      externalMetadataColumnId="Package\Data Flow Task\Sa_n_Salvador.Inputs[Excel Destination Input].ExternalColumns[LIRIOS]"
+                      lineageId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[LIRIOS]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Sa_n_Salvador.Inputs[Excel Destination Input].Columns[LISTÓN]"
+                      cachedDataType="bool"
+                      cachedName="LISTÓN"
+                      externalMetadataColumnId="Package\Data Flow Task\Sa_n_Salvador.Inputs[Excel Destination Input].ExternalColumns[LISTÓN]"
+                      lineageId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[LISTÓN]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Sa_n_Salvador.Inputs[Excel Destination Input].Columns[MACETAS]"
+                      cachedDataType="bool"
+                      cachedName="MACETAS"
+                      externalMetadataColumnId="Package\Data Flow Task\Sa_n_Salvador.Inputs[Excel Destination Input].ExternalColumns[MACETAS]"
+                      lineageId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[MACETAS]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Sa_n_Salvador.Inputs[Excel Destination Input].Columns[ROSAS]"
+                      cachedDataType="bool"
+                      cachedName="ROSAS"
+                      externalMetadataColumnId="Package\Data Flow Task\Sa_n_Salvador.Inputs[Excel Destination Input].ExternalColumns[ROSAS]"
+                      lineageId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[ROSAS]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Sa_n_Salvador.Inputs[Excel Destination Input].Columns[TARJETAS]"
+                      cachedDataType="bool"
+                      cachedName="TARJETAS"
+                      externalMetadataColumnId="Package\Data Flow Task\Sa_n_Salvador.Inputs[Excel Destination Input].ExternalColumns[TARJETAS]"
+                      lineageId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[TARJETAS]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Sa_n_Salvador.Inputs[Excel Destination Input].Columns[TIERRA]"
+                      cachedDataType="bool"
+                      cachedName="TIERRA"
+                      externalMetadataColumnId="Package\Data Flow Task\Sa_n_Salvador.Inputs[Excel Destination Input].ExternalColumns[TIERRA]"
+                      lineageId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[TIERRA]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Sa_n_Salvador.Inputs[Excel Destination Input].Columns[TULIPANES]"
+                      cachedDataType="bool"
+                      cachedName="TULIPANES"
+                      externalMetadataColumnId="Package\Data Flow Task\Sa_n_Salvador.Inputs[Excel Destination Input].ExternalColumns[TULIPANES]"
+                      lineageId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[TULIPANES]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Sa_n_Salvador.Inputs[Excel Destination Input].Columns[HORTENCIA]"
+                      cachedDataType="bool"
+                      cachedName="HORTENCIA"
+                      externalMetadataColumnId="Package\Data Flow Task\Sa_n_Salvador.Inputs[Excel Destination Input].ExternalColumns[HORTENSIA]"
+                      lineageId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[HORTENCIA]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Sa_n_Salvador.Inputs[Excel Destination Input].Columns[ORQUIDEAS]"
+                      cachedDataType="bool"
+                      cachedName="ORQUIDEAS"
+                      externalMetadataColumnId="Package\Data Flow Task\Sa_n_Salvador.Inputs[Excel Destination Input].ExternalColumns[ORQUIDIAS]"
+                      lineageId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1].Columns[ORQUIDEAS]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Sa_n_Salvador.Inputs[Excel Destination Input].ExternalColumns[ROSAS]"
+                      dataType="wstr"
+                      length="255"
+                      name="ROSAS" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Sa_n_Salvador.Inputs[Excel Destination Input].ExternalColumns[CLAVELES]"
+                      dataType="wstr"
+                      length="255"
+                      name="CLAVELES" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Sa_n_Salvador.Inputs[Excel Destination Input].ExternalColumns[MACETAS]"
+                      dataType="wstr"
+                      length="255"
+                      name="MACETAS" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Sa_n_Salvador.Inputs[Excel Destination Input].ExternalColumns[TIERRA]"
+                      dataType="wstr"
+                      length="255"
+                      name="TIERRA" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Sa_n_Salvador.Inputs[Excel Destination Input].ExternalColumns[GIRASOLES]"
+                      dataType="wstr"
+                      length="255"
+                      name="GIRASOLES" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Sa_n_Salvador.Inputs[Excel Destination Input].ExternalColumns[HORTENSIA]"
+                      dataType="wstr"
+                      length="255"
+                      name="HORTENSIA" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Sa_n_Salvador.Inputs[Excel Destination Input].ExternalColumns[GLOBOS]"
+                      dataType="wstr"
+                      length="255"
+                      name="GLOBOS" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Sa_n_Salvador.Inputs[Excel Destination Input].ExternalColumns[TARJETAS]"
+                      dataType="wstr"
+                      length="255"
+                      name="TARJETAS" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Sa_n_Salvador.Inputs[Excel Destination Input].ExternalColumns[CARMELIAS]"
+                      dataType="wstr"
+                      length="255"
+                      name="CARMELIAS" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Sa_n_Salvador.Inputs[Excel Destination Input].ExternalColumns[ORQUIDIAS]"
+                      dataType="wstr"
+                      length="255"
+                      name="ORQUIDIAS" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Sa_n_Salvador.Inputs[Excel Destination Input].ExternalColumns[LIRIOS]"
+                      dataType="wstr"
+                      length="255"
+                      name="LIRIOS" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Sa_n_Salvador.Inputs[Excel Destination Input].ExternalColumns[AURORA]"
+                      dataType="wstr"
+                      length="255"
+                      name="AURORA" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Sa_n_Salvador.Inputs[Excel Destination Input].ExternalColumns[TULIPANES]"
+                      dataType="wstr"
+                      length="255"
+                      name="TULIPANES" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Sa_n_Salvador.Inputs[Excel Destination Input].ExternalColumns[LISTÓN]"
+                      dataType="wstr"
+                      length="255"
+                      name="LISTÓN" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\Sa_n_Salvador.Outputs[Excel Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Excel Destination Error Output"
+                  synchronousInputId="Package\Data Flow Task\Sa_n_Salvador.Inputs[Excel Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Sa_n_Salvador.Outputs[Excel Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Sa_n_Salvador.Outputs[Excel Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Sa_n_Salvador.Outputs[Excel Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Sa_n_Salvador.Outputs[Excel Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
               refId="Package\Data Flow Task\Union All"
               componentClassID="Microsoft.UnionAll"
               contactInfo="Union All;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
@@ -3216,248 +4509,7 @@
               version="1">
               <inputs>
                 <input
-                  refId="Package\Data Flow Task\Union All.Inputs[Union All Input 2]"
-                  hasSideEffects="true"
-                  name="Union All Input 2">
-                  <inputColumns>
-                    <inputColumn
-                      refId="Package\Data Flow Task\Union All.Inputs[Union All Input 2].Columns[id]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="id"
-                      lineageId="Package\Data Flow Task\Santa Ana.Outputs[Flat File Source Output].Columns[id]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[id]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Data Flow Task\Union All.Inputs[Union All Input 2].Columns[Rosas]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="Rosas"
-                      lineageId="Package\Data Flow Task\Santa Ana.Outputs[Flat File Source Output].Columns[Rosas]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[Rosas]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Data Flow Task\Union All.Inputs[Union All Input 2].Columns[Claveles]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="Claveles"
-                      lineageId="Package\Data Flow Task\Santa Ana.Outputs[Flat File Source Output].Columns[Claveles]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[Claveles]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Data Flow Task\Union All.Inputs[Union All Input 2].Columns[Macetas]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="Macetas"
-                      lineageId="Package\Data Flow Task\Santa Ana.Outputs[Flat File Source Output].Columns[Macetas]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[Macetas]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Data Flow Task\Union All.Inputs[Union All Input 2].Columns[Tierra]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="Tierra"
-                      lineageId="Package\Data Flow Task\Santa Ana.Outputs[Flat File Source Output].Columns[Tierra]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[Tierra]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Data Flow Task\Union All.Inputs[Union All Input 2].Columns[Girasoles]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="Girasoles"
-                      lineageId="Package\Data Flow Task\Santa Ana.Outputs[Flat File Source Output].Columns[Girasoles]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[Girasoles]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Data Flow Task\Union All.Inputs[Union All Input 2].Columns[Hortensia]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="Hortensia"
-                      lineageId="Package\Data Flow Task\Santa Ana.Outputs[Flat File Source Output].Columns[Hortensia]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[Hortensia]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Data Flow Task\Union All.Inputs[Union All Input 2].Columns[Globos]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="Globos"
-                      lineageId="Package\Data Flow Task\Santa Ana.Outputs[Flat File Source Output].Columns[Globos]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[Globos]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Data Flow Task\Union All.Inputs[Union All Input 2].Columns[Tarjetas]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="Tarjetas"
-                      lineageId="Package\Data Flow Task\Santa Ana.Outputs[Flat File Source Output].Columns[Tarjetas]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[Tarjetas]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Data Flow Task\Union All.Inputs[Union All Input 2].Columns[fOrquÃ­dias]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="fOrquÃ­dias"
-                      lineageId="Package\Data Flow Task\Santa Ana.Outputs[Flat File Source Output].Columns[fOrquÃ­dias]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[fOrquÃ­dias]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Data Flow Task\Union All.Inputs[Union All Input 2].Columns[CarmesÃ­]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="CarmesÃ­"
-                      lineageId="Package\Data Flow Task\Santa Ana.Outputs[Flat File Source Output].Columns[CarmesÃ­]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[CarmesÃ­]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Data Flow Task\Union All.Inputs[Union All Input 2].Columns[Lirios]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="Lirios"
-                      lineageId="Package\Data Flow Task\Santa Ana.Outputs[Flat File Source Output].Columns[Lirios]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[Lirios]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Data Flow Task\Union All.Inputs[Union All Input 2].Columns[Aurora]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="Aurora"
-                      lineageId="Package\Data Flow Task\Santa Ana.Outputs[Flat File Source Output].Columns[Aurora]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[Aurora]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Data Flow Task\Union All.Inputs[Union All Input 2].Columns[Tulipanes]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="Tulipanes"
-                      lineageId="Package\Data Flow Task\Santa Ana.Outputs[Flat File Source Output].Columns[Tulipanes]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[Tulipanes]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Data Flow Task\Union All.Inputs[Union All Input 2].Columns[ListÃ³n]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="ListÃ³n"
-                      lineageId="Package\Data Flow Task\Santa Ana.Outputs[Flat File Source Output].Columns[ListÃ³n]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[ListÃ³n]}</property>
-                      </properties>
-                    </inputColumn>
-                  </inputColumns>
-                  <externalMetadataColumns />
-                </input>
-                <input
-                  refId="Package\Data Flow Task\Union All.Inputs[Union All Input 4]"
-                  dangling="true"
-                  hasSideEffects="true"
-                  name="Union All Input 4">
-                  <externalMetadataColumns />
-                </input>
-                <input
                   refId="Package\Data Flow Task\Union All.Inputs[Union All Input 1]"
-                  hasSideEffects="true"
                   name="Union All Input 1">
                   <inputColumns>
                     <inputColumn
@@ -3466,7 +4518,7 @@
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="id"
-                      lineageId="Package\Data Flow Task\San Salvador.Outputs[Flat File Source Output].Columns[id]">
+                      lineageId="Package\Data Flow Task\San Miguel.Outputs[Flat File Source Output].Columns[id]">
                       <properties>
                         <property
                           containsID="true"
@@ -3481,7 +4533,7 @@
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Rosas"
-                      lineageId="Package\Data Flow Task\San Salvador.Outputs[Flat File Source Output].Columns[Rosas]">
+                      lineageId="Package\Data Flow Task\San Miguel.Outputs[Flat File Source Output].Columns[Rosas]">
                       <properties>
                         <property
                           containsID="true"
@@ -3496,7 +4548,7 @@
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Claveles"
-                      lineageId="Package\Data Flow Task\San Salvador.Outputs[Flat File Source Output].Columns[Claveles]">
+                      lineageId="Package\Data Flow Task\San Miguel.Outputs[Flat File Source Output].Columns[Claveles]">
                       <properties>
                         <property
                           containsID="true"
@@ -3511,7 +4563,7 @@
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Macetas"
-                      lineageId="Package\Data Flow Task\San Salvador.Outputs[Flat File Source Output].Columns[Macetas]">
+                      lineageId="Package\Data Flow Task\San Miguel.Outputs[Flat File Source Output].Columns[Macetas]">
                       <properties>
                         <property
                           containsID="true"
@@ -3526,7 +4578,7 @@
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Tierra"
-                      lineageId="Package\Data Flow Task\San Salvador.Outputs[Flat File Source Output].Columns[Tierra]">
+                      lineageId="Package\Data Flow Task\San Miguel.Outputs[Flat File Source Output].Columns[Tierra]">
                       <properties>
                         <property
                           containsID="true"
@@ -3541,7 +4593,7 @@
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Girasoles"
-                      lineageId="Package\Data Flow Task\San Salvador.Outputs[Flat File Source Output].Columns[Girasoles]">
+                      lineageId="Package\Data Flow Task\San Miguel.Outputs[Flat File Source Output].Columns[Girasoles]">
                       <properties>
                         <property
                           containsID="true"
@@ -3556,7 +4608,7 @@
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Hortensia"
-                      lineageId="Package\Data Flow Task\San Salvador.Outputs[Flat File Source Output].Columns[Hortensia]">
+                      lineageId="Package\Data Flow Task\San Miguel.Outputs[Flat File Source Output].Columns[Hortensia]">
                       <properties>
                         <property
                           containsID="true"
@@ -3571,7 +4623,7 @@
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Globos"
-                      lineageId="Package\Data Flow Task\San Salvador.Outputs[Flat File Source Output].Columns[Globos]">
+                      lineageId="Package\Data Flow Task\San Miguel.Outputs[Flat File Source Output].Columns[Globos]">
                       <properties>
                         <property
                           containsID="true"
@@ -3586,7 +4638,7 @@
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Tarjetas"
-                      lineageId="Package\Data Flow Task\San Salvador.Outputs[Flat File Source Output].Columns[Tarjetas]">
+                      lineageId="Package\Data Flow Task\San Miguel.Outputs[Flat File Source Output].Columns[Tarjetas]">
                       <properties>
                         <property
                           containsID="true"
@@ -3601,7 +4653,7 @@
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="fOrquÃ­dias"
-                      lineageId="Package\Data Flow Task\San Salvador.Outputs[Flat File Source Output].Columns[fOrquÃ­dias]">
+                      lineageId="Package\Data Flow Task\San Miguel.Outputs[Flat File Source Output].Columns[fOrquÃ­dias]">
                       <properties>
                         <property
                           containsID="true"
@@ -3616,7 +4668,7 @@
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="CarmesÃ­"
-                      lineageId="Package\Data Flow Task\San Salvador.Outputs[Flat File Source Output].Columns[CarmesÃ­]">
+                      lineageId="Package\Data Flow Task\San Miguel.Outputs[Flat File Source Output].Columns[CarmesÃ­]">
                       <properties>
                         <property
                           containsID="true"
@@ -3631,7 +4683,7 @@
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Lirios"
-                      lineageId="Package\Data Flow Task\San Salvador.Outputs[Flat File Source Output].Columns[Lirios]">
+                      lineageId="Package\Data Flow Task\San Miguel.Outputs[Flat File Source Output].Columns[Lirios]">
                       <properties>
                         <property
                           containsID="true"
@@ -3646,7 +4698,7 @@
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Aurora"
-                      lineageId="Package\Data Flow Task\San Salvador.Outputs[Flat File Source Output].Columns[Aurora]">
+                      lineageId="Package\Data Flow Task\San Miguel.Outputs[Flat File Source Output].Columns[Aurora]">
                       <properties>
                         <property
                           containsID="true"
@@ -3661,7 +4713,7 @@
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Tulipanes"
-                      lineageId="Package\Data Flow Task\San Salvador.Outputs[Flat File Source Output].Columns[Tulipanes]">
+                      lineageId="Package\Data Flow Task\San Miguel.Outputs[Flat File Source Output].Columns[Tulipanes]">
                       <properties>
                         <property
                           containsID="true"
@@ -3676,6 +4728,253 @@
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="ListÃ³n"
+                      lineageId="Package\Data Flow Task\San Miguel.Outputs[Flat File Source Output].Columns[ListÃ³n]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[ListÃ³n]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Union All.Inputs[Union All Input 1].Columns[Departamento]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="Departamento"
+                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[Departamento]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[Departamento]}</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+                <input
+                  refId="Package\Data Flow Task\Union All.Inputs[Union All Input 2]"
+                  hasSideEffects="true"
+                  name="Union All Input 2">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Union All.Inputs[Union All Input 2].Columns[id]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="id"
+                      lineageId="Package\Data Flow Task\San Salvador.Outputs[Flat File Source Output].Columns[id]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[id]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Union All.Inputs[Union All Input 2].Columns[Rosas]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Rosas"
+                      lineageId="Package\Data Flow Task\San Salvador.Outputs[Flat File Source Output].Columns[Rosas]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[Rosas]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Union All.Inputs[Union All Input 2].Columns[Claveles]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Claveles"
+                      lineageId="Package\Data Flow Task\San Salvador.Outputs[Flat File Source Output].Columns[Claveles]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[Claveles]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Union All.Inputs[Union All Input 2].Columns[Macetas]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Macetas"
+                      lineageId="Package\Data Flow Task\San Salvador.Outputs[Flat File Source Output].Columns[Macetas]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[Macetas]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Union All.Inputs[Union All Input 2].Columns[Tierra]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Tierra"
+                      lineageId="Package\Data Flow Task\San Salvador.Outputs[Flat File Source Output].Columns[Tierra]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[Tierra]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Union All.Inputs[Union All Input 2].Columns[Girasoles]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Girasoles"
+                      lineageId="Package\Data Flow Task\San Salvador.Outputs[Flat File Source Output].Columns[Girasoles]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[Girasoles]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Union All.Inputs[Union All Input 2].Columns[Hortensia]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Hortensia"
+                      lineageId="Package\Data Flow Task\San Salvador.Outputs[Flat File Source Output].Columns[Hortensia]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[Hortensia]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Union All.Inputs[Union All Input 2].Columns[Globos]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Globos"
+                      lineageId="Package\Data Flow Task\San Salvador.Outputs[Flat File Source Output].Columns[Globos]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[Globos]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Union All.Inputs[Union All Input 2].Columns[Tarjetas]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Tarjetas"
+                      lineageId="Package\Data Flow Task\San Salvador.Outputs[Flat File Source Output].Columns[Tarjetas]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[Tarjetas]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Union All.Inputs[Union All Input 2].Columns[fOrquÃ­dias]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="fOrquÃ­dias"
+                      lineageId="Package\Data Flow Task\San Salvador.Outputs[Flat File Source Output].Columns[fOrquÃ­dias]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[fOrquÃ­dias]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Union All.Inputs[Union All Input 2].Columns[CarmesÃ­]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="CarmesÃ­"
+                      lineageId="Package\Data Flow Task\San Salvador.Outputs[Flat File Source Output].Columns[CarmesÃ­]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[CarmesÃ­]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Union All.Inputs[Union All Input 2].Columns[Lirios]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Lirios"
+                      lineageId="Package\Data Flow Task\San Salvador.Outputs[Flat File Source Output].Columns[Lirios]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[Lirios]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Union All.Inputs[Union All Input 2].Columns[Aurora]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Aurora"
+                      lineageId="Package\Data Flow Task\San Salvador.Outputs[Flat File Source Output].Columns[Aurora]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[Aurora]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Union All.Inputs[Union All Input 2].Columns[Tulipanes]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Tulipanes"
+                      lineageId="Package\Data Flow Task\San Salvador.Outputs[Flat File Source Output].Columns[Tulipanes]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[Tulipanes]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Union All.Inputs[Union All Input 2].Columns[ListÃ³n]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="ListÃ³n"
                       lineageId="Package\Data Flow Task\San Salvador.Outputs[Flat File Source Output].Columns[ListÃ³n]">
                       <properties>
                         <property
@@ -3683,6 +4982,20 @@
                           dataType="System.Int32"
                           description="Output column lineage ID"
                           name="OutputColumnLineageID">#{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[ListÃ³n]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Union All.Inputs[Union All Input 2].Columns[Departamento]"
+                      cachedDataType="wstr"
+                      cachedLength="150"
+                      cachedName="Departamento"
+                      lineageId="Package\Data Flow Task\Derived Column 1.Outputs[Derived Column Output].Columns[Departamento]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[Departamento]}</property>
                       </properties>
                     </inputColumn>
                   </inputColumns>
@@ -3699,7 +5012,7 @@
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="id"
-                      lineageId="Package\Data Flow Task\San Miguel.Outputs[Flat File Source Output].Columns[id]">
+                      lineageId="Package\Data Flow Task\Santa Ana.Outputs[Flat File Source Output].Columns[id]">
                       <properties>
                         <property
                           containsID="true"
@@ -3714,7 +5027,7 @@
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Rosas"
-                      lineageId="Package\Data Flow Task\San Miguel.Outputs[Flat File Source Output].Columns[Rosas]">
+                      lineageId="Package\Data Flow Task\Santa Ana.Outputs[Flat File Source Output].Columns[Rosas]">
                       <properties>
                         <property
                           containsID="true"
@@ -3729,7 +5042,7 @@
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Claveles"
-                      lineageId="Package\Data Flow Task\San Miguel.Outputs[Flat File Source Output].Columns[Claveles]">
+                      lineageId="Package\Data Flow Task\Santa Ana.Outputs[Flat File Source Output].Columns[Claveles]">
                       <properties>
                         <property
                           containsID="true"
@@ -3744,7 +5057,7 @@
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Macetas"
-                      lineageId="Package\Data Flow Task\San Miguel.Outputs[Flat File Source Output].Columns[Macetas]">
+                      lineageId="Package\Data Flow Task\Santa Ana.Outputs[Flat File Source Output].Columns[Macetas]">
                       <properties>
                         <property
                           containsID="true"
@@ -3759,7 +5072,7 @@
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Tierra"
-                      lineageId="Package\Data Flow Task\San Miguel.Outputs[Flat File Source Output].Columns[Tierra]">
+                      lineageId="Package\Data Flow Task\Santa Ana.Outputs[Flat File Source Output].Columns[Tierra]">
                       <properties>
                         <property
                           containsID="true"
@@ -3774,7 +5087,7 @@
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Girasoles"
-                      lineageId="Package\Data Flow Task\San Miguel.Outputs[Flat File Source Output].Columns[Girasoles]">
+                      lineageId="Package\Data Flow Task\Santa Ana.Outputs[Flat File Source Output].Columns[Girasoles]">
                       <properties>
                         <property
                           containsID="true"
@@ -3789,7 +5102,7 @@
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Hortensia"
-                      lineageId="Package\Data Flow Task\San Miguel.Outputs[Flat File Source Output].Columns[Hortensia]">
+                      lineageId="Package\Data Flow Task\Santa Ana.Outputs[Flat File Source Output].Columns[Hortensia]">
                       <properties>
                         <property
                           containsID="true"
@@ -3804,7 +5117,7 @@
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Globos"
-                      lineageId="Package\Data Flow Task\San Miguel.Outputs[Flat File Source Output].Columns[Globos]">
+                      lineageId="Package\Data Flow Task\Santa Ana.Outputs[Flat File Source Output].Columns[Globos]">
                       <properties>
                         <property
                           containsID="true"
@@ -3819,7 +5132,7 @@
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Tarjetas"
-                      lineageId="Package\Data Flow Task\San Miguel.Outputs[Flat File Source Output].Columns[Tarjetas]">
+                      lineageId="Package\Data Flow Task\Santa Ana.Outputs[Flat File Source Output].Columns[Tarjetas]">
                       <properties>
                         <property
                           containsID="true"
@@ -3834,7 +5147,7 @@
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="fOrquÃ­dias"
-                      lineageId="Package\Data Flow Task\San Miguel.Outputs[Flat File Source Output].Columns[fOrquÃ­dias]">
+                      lineageId="Package\Data Flow Task\Santa Ana.Outputs[Flat File Source Output].Columns[fOrquÃ­dias]">
                       <properties>
                         <property
                           containsID="true"
@@ -3849,7 +5162,7 @@
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="CarmesÃ­"
-                      lineageId="Package\Data Flow Task\San Miguel.Outputs[Flat File Source Output].Columns[CarmesÃ­]">
+                      lineageId="Package\Data Flow Task\Santa Ana.Outputs[Flat File Source Output].Columns[CarmesÃ­]">
                       <properties>
                         <property
                           containsID="true"
@@ -3864,7 +5177,7 @@
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Lirios"
-                      lineageId="Package\Data Flow Task\San Miguel.Outputs[Flat File Source Output].Columns[Lirios]">
+                      lineageId="Package\Data Flow Task\Santa Ana.Outputs[Flat File Source Output].Columns[Lirios]">
                       <properties>
                         <property
                           containsID="true"
@@ -3879,7 +5192,7 @@
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Aurora"
-                      lineageId="Package\Data Flow Task\San Miguel.Outputs[Flat File Source Output].Columns[Aurora]">
+                      lineageId="Package\Data Flow Task\Santa Ana.Outputs[Flat File Source Output].Columns[Aurora]">
                       <properties>
                         <property
                           containsID="true"
@@ -3894,7 +5207,7 @@
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Tulipanes"
-                      lineageId="Package\Data Flow Task\San Miguel.Outputs[Flat File Source Output].Columns[Tulipanes]">
+                      lineageId="Package\Data Flow Task\Santa Ana.Outputs[Flat File Source Output].Columns[Tulipanes]">
                       <properties>
                         <property
                           containsID="true"
@@ -3909,7 +5222,7 @@
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="ListÃ³n"
-                      lineageId="Package\Data Flow Task\San Miguel.Outputs[Flat File Source Output].Columns[ListÃ³n]">
+                      lineageId="Package\Data Flow Task\Santa Ana.Outputs[Flat File Source Output].Columns[ListÃ³n]">
                       <properties>
                         <property
                           containsID="true"
@@ -3918,7 +5231,28 @@
                           name="OutputColumnLineageID">#{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[ListÃ³n]}</property>
                       </properties>
                     </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Union All.Inputs[Union All Input 3].Columns[Departamento]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Departamento"
+                      lineageId="Package\Data Flow Task\Derived Column 2.Outputs[Derived Column Output].Columns[Departamento]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[Departamento]}</property>
+                      </properties>
+                    </inputColumn>
                   </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+                <input
+                  refId="Package\Data Flow Task\Union All.Inputs[Union All Input 4]"
+                  dangling="true"
+                  hasSideEffects="true"
+                  name="Union All Input 4">
                   <externalMetadataColumns />
                 </input>
               </inputs>
@@ -4032,6 +5366,12 @@
                       length="50"
                       lineageId="Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[ListÃ³n]"
                       name="ListÃ³n" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[Departamento]"
+                      dataType="wstr"
+                      length="150"
+                      lineageId="Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[Departamento]"
+                      name="Departamento" />
                   </outputColumns>
                   <externalMetadataColumns />
                 </output>
@@ -4041,7 +5381,7 @@
           <paths>
             <path
               refId="Package\Data Flow Task.Paths[Aggregate Output 1]"
-              endId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              endId="Package\Data Flow Task\Multicast.Inputs[Multicast Input 1]"
               name="Aggregate Output 1"
               startId="Package\Data Flow Task\Aggregate.Outputs[Aggregate Output 1]" />
             <path
@@ -4050,20 +5390,60 @@
               name="Data Conversion Output"
               startId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output]" />
             <path
-              refId="Package\Data Flow Task.Paths[Flat File Source Output]"
+              refId="Package\Data Flow Task.Paths[Derived Column Output]"
+              endId="Package\Data Flow Task\Union All.Inputs[Union All Input 1]"
+              name="Derived Column Output"
+              startId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Derived Column Output1]"
               endId="Package\Data Flow Task\Union All.Inputs[Union All Input 2]"
+              name="Derived Column Output"
+              startId="Package\Data Flow Task\Derived Column 1.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Derived Column Output2]"
+              endId="Package\Data Flow Task\Union All.Inputs[Union All Input 3]"
+              name="Derived Column Output"
+              startId="Package\Data Flow Task\Derived Column 2.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Flat File Source Output]"
+              endId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input]"
               name="Flat File Source Output"
-              startId="Package\Data Flow Task\Santa Ana.Outputs[Flat File Source Output]" />
+              startId="Package\Data Flow Task\San Miguel.Outputs[Flat File Source Output]" />
             <path
               refId="Package\Data Flow Task.Paths[Flat File Source Output1]"
-              endId="Package\Data Flow Task\Union All.Inputs[Union All Input 1]"
+              endId="Package\Data Flow Task\Derived Column 1.Inputs[Derived Column Input]"
               name="Flat File Source Output"
               startId="Package\Data Flow Task\San Salvador.Outputs[Flat File Source Output]" />
             <path
               refId="Package\Data Flow Task.Paths[Flat File Source Output2]"
-              endId="Package\Data Flow Task\Union All.Inputs[Union All Input 3]"
+              endId="Package\Data Flow Task\Derived Column 2.Inputs[Derived Column Input]"
               name="Flat File Source Output"
-              startId="Package\Data Flow Task\San Miguel.Outputs[Flat File Source Output]" />
+              startId="Package\Data Flow Task\Santa Ana.Outputs[Flat File Source Output]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Multicast Output 1]"
+              endId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Multicast Output 1"
+              startId="Package\Data Flow Task\Multicast.Outputs[Multicast Output 1]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Multicast Output 2]"
+              endId="Package\Data Flow Task\Conditional Split.Inputs[Conditional Split Input]"
+              name="Multicast Output 2"
+              startId="Package\Data Flow Task\Multicast.Outputs[Multicast Output 2]" />
+            <path
+              refId="Package\Data Flow Task.Paths[San Miguel]"
+              endId="Package\Data Flow Task\Sa_n_Miguel.Inputs[Excel Destination Input]"
+              name="San Miguel"
+              startId="Package\Data Flow Task\Conditional Split.Outputs[San Miguel]" />
+            <path
+              refId="Package\Data Flow Task.Paths[San Salvador]"
+              endId="Package\Data Flow Task\Sa_n_Salvador.Inputs[Excel Destination Input]"
+              name="San Salvador"
+              startId="Package\Data Flow Task\Conditional Split.Outputs[San Salvador]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Santa Ana]"
+              endId="Package\Data Flow Task\San_ta_Ana.Inputs[Excel Destination Input]"
+              name="Santa Ana"
+              startId="Package\Data Flow Task\Conditional Split.Outputs[Santa Ana]" />
             <path
               refId="Package\Data Flow Task.Paths[Union All Output 1]"
               endId="Package\Data Flow Task\Data Conversion.Inputs[Data Conversion Input]"
@@ -4097,120 +5477,34 @@
     design-time-name="Package\Data Flow Task">
     <LayoutInfo>
       <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="130,42"
           Id="Package\Data Flow Task\San Miguel"
-          TopLeft="193,25" />
+          TopLeft="189,27" />
         <NodeLayout
           Size="140,42"
           Id="Package\Data Flow Task\San Salvador"
-          TopLeft="387,26" />
+          TopLeft="399,19" />
         <NodeLayout
           Size="127,42"
           Id="Package\Data Flow Task\Santa Ana"
-          TopLeft="578,26" />
-        <NodeLayout
-          Size="121,42"
-          Id="Package\Data Flow Task\Union All"
-          TopLeft="399,167" />
-        <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Flat File Source Output]"
-          TopLeft="641.5,68">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-153.75,99"
-              Start="0,0"
-              End="-153.75,91.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,60.5768194070081" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,60.5768194070081"
-                    Point2="0,64.5768194070081"
-                    Point3="-4,64.5768194070081" />
-                  <mssgle:LineSegment
-                    End="-149.75,64.5768194070081" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-149.75,64.5768194070081"
-                    Point2="-153.75,64.5768194070081"
-                    Point3="-153.75,68.5768194070081" />
-                  <mssgle:LineSegment
-                    End="-153.75,91.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Flat File Source Output1]"
-          TopLeft="458.25,68">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,99"
-              Start="0,0"
-              End="0,91.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,91.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Flat File Source Output2]"
-          TopLeft="258,67">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="173.25,100"
-              Start="0,0"
-              End="173.25,92.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,61.2291105121294" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,61.2291105121294"
-                    Point2="0,65.2291105121294"
-                    Point3="4,65.2291105121294" />
-                  <mssgle:LineSegment
-                    End="169.25,65.2291105121294" />
-                  <mssgle:CubicBezierSegment
-                    Point1="169.25,65.2291105121294"
-                    Point2="173.25,65.2291105121294"
-                    Point3="173.25,69.2291105121294" />
-                  <mssgle:LineSegment
-                    End="173.25,92.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+          TopLeft="609,29" />
         <NodeLayout
           Size="156,42"
           Id="Package\Data Flow Task\Data Conversion"
-          TopLeft="379,255" />
+          TopLeft="611,218" />
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Data Flow Task\OLE DB Destination"
+          TopLeft="169,298" />
+        <NodeLayout
+          Size="127,42"
+          Id="Package\Data Flow Task\Aggregate"
+          TopLeft="627,306" />
         <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Union All Output 1]"
-          TopLeft="458.25,209">
+          Id="Package\Data Flow Task.Paths[Data Conversion Output]"
+          TopLeft="689.75,260">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -4231,23 +5525,49 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <NodeLayout
-          Size="127,42"
-          Id="Package\Data Flow Task\Aggregate"
-          TopLeft="400,340" />
+          Size="154,42"
+          Id="Package\Data Flow Task\Derived Column"
+          TopLeft="184,122" />
+        <NodeLayout
+          Size="163,42"
+          Id="Package\Data Flow Task\Derived Column 1"
+          TopLeft="387,110" />
         <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Data Conversion Output]"
-          TopLeft="460.25,297">
+          Id="Package\Data Flow Task.Paths[Flat File Source Output]"
+          TopLeft="257.5,69">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,43"
+              EndConnector="0,53"
               Start="0,0"
-              End="0,35.5">
+              End="0,45.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,35.5" />
+                    End="0,45.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Flat File Source Output1]"
+          TopLeft="468.75,61">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,49"
+              Start="0,0"
+              End="0,41.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,41.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4257,23 +5577,23 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <NodeLayout
-          Size="171,42"
-          Id="Package\Data Flow Task\OLE DB Destination"
-          TopLeft="153,338" />
+          Size="163,42"
+          Id="Package\Data Flow Task\Derived Column 2"
+          TopLeft="594,125" />
         <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Aggregate Output 1]"
-          TopLeft="400,360">
+          Id="Package\Data Flow Task.Paths[Flat File Source Output2]"
+          TopLeft="674,71">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-76,0"
+              EndConnector="0,54"
               Start="0,0"
-              End="-68.5,0">
+              End="0,46.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="-68.5,0" />
+                    End="0,46.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4282,11 +5602,348 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="121,42"
+          Id="Package\Data Flow Task\Union All"
+          TopLeft="409,223" />
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Union All Output 1]"
+          TopLeft="530,241.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="81,0"
+              Start="0,0"
+              End="73.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="73.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Derived Column Output]"
+          TopLeft="261,164">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="180.25,59"
+              Start="0,0"
+              End="180.25,51.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,34.4851752021563" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,34.4851752021563"
+                    Point2="0,38.4851752021563"
+                    Point3="4,38.4851752021563" />
+                  <mssgle:LineSegment
+                    End="176.25,38.4851752021563" />
+                  <mssgle:CubicBezierSegment
+                    Point1="176.25,38.4851752021563"
+                    Point2="180.25,38.4851752021563"
+                    Point3="180.25,42.4851752021563" />
+                  <mssgle:LineSegment
+                    End="180.25,51.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Derived Column Output1]"
+          TopLeft="469,152">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,71"
+              Start="0,0"
+              End="0,63.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,63.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Derived Column Output2]"
+          TopLeft="675.5,167">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-177.75,56"
+              Start="0,0"
+              End="-177.75,48.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,32.5283018867925" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,32.5283018867925"
+                    Point2="0,36.5283018867925"
+                    Point3="-4,36.5283018867925" />
+                  <mssgle:LineSegment
+                    End="-173.75,36.5283018867925" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-173.75,36.5283018867925"
+                    Point2="-177.75,36.5283018867925"
+                    Point3="-177.75,40.5283018867925" />
+                  <mssgle:LineSegment
+                    End="-177.75,48.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="120,42"
+          Id="Package\Data Flow Task\Multicast"
+          TopLeft="409,299" />
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Aggregate Output 1]"
+          TopLeft="627,323.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-98,0"
+              Start="0,0"
+              End="-90.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-90.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Multicast Output 1]"
+          TopLeft="409,319.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-69,0"
+              Start="0,0"
+              End="-61.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-61.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="155,42"
+          Id="Package\Data Flow Task\Conditional Split"
+          TopLeft="387,371" />
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Multicast Output 2]"
+          TopLeft="466.75,341">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,30"
+              Start="0,0"
+              End="0,22.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,22.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="135,42"
+          Id="Package\Data Flow Task\San_ta_Ana"
+          TopLeft="186,443" />
+        <NodeLayout
+          Size="149,42"
+          Id="Package\Data Flow Task\Sa_n_Salvador"
+          TopLeft="392,474" />
+        <NodeLayout
+          Size="139,42"
+          Id="Package\Data Flow Task\Sa_n_Miguel"
+          TopLeft="616,443" />
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Santa Ana]"
+          TopLeft="464.5,413">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-211,30"
+              Start="0,0"
+              End="-211,22.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,11" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,11"
+                    Point2="0,15"
+                    Point3="-4,15" />
+                  <mssgle:LineSegment
+                    End="-207,15" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-207,15"
+                    Point2="-211,15"
+                    Point3="-211,19" />
+                  <mssgle:LineSegment
+                    End="-211,22.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-128.4740234375,20,45.948046875,9.5537109375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[San Salvador]"
+          TopLeft="465.5,413">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,61"
+              Start="0,0"
+              End="0,53.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,53.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-29.50435546875,21.87548828125,59.0087109375,9.7490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[San Miguel]"
+          TopLeft="501.25,413">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="184.25,30"
+              Start="0,0"
+              End="184.25,22.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,6.33826638477801" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,6.33826638477801"
+                    Point2="0,10.338266384778"
+                    Point3="4,10.338266384778" />
+                  <mssgle:LineSegment
+                    End="180.25,10.338266384778" />
+                  <mssgle:CubicBezierSegment
+                    Point1="180.25,10.338266384778"
+                    Point2="184.25,10.338266384778"
+                    Point3="184.25,14.338266384778" />
+                  <mssgle:LineSegment
+                    End="184.25,22.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="67.56220703125,15.338266384778,49.1255859375,11.6630859375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
     design-time-name="Package\Data Flow Task\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\San_ta_Ana">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\Sa_n_Salvador">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\Sa_n_Miguel">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
