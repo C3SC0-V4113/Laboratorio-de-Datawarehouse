@@ -11,15 +11,149 @@
   DTS:LocaleID="22538"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="11"
-  DTS:VersionGUID="{686472B2-C52F-4F3B-B346-D0CD15EA8467}">
+  DTS:VersionBuild="37"
+  DTS:VersionGUID="{F7AB7286-FE72-418E-9CA0-2464BD6A47A6}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
     <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[conversion_error]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{9DF560F9-38C6-417A-9EC9-803AA38F4121}"
+      DTS:ObjectName="conversion_error">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="22538"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="F:\DOCUMENTOS CUQUIS\UNIVERSIDAD\CICLO 04\Dataware Y Mineria de datos\Laboratorio-de-Datawarehouse\Guia 4 ETL Final\Ejercicio 1\bulkfiles\error_output\data_conversion_error.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Categoria"
+              DTS:DTSID="{21A8A270-9F6A-4A71-9167-B085A00E9D60}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Producto"
+              DTS:DTSID="{612F1EE3-BC94-4A7C-99D6-2D36F057468A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Marca"
+              DTS:DTSID="{3CD9D92C-E00E-4BF1-9FA7-43846115F2A4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Cantidad"
+              DTS:DTSID="{04BE5EE8-D064-40AE-B4D2-207A720D5D3B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Unidad"
+              DTS:DTSID="{D9869A54-FF51-41A1-A64D-2920ABA2F571}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Precio"
+              DTS:DTSID="{6812DE54-D272-46A5-99AF-47ABE29EF9F7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Establecimiento"
+              DTS:DTSID="{43B7C82A-EB01-4AB8-97BD-0DCAB6389D89}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Direccion"
+              DTS:DTSID="{56905C06-198F-4695-9044-EA4FC6790064}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="De partamento"
+              DTS:DTSID="{165DB74F-1D25-492C-8E05-5641E8AA9422}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Municipio"
+              DTS:DTSID="{A4934457-F6FC-4532-A82E-7FCF0553440A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Fecha Sondeo"
+              DTS:DTSID="{E3604FB8-6BB6-4081-BFF7-857CD10EE5BA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ErrorCode"
+              DTS:DTSID="{35D72FE3-AAE7-47A6-9E3F-4B853C21E19D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ErrorColumn"
+              DTS:DTSID="{AECA9C61-4F4C-407B-BB81-DB6E7DEA5D78}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[Data]"
       DTS:CreationName="FLATFILE"
-      DTS:DTSID="{11A3F23D-70C6-40B4-B44E-2542C6FDE424}"
+      DTS:DTSID="{1BB7424C-2FF8-477C-A74F-B49C9956DC0D}"
       DTS:ObjectName="Data">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -35,90 +169,92 @@
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Categoria"
-              DTS:DTSID="{D7EA32E4-5AE8-4D99-9D0E-4A7E09E76AD4}"
+              DTS:DTSID="{5288B990-39D5-4E7E-ABA0-9FAAEC8D0C76}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Producto"
-              DTS:DTSID="{67BAB702-989A-41B5-B270-7C4D8B7AE9FD}"
+              DTS:DTSID="{8B69129D-A468-41DE-9045-606A53C9400F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Marca"
-              DTS:DTSID="{B90DEDEB-C6BA-4FA2-88C3-A4E5D186442F}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="4"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Cantidad"
-              DTS:DTSID="{EEDEF4D2-98A1-4B45-B6B9-6B9B162D5CB1}"
+              DTS:DTSID="{5A1389F9-1DAD-40FE-BAD2-7A2BF0D83D5B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
               DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Cantidad"
+              DTS:DTSID="{F4F4F8FF-5FF2-431E-9E3D-325955FF52D4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Unidad"
-              DTS:DTSID="{B5308BB2-2F46-47AE-A305-11CBACD4B1E6}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="6"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Precio"
-              DTS:DTSID="{D427855D-8945-4A5C-AD50-3A018A5FDACD}"
+              DTS:DTSID="{40F9D96A-4143-41DC-9BD1-75F5919E47C2}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
               DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Precio"
+              DTS:DTSID="{904303F1-A2A1-481C-8B5C-3E52FE06517E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="4000"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Establecimiento"
-              DTS:DTSID="{8FC44729-6A09-4E51-B815-1862C06C06ED}"
+              DTS:DTSID="{CE04F3E4-C073-4C5A-8263-F2AA16E0EB60}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="400"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Direccion"
-              DTS:DTSID="{5ADCE399-23B4-41A3-AAA3-877D510BE18B}"
+              DTS:DTSID="{F70064FE-5C6B-4014-BAFE-6AA65EDD8254}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
-              DTS:ObjectName="Departamento"
-              DTS:DTSID="{A1E998BF-DD5E-44D7-A0C9-8CB8F1799331}"
+              DTS:ObjectName="De partamento"
+              DTS:DTSID="{CE5CB38D-1967-4BC9-BDA5-F8B3ED89D8E7}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Municipio"
-              DTS:DTSID="{B535903A-D4F0-45AA-A74A-5A4C05DE9948}"
+              DTS:DTSID="{E0D7196B-F22F-46E8-A170-474C3DE37F80}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -127,17 +263,52 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Fecha Sondeo"
-              DTS:DTSID="{8EAC83DB-3361-48A3-BAE6-0F2C58A3F3AF}"
+              DTS:DTSID="{3144DB49-79A1-418B-BD9F-B1A0608D8AAF}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[data_error]"
+      DTS:refId="Package.ConnectionManagers[error de archivo plano]"
       DTS:CreationName="FLATFILE"
-      DTS:DTSID="{6118A071-3986-44F6-A8F1-FB630F8DB57D}"
-      DTS:ObjectName="data_error">
+      DTS:DTSID="{2F7FDDE6-59C7-43A7-9FBD-EEF6DF77C573}"
+      DTS:ObjectName="error de archivo plano">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="22538"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="F:\DOCUMENTOS CUQUIS\UNIVERSIDAD\CICLO 04\Dataware Y Mineria de datos\Laboratorio-de-Datawarehouse\Guia 4 ETL Final\Ejercicio 1\bulkfiles\error_output\flat_file_error.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ErrorCode"
+              DTS:DTSID="{AEC648B9-1EFF-42E5-888D-04409CF0C797}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ErrorColumn"
+              DTS:DTSID="{1E8E75E2-6EDD-4263-A131-0AE5FD26963D}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[error_fecha]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{6762CD19-0D17-4524-9B93-095188D2AD64}"
+      DTS:ObjectName="error_fecha">
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:Format="Delimited"
@@ -155,7 +326,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Categoria"
-              DTS:DTSID="{C89EDAE4-5CD2-4BE1-995C-ADE23D67A6AA}"
+              DTS:DTSID="{A53DD1FE-D39D-45D9-B255-BF00367F6F00}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -164,7 +335,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Producto"
-              DTS:DTSID="{C506C775-461C-447B-BE5E-CEE233CA944B}"
+              DTS:DTSID="{AD220EB9-7E4C-4B96-8312-5CB06F39CE1A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -173,32 +344,34 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Marca"
-              DTS:DTSID="{981BC868-398C-4278-A859-044C720F7D18}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="4"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Cantidad"
-              DTS:DTSID="{29C3538D-8426-4544-BB93-F363EE659F1C}"
+              DTS:DTSID="{7D6F1C71-1992-48C5-8F23-D772E1F58BB0}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
               DTS:MaximumWidth="50"
-              DTS:DataType="130"
+              DTS:DataType="129"
               DTS:TextQualified="True"
-              DTS:ObjectName="Unidad"
-              DTS:DTSID="{CF442D91-CA40-422C-9845-497CF76BAB4D}"
+              DTS:ObjectName="Cantidad"
+              DTS:DTSID="{01D1260F-4BC9-4BBD-8C52-E1261E257447}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="6"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Unidad"
+              DTS:DTSID="{ACF58BE7-5F74-476B-87CE-76829718F6F3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Precio"
-              DTS:DTSID="{590B1CE9-3E6F-40F8-9572-218F3FA9AC68}"
+              DTS:DTSID="{CC19D9BA-50F0-4B5D-80A0-E6CE870E4CAC}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -207,7 +380,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Establecimiento"
-              DTS:DTSID="{F895943B-9103-48B7-8F5B-786DFC1C56B6}"
+              DTS:DTSID="{2688824E-2856-4374-B4DB-97DFF3D27BD1}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -216,7 +389,16 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Direccion"
-              DTS:DTSID="{0EDFDF48-2B0C-4B5E-84B5-491D3AD2AC53}"
+              DTS:DTSID="{8E9215AC-7E75-4BF8-9CA6-09A6D5F80E8B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="De partamento"
+              DTS:DTSID="{D6BC5156-C81A-47CE-B2AA-198D3C99B2BF}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -225,7 +407,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Municipio"
-              DTS:DTSID="{4FEAABEE-375D-4AB3-AC4D-D26A5E96DD64}"
+              DTS:DTSID="{AA487FC5-4C38-4A7B-A53B-CAFA119F645F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -234,16 +416,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Fecha Sondeo"
-              DTS:DTSID="{B7670D00-D757-4D54-B8DA-79042AE58925}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="130"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Departamento"
-              DTS:DTSID="{C900B6B1-572B-4A44-B85C-6F272321DABD}"
+              DTS:DTSID="{CB951716-C960-42D3-9995-9A60AF83C71D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -251,7 +424,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="ErrorCode"
-              DTS:DTSID="{00D21830-1EE2-4855-822B-02A4CE002E80}"
+              DTS:DTSID="{33F6CFAE-5AE8-4D30-8D9E-4B19AD2DDE64}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -259,70 +432,17 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="ErrorColumn"
-              DTS:DTSID="{D2FF455D-4586-4C26-BDC6-1C1FE5787E35}"
+              DTS:DTSID="{0A4C072E-9D45-4DB8-AB17-283B3EC84FA3}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[flat_file_error]"
+      DTS:refId="Package.ConnectionManagers[error_negativos]"
       DTS:CreationName="FLATFILE"
-      DTS:DTSID="{61ED7B9C-2A3F-4533-A6BA-B76D7DC6CC82}"
-      DTS:ObjectName="flat_file_error">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:Format="Delimited"
-          DTS:LocaleID="22538"
-          DTS:HeaderRowDelimiter="_x000D__x000A_"
-          DTS:RowDelimiter=""
-          DTS:TextQualifier="_x003C_none_x003E_"
-          DTS:CodePage="1252"
-          DTS:ConnectionString="F:\DOCUMENTOS CUQUIS\UNIVERSIDAD\CICLO 04\Dataware Y Mineria de datos\Laboratorio-de-Datawarehouse\Guia 4 ETL Final\Ejercicio 1\bulkfiles\error_output\flat_file_error.txt">
-          <DTS:FlatFileColumns>
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="302"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Flat File Source Error Output Column"
-              DTS:DTSID="{76FE3524-EA62-4F67-B8A5-38946F7699C5}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="3"
-              DTS:TextQualified="True"
-              DTS:ObjectName="ErrorCode"
-              DTS:DTSID="{3EC27CD8-732C-46F5-A7E1-5FFF39264723}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x000D__x000A_"
-              DTS:DataType="3"
-              DTS:TextQualified="True"
-              DTS:ObjectName="ErrorColumn"
-              DTS:DTSID="{13265649-4EF4-49BF-B327-503D596F3301}"
-              DTS:CreationName="" />
-          </DTS:FlatFileColumns>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[LAPTOP-SEV4FTSO.sv_school_products]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{09BEBA95-41A6-423E-B5B2-CD1B3BD12050}"
-      DTS:ObjectName="LAPTOP-SEV4FTSO.sv_school_products">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=LAPTOP-SEV4FTSO;Initial Catalog=sv_school_products;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[negative_price_error]"
-      DTS:CreationName="FLATFILE"
-      DTS:DTSID="{964A6966-1284-41B5-9CF8-D8B57634C74F}"
-      DTS:ObjectName="negative_price_error">
+      DTS:DTSID="{4890E56B-B8ED-4756-BA80-E91D72FBB0CB}"
+      DTS:ObjectName="error_negativos">
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:Format="Delimited"
@@ -338,110 +458,113 @@
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
               DTS:MaximumWidth="50"
-              DTS:DataType="130"
+              DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Categoria"
-              DTS:DTSID="{3F68383A-DC47-42B7-964B-F1CBE46CB899}"
+              DTS:DTSID="{80FB2E86-35A9-49F0-8889-C7839C344794}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
               DTS:MaximumWidth="50"
-              DTS:DataType="130"
+              DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Producto"
-              DTS:DTSID="{AF1E767B-B3F3-4EB4-95C6-8544A536188D}"
+              DTS:DTSID="{3D4EC4D2-1A05-4D55-85EF-7E2DC7C7ACAA}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
               DTS:MaximumWidth="50"
-              DTS:DataType="130"
+              DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Marca"
-              DTS:DTSID="{0A599AC4-B8FB-4E7B-8609-7ACAB3E2C4F6}"
+              DTS:DTSID="{0B0AE749-B69F-4EF9-B0D7-E1770AE1DC8B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="131"
-              DTS:DataPrecision="18"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Cantidad"
-              DTS:DTSID="{1156AD6D-8DFB-4182-9195-BB59740DED3D}"
+              DTS:DTSID="{A586F87F-32DA-4868-93B5-CDCA1B55ED16}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
               DTS:MaximumWidth="50"
-              DTS:DataType="130"
+              DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Unidad"
-              DTS:DTSID="{952043C0-57A8-4FCC-AAB9-6BA9DC68BA8C}"
+              DTS:DTSID="{0EB92E9C-C13C-43C6-85B3-3877283BD5A6}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="6"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Precio"
-              DTS:DTSID="{0C3A6D14-7182-4EA6-9D72-A77235DE60A5}"
+              DTS:DTSID="{BCF3CDD4-3697-4B05-9241-61C122513816}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
               DTS:MaximumWidth="50"
-              DTS:DataType="130"
+              DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Establecimiento"
-              DTS:DTSID="{FF71BC58-5A42-4900-BE44-A69405A4B728}"
+              DTS:DTSID="{8B4C5F97-0083-4EC8-827B-7358D710BF43}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
               DTS:MaximumWidth="50"
-              DTS:DataType="130"
+              DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Direccion"
-              DTS:DTSID="{87BB3FCC-72AF-44EA-A260-06335EC8F5F6}"
+              DTS:DTSID="{92AB7A65-1BE8-4431-B322-962AD6B3F9A1}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
               DTS:MaximumWidth="50"
-              DTS:DataType="130"
+              DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Departamento"
-              DTS:DTSID="{7CE251A3-7C5A-492A-9725-D3188BDB2014}"
+              DTS:DTSID="{54248F5A-33DC-4CE9-B50C-293C0FFD93AB}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
               DTS:MaximumWidth="50"
-              DTS:DataType="130"
+              DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Municipio"
-              DTS:DTSID="{CEB47233-2F18-4165-93CB-13026152BB88}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="130"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Fecha Sondeo"
-              DTS:DTSID="{8E872129-3D60-489C-9F0C-78AD2960C131}"
+              DTS:DTSID="{DADD6624-535A-4A28-A602-671C9F8BBC9E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x000D__x000A_"
-              DTS:DataType="133"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
               DTS:TextQualified="True"
-              DTS:ObjectName="fecha_sondeo_fixed"
-              DTS:DTSID="{779A8BD0-3653-4AE4-83DE-E098737AC103}"
+              DTS:ObjectName="Fecha Sondeo"
+              DTS:DTSID="{605C5075-B810-4F42-A0C3-6C09B677F97E}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LAPTOP-SEV4FTSO.sv_school_products]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{94263DAD-7C65-4C29-8F21-0524F60B3554}"
+      DTS:ObjectName="LAPTOP-SEV4FTSO.sv_school_products">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=LAPTOP-SEV4FTSO;Initial Catalog=sv_school_products;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -462,20 +585,20 @@
           version="1">
           <components>
             <component
-              refId="Package\Data Flow Task\Conversiones"
+              refId="Package\Data Flow Task\Conversion Fecha"
               componentClassID="Microsoft.DerivedColumn"
               contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
               description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
-              name="Conversiones"
+              name="Conversion Fecha"
               usesDispositions="true">
               <inputs>
                 <input
-                  refId="Package\Data Flow Task\Conversiones.Inputs[Derived Column Input]"
+                  refId="Package\Data Flow Task\Conversion Fecha.Inputs[Derived Column Input]"
                   description="Input to the Derived Column Transformation"
                   name="Derived Column Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Data Flow Task\Conversiones.Inputs[Derived Column Input].Columns[Fecha Sondeo]"
+                      refId="Package\Data Flow Task\Conversion Fecha.Inputs[Derived Column Input].Columns[Fecha Sondeo]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="Fecha Sondeo"
@@ -486,18 +609,18 @@
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Data Flow Task\Conversiones.Outputs[Derived Column Output]"
+                  refId="Package\Data Flow Task\Conversion Fecha.Outputs[Derived Column Output]"
                   description="Default Output of the Derived Column Transformation"
                   exclusionGroup="1"
                   name="Derived Column Output"
-                  synchronousInputId="Package\Data Flow Task\Conversiones.Inputs[Derived Column Input]">
+                  synchronousInputId="Package\Data Flow Task\Conversion Fecha.Inputs[Derived Column Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Data Flow Task\Conversiones.Outputs[Derived Column Output].Columns[fecha_sondeo_fixed]"
+                      refId="Package\Data Flow Task\Conversion Fecha.Outputs[Derived Column Output].Columns[fecha_sondeo_fixed]"
                       dataType="dbDate"
                       errorOrTruncationOperation="Computation"
                       errorRowDisposition="RedirectRow"
-                      lineageId="Package\Data Flow Task\Conversiones.Outputs[Derived Column Output].Columns[fecha_sondeo_fixed]"
+                      lineageId="Package\Data Flow Task\Conversion Fecha.Outputs[Derived Column Output].Columns[fecha_sondeo_fixed]"
                       name="fecha_sondeo_fixed"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -518,23 +641,23 @@
                   <externalMetadataColumns />
                 </output>
                 <output
-                  refId="Package\Data Flow Task\Conversiones.Outputs[Derived Column Error Output]"
+                  refId="Package\Data Flow Task\Conversion Fecha.Outputs[Derived Column Error Output]"
                   description="Error Output of the Derived Column Transformation"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="Derived Column Error Output"
-                  synchronousInputId="Package\Data Flow Task\Conversiones.Inputs[Derived Column Input]">
+                  synchronousInputId="Package\Data Flow Task\Conversion Fecha.Inputs[Derived Column Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Data Flow Task\Conversiones.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      refId="Package\Data Flow Task\Conversion Fecha.Outputs[Derived Column Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\Conversiones.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      lineageId="Package\Data Flow Task\Conversion Fecha.Outputs[Derived Column Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Conversiones.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      refId="Package\Data Flow Task\Conversion Fecha.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\Conversiones.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\Data Flow Task\Conversion Fecha.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -543,12 +666,357 @@
               </outputs>
             </component>
             <component
-              refId="Package\Data Flow Task\date_error"
+              refId="Package\Data Flow Task\Data Conversion"
+              componentClassID="Microsoft.DataConvert"
+              contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Data Conversion"
+              name="Data Conversion"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\Data Conversion.Inputs[Data Conversion Input]"
+                  name="Data Conversion Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Data Conversion.Inputs[Data Conversion Input].Columns[Categoria]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="Categoria"
+                      lineageId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Categoria]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Data Conversion.Inputs[Data Conversion Input].Columns[Producto]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="Producto"
+                      lineageId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Producto]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Data Conversion.Inputs[Data Conversion Input].Columns[Marca]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="Marca"
+                      lineageId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Marca]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Data Conversion.Inputs[Data Conversion Input].Columns[Cantidad]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Cantidad"
+                      lineageId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Cantidad]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Data Conversion.Inputs[Data Conversion Input].Columns[Unidad]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="Unidad"
+                      lineageId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Unidad]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Data Conversion.Inputs[Data Conversion Input].Columns[Precio]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Precio"
+                      lineageId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Precio]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Data Conversion.Inputs[Data Conversion Input].Columns[Establecimiento]"
+                      cachedDataType="wstr"
+                      cachedLength="4000"
+                      cachedName="Establecimiento"
+                      lineageId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Establecimiento]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Data Conversion.Inputs[Data Conversion Input].Columns[Direccion]"
+                      cachedDataType="wstr"
+                      cachedLength="400"
+                      cachedName="Direccion"
+                      lineageId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Direccion]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Data Conversion.Inputs[Data Conversion Input].Columns[De partamento]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="De partamento"
+                      lineageId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[De partamento]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Data Conversion.Inputs[Data Conversion Input].Columns[Municipio]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="Municipio"
+                      lineageId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Municipio]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Data Conversion.Inputs[Data Conversion Input].Columns[Fecha Sondeo]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Fecha Sondeo"
+                      lineageId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Fecha Sondeo]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output]"
+                  exclusionGroup="1"
+                  name="Data Conversion Output"
+                  synchronousInputId="Package\Data Flow Task\Data Conversion.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Categoria]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="RedirectRow"
+                      length="100"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Categoria]"
+                      name="Copia de Categoria"
+                      truncationRowDisposition="RedirectRow">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Categoria]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Producto]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="RedirectRow"
+                      length="100"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Producto]"
+                      name="Copia de Producto"
+                      truncationRowDisposition="RedirectRow">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Producto]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Marca]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="RedirectRow"
+                      length="100"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Marca]"
+                      name="Copia de Marca"
+                      truncationRowDisposition="RedirectRow">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Marca]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Cantidad]"
+                      dataType="r4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="RedirectRow"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Cantidad]"
+                      name="Copia de Cantidad"
+                      truncationRowDisposition="RedirectRow">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Cantidad]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Unidad]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="RedirectRow"
+                      length="100"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Unidad]"
+                      name="Copia de Unidad"
+                      truncationRowDisposition="RedirectRow">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Unidad]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Precio]"
+                      dataType="cy"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="RedirectRow"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Precio]"
+                      name="Copia de Precio"
+                      truncationRowDisposition="RedirectRow">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Precio]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Establecimiento]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="RedirectRow"
+                      length="4000"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Establecimiento]"
+                      name="Copia de Establecimiento"
+                      truncationRowDisposition="RedirectRow">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Establecimiento]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Direccion]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="RedirectRow"
+                      length="400"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Direccion]"
+                      name="Copia de Direccion"
+                      truncationRowDisposition="RedirectRow">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Direccion]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de De partamento]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="RedirectRow"
+                      length="100"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de De partamento]"
+                      name="Copia de De partamento"
+                      truncationRowDisposition="RedirectRow">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[De partamento]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Municipio]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="RedirectRow"
+                      length="100"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Municipio]"
+                      name="Copia de Municipio"
+                      truncationRowDisposition="RedirectRow">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Municipio]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Fecha Sondeo]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="RedirectRow"
+                      length="50"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Fecha Sondeo]"
+                      name="Copia de Fecha Sondeo"
+                      truncationRowDisposition="RedirectRow">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Fecha Sondeo]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Data Conversion Error Output"
+                  synchronousInputId="Package\Data Flow Task\Data Conversion.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\Error Conversion"
               componentClassID="Microsoft.FlatFileDestination"
               contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
               description="Flat File Destination"
               localeId="22538"
-              name="date_error"
+              name="Error Conversion"
               version="1">
               <properties>
                 <property
@@ -567,173 +1035,170 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\Data Flow Task\date_error.Connections[FlatFileConnection]"
-                  connectionManagerID="Package.ConnectionManagers[data_error]"
-                  connectionManagerRefId="Package.ConnectionManagers[data_error]"
+                  refId="Package\Data Flow Task\Error Conversion.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[conversion_error]"
+                  connectionManagerRefId="Package.ConnectionManagers[conversion_error]"
                   name="FlatFileConnection" />
               </connections>
               <inputs>
                 <input
-                  refId="Package\Data Flow Task\date_error.Inputs[Flat File Destination Input]"
+                  refId="Package\Data Flow Task\Error Conversion.Inputs[Flat File Destination Input]"
                   hasSideEffects="true"
                   name="Flat File Destination Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Data Flow Task\date_error.Inputs[Flat File Destination Input].Columns[Categoria]"
+                      refId="Package\Data Flow Task\Error Conversion.Inputs[Flat File Destination Input].Columns[Categoria]"
                       cachedDataType="wstr"
-                      cachedLength="50"
+                      cachedLength="100"
                       cachedName="Categoria"
-                      externalMetadataColumnId="Package\Data Flow Task\date_error.Inputs[Flat File Destination Input].ExternalColumns[Categoria]"
+                      externalMetadataColumnId="Package\Data Flow Task\Error Conversion.Inputs[Flat File Destination Input].ExternalColumns[Categoria]"
                       lineageId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Categoria]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\date_error.Inputs[Flat File Destination Input].Columns[Producto]"
+                      refId="Package\Data Flow Task\Error Conversion.Inputs[Flat File Destination Input].Columns[Producto]"
                       cachedDataType="wstr"
-                      cachedLength="50"
+                      cachedLength="100"
                       cachedName="Producto"
-                      externalMetadataColumnId="Package\Data Flow Task\date_error.Inputs[Flat File Destination Input].ExternalColumns[Producto]"
+                      externalMetadataColumnId="Package\Data Flow Task\Error Conversion.Inputs[Flat File Destination Input].ExternalColumns[Producto]"
                       lineageId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Producto]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\date_error.Inputs[Flat File Destination Input].Columns[Marca]"
+                      refId="Package\Data Flow Task\Error Conversion.Inputs[Flat File Destination Input].Columns[Marca]"
                       cachedDataType="wstr"
-                      cachedLength="50"
+                      cachedLength="100"
                       cachedName="Marca"
-                      externalMetadataColumnId="Package\Data Flow Task\date_error.Inputs[Flat File Destination Input].ExternalColumns[Marca]"
+                      externalMetadataColumnId="Package\Data Flow Task\Error Conversion.Inputs[Flat File Destination Input].ExternalColumns[Marca]"
                       lineageId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Marca]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\date_error.Inputs[Flat File Destination Input].Columns[Cantidad]"
-                      cachedDataType="r4"
+                      refId="Package\Data Flow Task\Error Conversion.Inputs[Flat File Destination Input].Columns[Cantidad]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
                       cachedName="Cantidad"
-                      externalMetadataColumnId="Package\Data Flow Task\date_error.Inputs[Flat File Destination Input].ExternalColumns[Cantidad]"
+                      externalMetadataColumnId="Package\Data Flow Task\Error Conversion.Inputs[Flat File Destination Input].ExternalColumns[Cantidad]"
                       lineageId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Cantidad]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\date_error.Inputs[Flat File Destination Input].Columns[Unidad]"
+                      refId="Package\Data Flow Task\Error Conversion.Inputs[Flat File Destination Input].Columns[Unidad]"
                       cachedDataType="wstr"
-                      cachedLength="50"
+                      cachedLength="100"
                       cachedName="Unidad"
-                      externalMetadataColumnId="Package\Data Flow Task\date_error.Inputs[Flat File Destination Input].ExternalColumns[Unidad]"
+                      externalMetadataColumnId="Package\Data Flow Task\Error Conversion.Inputs[Flat File Destination Input].ExternalColumns[Unidad]"
                       lineageId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Unidad]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\date_error.Inputs[Flat File Destination Input].Columns[Precio]"
-                      cachedDataType="cy"
+                      refId="Package\Data Flow Task\Error Conversion.Inputs[Flat File Destination Input].Columns[Precio]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
                       cachedName="Precio"
-                      externalMetadataColumnId="Package\Data Flow Task\date_error.Inputs[Flat File Destination Input].ExternalColumns[Precio]"
+                      externalMetadataColumnId="Package\Data Flow Task\Error Conversion.Inputs[Flat File Destination Input].ExternalColumns[Precio]"
                       lineageId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Precio]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\date_error.Inputs[Flat File Destination Input].Columns[Establecimiento]"
+                      refId="Package\Data Flow Task\Error Conversion.Inputs[Flat File Destination Input].Columns[Establecimiento]"
                       cachedDataType="wstr"
-                      cachedLength="50"
+                      cachedLength="4000"
                       cachedName="Establecimiento"
-                      externalMetadataColumnId="Package\Data Flow Task\date_error.Inputs[Flat File Destination Input].ExternalColumns[Establecimiento]"
+                      externalMetadataColumnId="Package\Data Flow Task\Error Conversion.Inputs[Flat File Destination Input].ExternalColumns[Establecimiento]"
                       lineageId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Establecimiento]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\date_error.Inputs[Flat File Destination Input].Columns[Direccion]"
+                      refId="Package\Data Flow Task\Error Conversion.Inputs[Flat File Destination Input].Columns[Direccion]"
                       cachedDataType="wstr"
-                      cachedLength="50"
+                      cachedLength="400"
                       cachedName="Direccion"
-                      externalMetadataColumnId="Package\Data Flow Task\date_error.Inputs[Flat File Destination Input].ExternalColumns[Direccion]"
+                      externalMetadataColumnId="Package\Data Flow Task\Error Conversion.Inputs[Flat File Destination Input].ExternalColumns[Direccion]"
                       lineageId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Direccion]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\date_error.Inputs[Flat File Destination Input].Columns[Municipio]"
+                      refId="Package\Data Flow Task\Error Conversion.Inputs[Flat File Destination Input].Columns[De partamento]"
                       cachedDataType="wstr"
-                      cachedLength="50"
+                      cachedLength="100"
+                      cachedName="De partamento"
+                      externalMetadataColumnId="Package\Data Flow Task\Error Conversion.Inputs[Flat File Destination Input].ExternalColumns[De partamento]"
+                      lineageId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[De partamento]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Error Conversion.Inputs[Flat File Destination Input].Columns[Municipio]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
                       cachedName="Municipio"
-                      externalMetadataColumnId="Package\Data Flow Task\date_error.Inputs[Flat File Destination Input].ExternalColumns[Municipio]"
+                      externalMetadataColumnId="Package\Data Flow Task\Error Conversion.Inputs[Flat File Destination Input].ExternalColumns[Municipio]"
                       lineageId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Municipio]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\date_error.Inputs[Flat File Destination Input].Columns[Fecha Sondeo]"
+                      refId="Package\Data Flow Task\Error Conversion.Inputs[Flat File Destination Input].Columns[Fecha Sondeo]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="Fecha Sondeo"
-                      externalMetadataColumnId="Package\Data Flow Task\date_error.Inputs[Flat File Destination Input].ExternalColumns[Fecha Sondeo]"
+                      externalMetadataColumnId="Package\Data Flow Task\Error Conversion.Inputs[Flat File Destination Input].ExternalColumns[Fecha Sondeo]"
                       lineageId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Fecha Sondeo]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\date_error.Inputs[Flat File Destination Input].Columns[Departamento]"
-                      cachedDataType="wstr"
-                      cachedLength="50"
-                      cachedName="Departamento"
-                      externalMetadataColumnId="Package\Data Flow Task\date_error.Inputs[Flat File Destination Input].ExternalColumns[Departamento]"
-                      lineageId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Departamento]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task\date_error.Inputs[Flat File Destination Input].Columns[ErrorCode]"
+                      refId="Package\Data Flow Task\Error Conversion.Inputs[Flat File Destination Input].Columns[ErrorCode]"
                       cachedDataType="i4"
                       cachedName="ErrorCode"
-                      externalMetadataColumnId="Package\Data Flow Task\date_error.Inputs[Flat File Destination Input].ExternalColumns[ErrorCode]"
-                      lineageId="Package\Data Flow Task\Conversiones.Outputs[Derived Column Error Output].Columns[ErrorCode]" />
+                      externalMetadataColumnId="Package\Data Flow Task\Error Conversion.Inputs[Flat File Destination Input].ExternalColumns[ErrorCode]"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\date_error.Inputs[Flat File Destination Input].Columns[ErrorColumn]"
+                      refId="Package\Data Flow Task\Error Conversion.Inputs[Flat File Destination Input].Columns[ErrorColumn]"
                       cachedDataType="i4"
                       cachedName="ErrorColumn"
-                      externalMetadataColumnId="Package\Data Flow Task\date_error.Inputs[Flat File Destination Input].ExternalColumns[ErrorColumn]"
-                      lineageId="Package\Data Flow Task\Conversiones.Outputs[Derived Column Error Output].Columns[ErrorColumn]" />
+                      externalMetadataColumnId="Package\Data Flow Task\Error Conversion.Inputs[Flat File Destination Input].ExternalColumns[ErrorColumn]"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\date_error.Inputs[Flat File Destination Input].ExternalColumns[Categoria]"
-                      codePage="1252"
-                      dataType="str"
+                      refId="Package\Data Flow Task\Error Conversion.Inputs[Flat File Destination Input].ExternalColumns[Categoria]"
+                      dataType="wstr"
                       length="50"
                       name="Categoria" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\date_error.Inputs[Flat File Destination Input].ExternalColumns[Producto]"
-                      codePage="1252"
-                      dataType="str"
+                      refId="Package\Data Flow Task\Error Conversion.Inputs[Flat File Destination Input].ExternalColumns[Producto]"
+                      dataType="wstr"
                       length="50"
                       name="Producto" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\date_error.Inputs[Flat File Destination Input].ExternalColumns[Marca]"
-                      codePage="1252"
-                      dataType="str"
+                      refId="Package\Data Flow Task\Error Conversion.Inputs[Flat File Destination Input].ExternalColumns[Marca]"
+                      dataType="wstr"
                       length="50"
                       name="Marca" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\date_error.Inputs[Flat File Destination Input].ExternalColumns[Cantidad]"
-                      dataType="r4"
+                      refId="Package\Data Flow Task\Error Conversion.Inputs[Flat File Destination Input].ExternalColumns[Cantidad]"
+                      dataType="wstr"
+                      length="50"
                       name="Cantidad" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\date_error.Inputs[Flat File Destination Input].ExternalColumns[Unidad]"
+                      refId="Package\Data Flow Task\Error Conversion.Inputs[Flat File Destination Input].ExternalColumns[Unidad]"
                       dataType="wstr"
                       length="50"
                       name="Unidad" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\date_error.Inputs[Flat File Destination Input].ExternalColumns[Precio]"
-                      dataType="cy"
+                      refId="Package\Data Flow Task\Error Conversion.Inputs[Flat File Destination Input].ExternalColumns[Precio]"
+                      dataType="wstr"
+                      length="50"
                       name="Precio" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\date_error.Inputs[Flat File Destination Input].ExternalColumns[Establecimiento]"
-                      codePage="1252"
-                      dataType="str"
+                      refId="Package\Data Flow Task\Error Conversion.Inputs[Flat File Destination Input].ExternalColumns[Establecimiento]"
+                      dataType="wstr"
                       length="50"
                       name="Establecimiento" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\date_error.Inputs[Flat File Destination Input].ExternalColumns[Direccion]"
-                      codePage="1252"
-                      dataType="str"
+                      refId="Package\Data Flow Task\Error Conversion.Inputs[Flat File Destination Input].ExternalColumns[Direccion]"
+                      dataType="wstr"
                       length="50"
                       name="Direccion" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\date_error.Inputs[Flat File Destination Input].ExternalColumns[Municipio]"
-                      codePage="1252"
-                      dataType="str"
+                      refId="Package\Data Flow Task\Error Conversion.Inputs[Flat File Destination Input].ExternalColumns[De partamento]"
+                      dataType="wstr"
+                      length="50"
+                      name="De partamento" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Error Conversion.Inputs[Flat File Destination Input].ExternalColumns[Municipio]"
+                      dataType="wstr"
                       length="50"
                       name="Municipio" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\date_error.Inputs[Flat File Destination Input].ExternalColumns[Fecha Sondeo]"
-                      codePage="1252"
-                      dataType="str"
+                      refId="Package\Data Flow Task\Error Conversion.Inputs[Flat File Destination Input].ExternalColumns[Fecha Sondeo]"
+                      dataType="wstr"
                       length="50"
                       name="Fecha Sondeo" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\date_error.Inputs[Flat File Destination Input].ExternalColumns[Departamento]"
-                      dataType="wstr"
-                      length="50"
-                      name="Departamento" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\date_error.Inputs[Flat File Destination Input].ExternalColumns[ErrorCode]"
+                      refId="Package\Data Flow Task\Error Conversion.Inputs[Flat File Destination Input].ExternalColumns[ErrorCode]"
                       dataType="i4"
                       name="ErrorCode" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\date_error.Inputs[Flat File Destination Input].ExternalColumns[ErrorColumn]"
+                      refId="Package\Data Flow Task\Error Conversion.Inputs[Flat File Destination Input].ExternalColumns[ErrorColumn]"
                       dataType="i4"
                       name="ErrorColumn" />
                   </externalMetadataColumns>
@@ -741,12 +1206,12 @@
               </inputs>
             </component>
             <component
-              refId="Package\Data Flow Task\flat_file_error"
+              refId="Package\Data Flow Task\Error de Archivo Plano"
               componentClassID="Microsoft.FlatFileDestination"
               contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
               description="Flat File Destination"
               localeId="22538"
-              name="flat_file_error"
+              name="Error de Archivo Plano"
               version="1">
               <properties>
                 <property
@@ -765,50 +1230,38 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\Data Flow Task\flat_file_error.Connections[FlatFileConnection]"
-                  connectionManagerID="Package.ConnectionManagers[flat_file_error]"
-                  connectionManagerRefId="Package.ConnectionManagers[flat_file_error]"
+                  refId="Package\Data Flow Task\Error de Archivo Plano.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[error de archivo plano]"
+                  connectionManagerRefId="Package.ConnectionManagers[error de archivo plano]"
                   name="FlatFileConnection" />
               </connections>
               <inputs>
                 <input
-                  refId="Package\Data Flow Task\flat_file_error.Inputs[Flat File Destination Input]"
+                  refId="Package\Data Flow Task\Error de Archivo Plano.Inputs[Flat File Destination Input]"
                   hasSideEffects="true"
                   name="Flat File Destination Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Data Flow Task\flat_file_error.Inputs[Flat File Destination Input].Columns[Flat File Source Error Output Column]"
-                      cachedCodepage="1252"
-                      cachedDataType="text"
-                      cachedName="Flat File Source Error Output Column"
-                      externalMetadataColumnId="Package\Data Flow Task\flat_file_error.Inputs[Flat File Destination Input].ExternalColumns[Flat File Source Error Output Column]"
-                      lineageId="Package\Data Flow Task\Origen.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task\flat_file_error.Inputs[Flat File Destination Input].Columns[ErrorCode]"
+                      refId="Package\Data Flow Task\Error de Archivo Plano.Inputs[Flat File Destination Input].Columns[ErrorCode]"
                       cachedDataType="i4"
                       cachedName="ErrorCode"
-                      externalMetadataColumnId="Package\Data Flow Task\flat_file_error.Inputs[Flat File Destination Input].ExternalColumns[ErrorCode]"
+                      externalMetadataColumnId="Package\Data Flow Task\Error de Archivo Plano.Inputs[Flat File Destination Input].ExternalColumns[ErrorCode]"
                       lineageId="Package\Data Flow Task\Origen.Outputs[Flat File Source Error Output].Columns[ErrorCode]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\flat_file_error.Inputs[Flat File Destination Input].Columns[ErrorColumn]"
+                      refId="Package\Data Flow Task\Error de Archivo Plano.Inputs[Flat File Destination Input].Columns[ErrorColumn]"
                       cachedDataType="i4"
                       cachedName="ErrorColumn"
-                      externalMetadataColumnId="Package\Data Flow Task\flat_file_error.Inputs[Flat File Destination Input].ExternalColumns[ErrorColumn]"
+                      externalMetadataColumnId="Package\Data Flow Task\Error de Archivo Plano.Inputs[Flat File Destination Input].ExternalColumns[ErrorColumn]"
                       lineageId="Package\Data Flow Task\Origen.Outputs[Flat File Source Error Output].Columns[ErrorColumn]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\flat_file_error.Inputs[Flat File Destination Input].ExternalColumns[Flat File Source Error Output Column]"
-                      codePage="1252"
-                      dataType="text"
-                      name="Flat File Source Error Output Column" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\flat_file_error.Inputs[Flat File Destination Input].ExternalColumns[ErrorCode]"
+                      refId="Package\Data Flow Task\Error de Archivo Plano.Inputs[Flat File Destination Input].ExternalColumns[ErrorCode]"
                       dataType="i4"
                       name="ErrorCode" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\flat_file_error.Inputs[Flat File Destination Input].ExternalColumns[ErrorColumn]"
+                      refId="Package\Data Flow Task\Error de Archivo Plano.Inputs[Flat File Destination Input].ExternalColumns[ErrorColumn]"
                       dataType="i4"
                       name="ErrorColumn" />
                   </externalMetadataColumns>
@@ -816,12 +1269,12 @@
               </inputs>
             </component>
             <component
-              refId="Package\Data Flow Task\negative_price_error"
+              refId="Package\Data Flow Task\Error de Fecha"
               componentClassID="Microsoft.FlatFileDestination"
               contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
               description="Flat File Destination"
               localeId="22538"
-              name="negative_price_error"
+              name="Error de Fecha"
               version="1">
               <properties>
                 <property
@@ -840,159 +1293,358 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\Data Flow Task\negative_price_error.Connections[FlatFileConnection]"
-                  connectionManagerID="Package.ConnectionManagers[negative_price_error]"
-                  connectionManagerRefId="Package.ConnectionManagers[negative_price_error]"
+                  refId="Package\Data Flow Task\Error de Fecha.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[error_fecha]"
+                  connectionManagerRefId="Package.ConnectionManagers[error_fecha]"
                   name="FlatFileConnection" />
               </connections>
               <inputs>
                 <input
-                  refId="Package\Data Flow Task\negative_price_error.Inputs[Flat File Destination Input]"
+                  refId="Package\Data Flow Task\Error de Fecha.Inputs[Flat File Destination Input]"
                   hasSideEffects="true"
                   name="Flat File Destination Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Data Flow Task\negative_price_error.Inputs[Flat File Destination Input].Columns[Categoria]"
+                      refId="Package\Data Flow Task\Error de Fecha.Inputs[Flat File Destination Input].Columns[Copia de Categoria]"
                       cachedDataType="wstr"
-                      cachedLength="50"
-                      cachedName="Categoria"
-                      externalMetadataColumnId="Package\Data Flow Task\negative_price_error.Inputs[Flat File Destination Input].ExternalColumns[Categoria]"
-                      lineageId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Categoria]" />
+                      cachedLength="100"
+                      cachedName="Copia de Categoria"
+                      externalMetadataColumnId="Package\Data Flow Task\Error de Fecha.Inputs[Flat File Destination Input].ExternalColumns[Categoria]"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Categoria]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\negative_price_error.Inputs[Flat File Destination Input].Columns[Producto]"
+                      refId="Package\Data Flow Task\Error de Fecha.Inputs[Flat File Destination Input].Columns[Copia de Producto]"
                       cachedDataType="wstr"
-                      cachedLength="50"
-                      cachedName="Producto"
-                      externalMetadataColumnId="Package\Data Flow Task\negative_price_error.Inputs[Flat File Destination Input].ExternalColumns[Producto]"
-                      lineageId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Producto]" />
+                      cachedLength="100"
+                      cachedName="Copia de Producto"
+                      externalMetadataColumnId="Package\Data Flow Task\Error de Fecha.Inputs[Flat File Destination Input].ExternalColumns[Producto]"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Producto]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\negative_price_error.Inputs[Flat File Destination Input].Columns[Marca]"
+                      refId="Package\Data Flow Task\Error de Fecha.Inputs[Flat File Destination Input].Columns[Copia de Marca]"
                       cachedDataType="wstr"
-                      cachedLength="50"
-                      cachedName="Marca"
-                      externalMetadataColumnId="Package\Data Flow Task\negative_price_error.Inputs[Flat File Destination Input].ExternalColumns[Marca]"
-                      lineageId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Marca]" />
+                      cachedLength="100"
+                      cachedName="Copia de Marca"
+                      externalMetadataColumnId="Package\Data Flow Task\Error de Fecha.Inputs[Flat File Destination Input].ExternalColumns[Marca]"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Marca]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\negative_price_error.Inputs[Flat File Destination Input].Columns[Cantidad]"
+                      refId="Package\Data Flow Task\Error de Fecha.Inputs[Flat File Destination Input].Columns[Copia de Cantidad]"
                       cachedDataType="r4"
-                      cachedName="Cantidad"
-                      externalMetadataColumnId="Package\Data Flow Task\negative_price_error.Inputs[Flat File Destination Input].ExternalColumns[Cantidad]"
-                      lineageId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Cantidad]" />
+                      cachedName="Copia de Cantidad"
+                      externalMetadataColumnId="Package\Data Flow Task\Error de Fecha.Inputs[Flat File Destination Input].ExternalColumns[Cantidad]"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Cantidad]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\negative_price_error.Inputs[Flat File Destination Input].Columns[Unidad]"
+                      refId="Package\Data Flow Task\Error de Fecha.Inputs[Flat File Destination Input].Columns[Copia de Unidad]"
                       cachedDataType="wstr"
-                      cachedLength="50"
-                      cachedName="Unidad"
-                      externalMetadataColumnId="Package\Data Flow Task\negative_price_error.Inputs[Flat File Destination Input].ExternalColumns[Unidad]"
-                      lineageId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Unidad]" />
+                      cachedLength="100"
+                      cachedName="Copia de Unidad"
+                      externalMetadataColumnId="Package\Data Flow Task\Error de Fecha.Inputs[Flat File Destination Input].ExternalColumns[Unidad]"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Unidad]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\negative_price_error.Inputs[Flat File Destination Input].Columns[Precio]"
+                      refId="Package\Data Flow Task\Error de Fecha.Inputs[Flat File Destination Input].Columns[Copia de Precio]"
                       cachedDataType="cy"
-                      cachedName="Precio"
-                      externalMetadataColumnId="Package\Data Flow Task\negative_price_error.Inputs[Flat File Destination Input].ExternalColumns[Precio]"
-                      lineageId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Precio]" />
+                      cachedName="Copia de Precio"
+                      externalMetadataColumnId="Package\Data Flow Task\Error de Fecha.Inputs[Flat File Destination Input].ExternalColumns[Precio]"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Precio]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\negative_price_error.Inputs[Flat File Destination Input].Columns[Establecimiento]"
+                      refId="Package\Data Flow Task\Error de Fecha.Inputs[Flat File Destination Input].Columns[Copia de Establecimiento]"
+                      cachedDataType="wstr"
+                      cachedLength="4000"
+                      cachedName="Copia de Establecimiento"
+                      externalMetadataColumnId="Package\Data Flow Task\Error de Fecha.Inputs[Flat File Destination Input].ExternalColumns[Establecimiento]"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Establecimiento]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Error de Fecha.Inputs[Flat File Destination Input].Columns[Copia de Direccion]"
+                      cachedDataType="wstr"
+                      cachedLength="400"
+                      cachedName="Copia de Direccion"
+                      externalMetadataColumnId="Package\Data Flow Task\Error de Fecha.Inputs[Flat File Destination Input].ExternalColumns[Direccion]"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Direccion]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Error de Fecha.Inputs[Flat File Destination Input].Columns[Copia de De partamento]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="Copia de De partamento"
+                      externalMetadataColumnId="Package\Data Flow Task\Error de Fecha.Inputs[Flat File Destination Input].ExternalColumns[De partamento]"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de De partamento]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Error de Fecha.Inputs[Flat File Destination Input].Columns[Copia de Municipio]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="Copia de Municipio"
+                      externalMetadataColumnId="Package\Data Flow Task\Error de Fecha.Inputs[Flat File Destination Input].ExternalColumns[Municipio]"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Municipio]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Error de Fecha.Inputs[Flat File Destination Input].Columns[Copia de Fecha Sondeo]"
                       cachedDataType="wstr"
                       cachedLength="50"
-                      cachedName="Establecimiento"
-                      externalMetadataColumnId="Package\Data Flow Task\negative_price_error.Inputs[Flat File Destination Input].ExternalColumns[Establecimiento]"
-                      lineageId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Establecimiento]" />
+                      cachedName="Copia de Fecha Sondeo"
+                      externalMetadataColumnId="Package\Data Flow Task\Error de Fecha.Inputs[Flat File Destination Input].ExternalColumns[Fecha Sondeo]"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Fecha Sondeo]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\negative_price_error.Inputs[Flat File Destination Input].Columns[Direccion]"
-                      cachedDataType="wstr"
-                      cachedLength="50"
-                      cachedName="Direccion"
-                      externalMetadataColumnId="Package\Data Flow Task\negative_price_error.Inputs[Flat File Destination Input].ExternalColumns[Direccion]"
-                      lineageId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Direccion]" />
+                      refId="Package\Data Flow Task\Error de Fecha.Inputs[Flat File Destination Input].Columns[ErrorCode]"
+                      cachedDataType="i4"
+                      cachedName="ErrorCode"
+                      externalMetadataColumnId="Package\Data Flow Task\Error de Fecha.Inputs[Flat File Destination Input].ExternalColumns[ErrorCode]"
+                      lineageId="Package\Data Flow Task\Conversion Fecha.Outputs[Derived Column Error Output].Columns[ErrorCode]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\negative_price_error.Inputs[Flat File Destination Input].Columns[Municipio]"
-                      cachedDataType="wstr"
-                      cachedLength="50"
-                      cachedName="Municipio"
-                      externalMetadataColumnId="Package\Data Flow Task\negative_price_error.Inputs[Flat File Destination Input].ExternalColumns[Municipio]"
-                      lineageId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Municipio]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task\negative_price_error.Inputs[Flat File Destination Input].Columns[Fecha Sondeo]"
-                      cachedDataType="wstr"
-                      cachedLength="50"
-                      cachedName="Fecha Sondeo"
-                      externalMetadataColumnId="Package\Data Flow Task\negative_price_error.Inputs[Flat File Destination Input].ExternalColumns[Fecha Sondeo]"
-                      lineageId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Fecha Sondeo]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task\negative_price_error.Inputs[Flat File Destination Input].Columns[Departamento]"
-                      cachedDataType="wstr"
-                      cachedLength="50"
-                      cachedName="Departamento"
-                      externalMetadataColumnId="Package\Data Flow Task\negative_price_error.Inputs[Flat File Destination Input].ExternalColumns[Departamento]"
-                      lineageId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Departamento]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task\negative_price_error.Inputs[Flat File Destination Input].Columns[fecha_sondeo_fixed]"
-                      cachedDataType="dbDate"
-                      cachedName="fecha_sondeo_fixed"
-                      externalMetadataColumnId="Package\Data Flow Task\negative_price_error.Inputs[Flat File Destination Input].ExternalColumns[fecha_sondeo_fixed]"
-                      lineageId="Package\Data Flow Task\Conversiones.Outputs[Derived Column Output].Columns[fecha_sondeo_fixed]" />
+                      refId="Package\Data Flow Task\Error de Fecha.Inputs[Flat File Destination Input].Columns[ErrorColumn]"
+                      cachedDataType="i4"
+                      cachedName="ErrorColumn"
+                      externalMetadataColumnId="Package\Data Flow Task\Error de Fecha.Inputs[Flat File Destination Input].ExternalColumns[ErrorColumn]"
+                      lineageId="Package\Data Flow Task\Conversion Fecha.Outputs[Derived Column Error Output].Columns[ErrorColumn]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\negative_price_error.Inputs[Flat File Destination Input].ExternalColumns[Categoria]"
-                      dataType="wstr"
+                      refId="Package\Data Flow Task\Error de Fecha.Inputs[Flat File Destination Input].ExternalColumns[Categoria]"
+                      codePage="1252"
+                      dataType="str"
                       length="50"
                       name="Categoria" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\negative_price_error.Inputs[Flat File Destination Input].ExternalColumns[Producto]"
-                      dataType="wstr"
+                      refId="Package\Data Flow Task\Error de Fecha.Inputs[Flat File Destination Input].ExternalColumns[Producto]"
+                      codePage="1252"
+                      dataType="str"
                       length="50"
                       name="Producto" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\negative_price_error.Inputs[Flat File Destination Input].ExternalColumns[Marca]"
-                      dataType="wstr"
+                      refId="Package\Data Flow Task\Error de Fecha.Inputs[Flat File Destination Input].ExternalColumns[Marca]"
+                      codePage="1252"
+                      dataType="str"
                       length="50"
                       name="Marca" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\negative_price_error.Inputs[Flat File Destination Input].ExternalColumns[Cantidad]"
-                      dataType="numeric"
-                      name="Cantidad"
-                      precision="18" />
+                      refId="Package\Data Flow Task\Error de Fecha.Inputs[Flat File Destination Input].ExternalColumns[Cantidad]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Cantidad" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\negative_price_error.Inputs[Flat File Destination Input].ExternalColumns[Unidad]"
-                      dataType="wstr"
+                      refId="Package\Data Flow Task\Error de Fecha.Inputs[Flat File Destination Input].ExternalColumns[Unidad]"
+                      codePage="1252"
+                      dataType="str"
                       length="50"
                       name="Unidad" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\negative_price_error.Inputs[Flat File Destination Input].ExternalColumns[Precio]"
-                      dataType="cy"
+                      refId="Package\Data Flow Task\Error de Fecha.Inputs[Flat File Destination Input].ExternalColumns[Precio]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
                       name="Precio" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\negative_price_error.Inputs[Flat File Destination Input].ExternalColumns[Establecimiento]"
-                      dataType="wstr"
+                      refId="Package\Data Flow Task\Error de Fecha.Inputs[Flat File Destination Input].ExternalColumns[Establecimiento]"
+                      codePage="1252"
+                      dataType="str"
                       length="50"
                       name="Establecimiento" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\negative_price_error.Inputs[Flat File Destination Input].ExternalColumns[Direccion]"
-                      dataType="wstr"
+                      refId="Package\Data Flow Task\Error de Fecha.Inputs[Flat File Destination Input].ExternalColumns[Direccion]"
+                      codePage="1252"
+                      dataType="str"
                       length="50"
                       name="Direccion" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\negative_price_error.Inputs[Flat File Destination Input].ExternalColumns[Municipio]"
-                      dataType="wstr"
+                      refId="Package\Data Flow Task\Error de Fecha.Inputs[Flat File Destination Input].ExternalColumns[De partamento]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="De partamento" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Error de Fecha.Inputs[Flat File Destination Input].ExternalColumns[Municipio]"
+                      codePage="1252"
+                      dataType="str"
                       length="50"
                       name="Municipio" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\negative_price_error.Inputs[Flat File Destination Input].ExternalColumns[Fecha Sondeo]"
-                      dataType="wstr"
+                      refId="Package\Data Flow Task\Error de Fecha.Inputs[Flat File Destination Input].ExternalColumns[Fecha Sondeo]"
+                      codePage="1252"
+                      dataType="str"
                       length="50"
                       name="Fecha Sondeo" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\negative_price_error.Inputs[Flat File Destination Input].ExternalColumns[Departamento]"
-                      dataType="wstr"
+                      refId="Package\Data Flow Task\Error de Fecha.Inputs[Flat File Destination Input].ExternalColumns[ErrorCode]"
+                      dataType="i4"
+                      name="ErrorCode" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Error de Fecha.Inputs[Flat File Destination Input].ExternalColumns[ErrorColumn]"
+                      dataType="i4"
+                      name="ErrorColumn" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\Error de Negativos"
+              componentClassID="Microsoft.FlatFileDestination"
+              contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Destination"
+              localeId="22538"
+              name="Error de Negativos"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether the data will overwrite or append to the destination file."
+                  name="Overwrite">true</property>
+                <property
+                  dataType="System.Null"
+                  description="Specifies the text to write to the destination file before any data is written."
+                  expressionType="Notify"
+                  name="Header" />
+                <property
+                  dataType="System.Boolean"
+                  description="When text qualifier is enabled, specifies whether the text qualifier in the data written to the destination file will be escaped or not."
+                  name="EscapeQualifier">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\Error de Negativos.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[error_negativos]"
+                  connectionManagerRefId="Package.ConnectionManagers[error_negativos]"
+                  name="FlatFileConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\Error de Negativos.Inputs[Flat File Destination Input]"
+                  hasSideEffects="true"
+                  name="Flat File Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Error de Negativos.Inputs[Flat File Destination Input].Columns[Copia de Categoria]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="Copia de Categoria"
+                      externalMetadataColumnId="Package\Data Flow Task\Error de Negativos.Inputs[Flat File Destination Input].ExternalColumns[Categoria]"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Categoria]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Error de Negativos.Inputs[Flat File Destination Input].Columns[Copia de Producto]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="Copia de Producto"
+                      externalMetadataColumnId="Package\Data Flow Task\Error de Negativos.Inputs[Flat File Destination Input].ExternalColumns[Producto]"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Producto]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Error de Negativos.Inputs[Flat File Destination Input].Columns[Copia de Marca]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="Copia de Marca"
+                      externalMetadataColumnId="Package\Data Flow Task\Error de Negativos.Inputs[Flat File Destination Input].ExternalColumns[Marca]"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Marca]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Error de Negativos.Inputs[Flat File Destination Input].Columns[Copia de Cantidad]"
+                      cachedDataType="r4"
+                      cachedName="Copia de Cantidad"
+                      externalMetadataColumnId="Package\Data Flow Task\Error de Negativos.Inputs[Flat File Destination Input].ExternalColumns[Cantidad]"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Cantidad]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Error de Negativos.Inputs[Flat File Destination Input].Columns[Copia de Unidad]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="Copia de Unidad"
+                      externalMetadataColumnId="Package\Data Flow Task\Error de Negativos.Inputs[Flat File Destination Input].ExternalColumns[Unidad]"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Unidad]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Error de Negativos.Inputs[Flat File Destination Input].Columns[Copia de Precio]"
+                      cachedDataType="cy"
+                      cachedName="Copia de Precio"
+                      externalMetadataColumnId="Package\Data Flow Task\Error de Negativos.Inputs[Flat File Destination Input].ExternalColumns[Precio]"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Precio]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Error de Negativos.Inputs[Flat File Destination Input].Columns[Copia de Establecimiento]"
+                      cachedDataType="wstr"
+                      cachedLength="4000"
+                      cachedName="Copia de Establecimiento"
+                      externalMetadataColumnId="Package\Data Flow Task\Error de Negativos.Inputs[Flat File Destination Input].ExternalColumns[Establecimiento]"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Establecimiento]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Error de Negativos.Inputs[Flat File Destination Input].Columns[Copia de Direccion]"
+                      cachedDataType="wstr"
+                      cachedLength="400"
+                      cachedName="Copia de Direccion"
+                      externalMetadataColumnId="Package\Data Flow Task\Error de Negativos.Inputs[Flat File Destination Input].ExternalColumns[Direccion]"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Direccion]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Error de Negativos.Inputs[Flat File Destination Input].Columns[Copia de Municipio]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="Copia de Municipio"
+                      externalMetadataColumnId="Package\Data Flow Task\Error de Negativos.Inputs[Flat File Destination Input].ExternalColumns[Municipio]"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Municipio]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Error de Negativos.Inputs[Flat File Destination Input].Columns[Copia de Fecha Sondeo]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Copia de Fecha Sondeo"
+                      externalMetadataColumnId="Package\Data Flow Task\Error de Negativos.Inputs[Flat File Destination Input].ExternalColumns[Fecha Sondeo]"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Fecha Sondeo]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Error de Negativos.Inputs[Flat File Destination Input].ExternalColumns[Categoria]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Categoria" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Error de Negativos.Inputs[Flat File Destination Input].ExternalColumns[Producto]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Producto" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Error de Negativos.Inputs[Flat File Destination Input].ExternalColumns[Marca]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Marca" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Error de Negativos.Inputs[Flat File Destination Input].ExternalColumns[Cantidad]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Cantidad" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Error de Negativos.Inputs[Flat File Destination Input].ExternalColumns[Unidad]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Unidad" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Error de Negativos.Inputs[Flat File Destination Input].ExternalColumns[Precio]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Precio" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Error de Negativos.Inputs[Flat File Destination Input].ExternalColumns[Establecimiento]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Establecimiento" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Error de Negativos.Inputs[Flat File Destination Input].ExternalColumns[Direccion]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Direccion" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Error de Negativos.Inputs[Flat File Destination Input].ExternalColumns[Municipio]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Municipio" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Error de Negativos.Inputs[Flat File Destination Input].ExternalColumns[Fecha Sondeo]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Fecha Sondeo" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Error de Negativos.Inputs[Flat File Destination Input].ExternalColumns[Departamento]"
+                      codePage="1252"
+                      dataType="str"
                       length="50"
                       name="Departamento" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\negative_price_error.Inputs[Flat File Destination Input].ExternalColumns[fecha_sondeo_fixed]"
-                      dataType="dbDate"
-                      name="fecha_sondeo_fixed" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -1034,7 +1686,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].ExternalColumns[Categoria]"
-                      length="50"
+                      length="100"
                       lineageId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Categoria]"
                       name="Categoria"
                       truncationRowDisposition="RedirectRow">
@@ -1055,7 +1707,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].ExternalColumns[Producto]"
-                      length="50"
+                      length="100"
                       lineageId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Producto]"
                       name="Producto"
                       truncationRowDisposition="RedirectRow">
@@ -1076,7 +1728,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].ExternalColumns[Marca]"
-                      length="50"
+                      length="100"
                       lineageId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Marca]"
                       name="Marca"
                       truncationRowDisposition="RedirectRow">
@@ -1093,10 +1745,11 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Cantidad]"
-                      dataType="r4"
+                      dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].ExternalColumns[Cantidad]"
+                      length="50"
                       lineageId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Cantidad]"
                       name="Cantidad"
                       truncationRowDisposition="RedirectRow">
@@ -1117,7 +1770,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].ExternalColumns[Unidad]"
-                      length="50"
+                      length="100"
                       lineageId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Unidad]"
                       name="Unidad"
                       truncationRowDisposition="RedirectRow">
@@ -1134,10 +1787,11 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Precio]"
-                      dataType="cy"
+                      dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].ExternalColumns[Precio]"
+                      length="50"
                       lineageId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Precio]"
                       name="Precio"
                       truncationRowDisposition="RedirectRow">
@@ -1158,7 +1812,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].ExternalColumns[Establecimiento]"
-                      length="50"
+                      length="4000"
                       lineageId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Establecimiento]"
                       name="Establecimiento"
                       truncationRowDisposition="RedirectRow">
@@ -1179,9 +1833,30 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].ExternalColumns[Direccion]"
-                      length="50"
+                      length="400"
                       lineageId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Direccion]"
                       name="Direccion"
+                      truncationRowDisposition="RedirectRow">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[De partamento]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="RedirectRow"
+                      externalMetadataColumnId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].ExternalColumns[De partamento]"
+                      length="100"
+                      lineageId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[De partamento]"
+                      name="De partamento"
                       truncationRowDisposition="RedirectRow">
                       <properties>
                         <property
@@ -1200,7 +1875,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].ExternalColumns[Municipio]"
-                      length="50"
+                      length="100"
                       lineageId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Municipio]"
                       name="Municipio"
                       truncationRowDisposition="RedirectRow">
@@ -1236,83 +1911,64 @@
                           name="UseBinaryFormat">false</property>
                       </properties>
                     </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Departamento]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="RedirectRow"
-                      externalMetadataColumnId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].ExternalColumns[Departamento]"
-                      length="50"
-                      lineageId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Departamento]"
-                      name="Departamento"
-                      truncationRowDisposition="RedirectRow">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
                       refId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].ExternalColumns[Categoria]"
                       dataType="wstr"
-                      length="50"
+                      length="100"
                       name="Categoria" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].ExternalColumns[Producto]"
                       dataType="wstr"
-                      length="50"
+                      length="100"
                       name="Producto" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].ExternalColumns[Marca]"
                       dataType="wstr"
-                      length="50"
+                      length="100"
                       name="Marca" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].ExternalColumns[Cantidad]"
-                      dataType="r4"
+                      dataType="wstr"
+                      length="50"
                       name="Cantidad" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].ExternalColumns[Unidad]"
                       dataType="wstr"
-                      length="50"
+                      length="100"
                       name="Unidad" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].ExternalColumns[Precio]"
-                      dataType="cy"
+                      dataType="wstr"
+                      length="50"
                       name="Precio" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].ExternalColumns[Establecimiento]"
                       dataType="wstr"
-                      length="50"
+                      length="4000"
                       name="Establecimiento" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].ExternalColumns[Direccion]"
                       dataType="wstr"
-                      length="50"
+                      length="400"
                       name="Direccion" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].ExternalColumns[De partamento]"
+                      dataType="wstr"
+                      length="100"
+                      name="De partamento" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].ExternalColumns[Municipio]"
                       dataType="wstr"
-                      length="50"
+                      length="100"
                       name="Municipio" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].ExternalColumns[Fecha Sondeo]"
                       dataType="wstr"
                       length="50"
                       name="Fecha Sondeo" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].ExternalColumns[Departamento]"
-                      dataType="wstr"
-                      length="50"
-                      name="Departamento" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -1382,7 +2038,7 @@
                   dataType="System.Int32"
                   description="Specifies the mode used to access the database."
                   name="AccessMode"
-                  typeConverter="AccessMode">3</property>
+                  typeConverter="AccessMode">0</property>
                 <property
                   dataType="System.Boolean"
                   description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
@@ -1394,7 +2050,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
-                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                  name="FastLoadOptions"></property>
                 <property
                   dataType="System.Int32"
                   description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
@@ -1417,79 +2073,79 @@
                   name="OLE DB Destination Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Data Flow Task\Products.Inputs[OLE DB Destination Input].Columns[Categoria]"
-                      cachedDataType="wstr"
-                      cachedLength="50"
-                      cachedName="Categoria"
-                      externalMetadataColumnId="Package\Data Flow Task\Products.Inputs[OLE DB Destination Input].ExternalColumns[Categoria]"
-                      lineageId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Categoria]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task\Products.Inputs[OLE DB Destination Input].Columns[Producto]"
-                      cachedDataType="wstr"
-                      cachedLength="50"
-                      cachedName="Producto"
-                      externalMetadataColumnId="Package\Data Flow Task\Products.Inputs[OLE DB Destination Input].ExternalColumns[Producto]"
-                      lineageId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Producto]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task\Products.Inputs[OLE DB Destination Input].Columns[Marca]"
-                      cachedDataType="wstr"
-                      cachedLength="50"
-                      cachedName="Marca"
-                      externalMetadataColumnId="Package\Data Flow Task\Products.Inputs[OLE DB Destination Input].ExternalColumns[Marca]"
-                      lineageId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Marca]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task\Products.Inputs[OLE DB Destination Input].Columns[Cantidad]"
-                      cachedDataType="r4"
-                      cachedName="Cantidad"
-                      externalMetadataColumnId="Package\Data Flow Task\Products.Inputs[OLE DB Destination Input].ExternalColumns[Cantidad]"
-                      lineageId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Cantidad]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task\Products.Inputs[OLE DB Destination Input].Columns[Unidad]"
-                      cachedDataType="wstr"
-                      cachedLength="50"
-                      cachedName="Unidad"
-                      externalMetadataColumnId="Package\Data Flow Task\Products.Inputs[OLE DB Destination Input].ExternalColumns[Unidad]"
-                      lineageId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Unidad]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task\Products.Inputs[OLE DB Destination Input].Columns[Precio]"
+                      refId="Package\Data Flow Task\Products.Inputs[OLE DB Destination Input].Columns[Copia de Precio]"
                       cachedDataType="cy"
-                      cachedName="Precio"
+                      cachedName="Copia de Precio"
                       externalMetadataColumnId="Package\Data Flow Task\Products.Inputs[OLE DB Destination Input].ExternalColumns[Precio]"
-                      lineageId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Precio]" />
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Precio]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\Products.Inputs[OLE DB Destination Input].Columns[Establecimiento]"
+                      refId="Package\Data Flow Task\Products.Inputs[OLE DB Destination Input].Columns[Copia de De partamento]"
                       cachedDataType="wstr"
-                      cachedLength="50"
-                      cachedName="Establecimiento"
-                      externalMetadataColumnId="Package\Data Flow Task\Products.Inputs[OLE DB Destination Input].ExternalColumns[Establecimiento]"
-                      lineageId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Establecimiento]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task\Products.Inputs[OLE DB Destination Input].Columns[Direccion]"
-                      cachedDataType="wstr"
-                      cachedLength="50"
-                      cachedName="Direccion"
-                      externalMetadataColumnId="Package\Data Flow Task\Products.Inputs[OLE DB Destination Input].ExternalColumns[Direccion]"
-                      lineageId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Direccion]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task\Products.Inputs[OLE DB Destination Input].Columns[Municipio]"
-                      cachedDataType="wstr"
-                      cachedLength="50"
-                      cachedName="Municipio"
-                      externalMetadataColumnId="Package\Data Flow Task\Products.Inputs[OLE DB Destination Input].ExternalColumns[Municipio]"
-                      lineageId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Municipio]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task\Products.Inputs[OLE DB Destination Input].Columns[Departamento]"
-                      cachedDataType="wstr"
-                      cachedLength="50"
-                      cachedName="Departamento"
+                      cachedLength="100"
+                      cachedName="Copia de De partamento"
                       externalMetadataColumnId="Package\Data Flow Task\Products.Inputs[OLE DB Destination Input].ExternalColumns[Departamento]"
-                      lineageId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Departamento]" />
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de De partamento]" />
                     <inputColumn
                       refId="Package\Data Flow Task\Products.Inputs[OLE DB Destination Input].Columns[fecha_sondeo_fixed]"
                       cachedDataType="dbDate"
                       cachedName="fecha_sondeo_fixed"
                       externalMetadataColumnId="Package\Data Flow Task\Products.Inputs[OLE DB Destination Input].ExternalColumns[Fecha Sondeo]"
-                      lineageId="Package\Data Flow Task\Conversiones.Outputs[Derived Column Output].Columns[fecha_sondeo_fixed]" />
+                      lineageId="Package\Data Flow Task\Conversion Fecha.Outputs[Derived Column Output].Columns[fecha_sondeo_fixed]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Products.Inputs[OLE DB Destination Input].Columns[Copia de Categoria]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="Copia de Categoria"
+                      externalMetadataColumnId="Package\Data Flow Task\Products.Inputs[OLE DB Destination Input].ExternalColumns[Categoria]"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Categoria]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Products.Inputs[OLE DB Destination Input].Columns[Copia de Producto]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="Copia de Producto"
+                      externalMetadataColumnId="Package\Data Flow Task\Products.Inputs[OLE DB Destination Input].ExternalColumns[Producto]"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Producto]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Products.Inputs[OLE DB Destination Input].Columns[Copia de Marca]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="Copia de Marca"
+                      externalMetadataColumnId="Package\Data Flow Task\Products.Inputs[OLE DB Destination Input].ExternalColumns[Marca]"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Marca]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Products.Inputs[OLE DB Destination Input].Columns[Copia de Cantidad]"
+                      cachedDataType="r4"
+                      cachedName="Copia de Cantidad"
+                      externalMetadataColumnId="Package\Data Flow Task\Products.Inputs[OLE DB Destination Input].ExternalColumns[Cantidad]"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Cantidad]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Products.Inputs[OLE DB Destination Input].Columns[Copia de Unidad]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="Copia de Unidad"
+                      externalMetadataColumnId="Package\Data Flow Task\Products.Inputs[OLE DB Destination Input].ExternalColumns[Unidad]"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Unidad]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Products.Inputs[OLE DB Destination Input].Columns[Copia de Establecimiento]"
+                      cachedDataType="wstr"
+                      cachedLength="4000"
+                      cachedName="Copia de Establecimiento"
+                      externalMetadataColumnId="Package\Data Flow Task\Products.Inputs[OLE DB Destination Input].ExternalColumns[Establecimiento]"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Establecimiento]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Products.Inputs[OLE DB Destination Input].Columns[Copia de Direccion]"
+                      cachedDataType="wstr"
+                      cachedLength="400"
+                      cachedName="Copia de Direccion"
+                      externalMetadataColumnId="Package\Data Flow Task\Products.Inputs[OLE DB Destination Input].ExternalColumns[Direccion]"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Direccion]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Products.Inputs[OLE DB Destination Input].Columns[Copia de Municipio]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="Copia de Municipio"
+                      externalMetadataColumnId="Package\Data Flow Task\Products.Inputs[OLE DB Destination Input].ExternalColumns[Municipio]"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Municipio]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -1575,49 +2231,49 @@
               </outputs>
             </component>
             <component
-              refId="Package\Data Flow Task\Valores Negativos"
+              refId="Package\Data Flow Task\Valores_Negativos"
               componentClassID="Microsoft.ConditionalSplit"
               contactInfo="Conditional Split;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
               description="Routes data rows to different outputs depending on the content of the data. Use conditions (SSIS expressions) to specify which rows are routed. For example, separate records that need to be cleaned from those that are ready to be loaded or route only a subset of records."
-              name="Valores Negativos"
+              name="Valores_Negativos"
               usesDispositions="true">
               <inputs>
                 <input
-                  refId="Package\Data Flow Task\Valores Negativos.Inputs[Conditional Split Input]"
+                  refId="Package\Data Flow Task\Valores_Negativos.Inputs[Conditional Split Input]"
                   description="Input to the Conditional Split Transformation"
                   name="Conditional Split Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Data Flow Task\Valores Negativos.Inputs[Conditional Split Input].Columns[Precio]"
+                      refId="Package\Data Flow Task\Valores_Negativos.Inputs[Conditional Split Input].Columns[Copia de Precio]"
                       cachedDataType="cy"
-                      cachedName="Precio"
-                      lineageId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Precio]" />
+                      cachedName="Copia de Precio"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Precio]" />
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Data Flow Task\Valores Negativos.Outputs[valores_positivos]"
+                  refId="Package\Data Flow Task\Valores_Negativos.Outputs[Mayor que cero]"
                   description="Output 1 of the Conditional Split Transformation"
                   errorOrTruncationOperation="Computation"
                   errorRowDisposition="FailComponent"
                   exclusionGroup="1"
-                  name="valores_positivos"
-                  synchronousInputId="Package\Data Flow Task\Valores Negativos.Inputs[Conditional Split Input]"
+                  name="Mayor que cero"
+                  synchronousInputId="Package\Data Flow Task\Valores_Negativos.Inputs[Conditional Split Input]"
                   truncationRowDisposition="FailComponent">
                   <properties>
                     <property
                       containsID="true"
                       dataType="System.String"
                       description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
-                      name="Expression">#{Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Precio]} &gt;= 0</property>
+                      name="Expression">#{Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Precio]} &gt;= 0</property>
                     <property
                       containsID="true"
                       dataType="System.String"
                       description="Specifies the friendly version of the expression. This expression version uses column names."
                       expressionType="Notify"
-                      name="FriendlyExpression">Precio &gt;= 0</property>
+                      name="FriendlyExpression">[Copia de Precio] &gt;= 0</property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
@@ -1626,26 +2282,26 @@
                   <externalMetadataColumns />
                 </output>
                 <output
-                  refId="Package\Data Flow Task\Valores Negativos.Outputs[valores_negativos]"
+                  refId="Package\Data Flow Task\Valores_Negativos.Outputs[Menor que cero]"
                   description="Output 2 of the Conditional Split Transformation"
                   errorOrTruncationOperation="Computation"
                   errorRowDisposition="FailComponent"
                   exclusionGroup="1"
-                  name="valores_negativos"
-                  synchronousInputId="Package\Data Flow Task\Valores Negativos.Inputs[Conditional Split Input]"
+                  name="Menor que cero"
+                  synchronousInputId="Package\Data Flow Task\Valores_Negativos.Inputs[Conditional Split Input]"
                   truncationRowDisposition="FailComponent">
                   <properties>
                     <property
                       containsID="true"
                       dataType="System.String"
                       description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
-                      name="Expression">#{Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Precio]} &lt; 0</property>
+                      name="Expression">#{Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Precio]} &lt; 0</property>
                     <property
                       containsID="true"
                       dataType="System.String"
                       description="Specifies the friendly version of the expression. This expression version uses column names."
                       expressionType="Notify"
-                      name="FriendlyExpression">Precio &lt; 0</property>
+                      name="FriendlyExpression">[Copia de Precio] &lt; 0</property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
@@ -1654,11 +2310,11 @@
                   <externalMetadataColumns />
                 </output>
                 <output
-                  refId="Package\Data Flow Task\Valores Negativos.Outputs[Conditional Split Default Output]"
+                  refId="Package\Data Flow Task\Valores_Negativos.Outputs[Conditional Split Default Output]"
                   description="Default Output of the Conditional Split Transformation"
                   exclusionGroup="1"
                   name="Conditional Split Default Output"
-                  synchronousInputId="Package\Data Flow Task\Valores Negativos.Inputs[Conditional Split Input]">
+                  synchronousInputId="Package\Data Flow Task\Valores_Negativos.Inputs[Conditional Split Input]">
                   <properties>
                     <property
                       dataType="System.Boolean"
@@ -1667,23 +2323,23 @@
                   <externalMetadataColumns />
                 </output>
                 <output
-                  refId="Package\Data Flow Task\Valores Negativos.Outputs[Conditional Split Error Output]"
+                  refId="Package\Data Flow Task\Valores_Negativos.Outputs[Conditional Split Error Output]"
                   description="Error Output of the Conditional Split Transformation"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="Conditional Split Error Output"
-                  synchronousInputId="Package\Data Flow Task\Valores Negativos.Inputs[Conditional Split Input]">
+                  synchronousInputId="Package\Data Flow Task\Valores_Negativos.Inputs[Conditional Split Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Data Flow Task\Valores Negativos.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                      refId="Package\Data Flow Task\Valores_Negativos.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\Valores Negativos.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                      lineageId="Package\Data Flow Task\Valores_Negativos.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Valores Negativos.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                      refId="Package\Data Flow Task\Valores_Negativos.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\Valores Negativos.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\Data Flow Task\Valores_Negativos.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -1694,35 +2350,45 @@
           </components>
           <paths>
             <path
+              refId="Package\Data Flow Task.Paths[Data Conversion Error Output]"
+              endId="Package\Data Flow Task\Error Conversion.Inputs[Flat File Destination Input]"
+              name="Data Conversion Error Output"
+              startId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Error Output]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Data Conversion Output]"
+              endId="Package\Data Flow Task\Conversion Fecha.Inputs[Derived Column Input]"
+              name="Data Conversion Output"
+              startId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output]" />
+            <path
               refId="Package\Data Flow Task.Paths[Derived Column Error Output]"
-              endId="Package\Data Flow Task\date_error.Inputs[Flat File Destination Input]"
+              endId="Package\Data Flow Task\Error de Fecha.Inputs[Flat File Destination Input]"
               name="Derived Column Error Output"
-              startId="Package\Data Flow Task\Conversiones.Outputs[Derived Column Error Output]" />
+              startId="Package\Data Flow Task\Conversion Fecha.Outputs[Derived Column Error Output]" />
             <path
               refId="Package\Data Flow Task.Paths[Derived Column Output]"
-              endId="Package\Data Flow Task\Valores Negativos.Inputs[Conditional Split Input]"
+              endId="Package\Data Flow Task\Valores_Negativos.Inputs[Conditional Split Input]"
               name="Derived Column Output"
-              startId="Package\Data Flow Task\Conversiones.Outputs[Derived Column Output]" />
+              startId="Package\Data Flow Task\Conversion Fecha.Outputs[Derived Column Output]" />
             <path
               refId="Package\Data Flow Task.Paths[Flat File Source Error Output]"
-              endId="Package\Data Flow Task\flat_file_error.Inputs[Flat File Destination Input]"
+              endId="Package\Data Flow Task\Error de Archivo Plano.Inputs[Flat File Destination Input]"
               name="Flat File Source Error Output"
               startId="Package\Data Flow Task\Origen.Outputs[Flat File Source Error Output]" />
             <path
               refId="Package\Data Flow Task.Paths[Flat File Source Output]"
-              endId="Package\Data Flow Task\Conversiones.Inputs[Derived Column Input]"
+              endId="Package\Data Flow Task\Data Conversion.Inputs[Data Conversion Input]"
               name="Flat File Source Output"
               startId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output]" />
             <path
-              refId="Package\Data Flow Task.Paths[valores_negativos]"
-              endId="Package\Data Flow Task\negative_price_error.Inputs[Flat File Destination Input]"
-              name="valores_negativos"
-              startId="Package\Data Flow Task\Valores Negativos.Outputs[valores_negativos]" />
-            <path
-              refId="Package\Data Flow Task.Paths[valores_positivos]"
+              refId="Package\Data Flow Task.Paths[Mayor que cero]"
               endId="Package\Data Flow Task\Products.Inputs[OLE DB Destination Input]"
-              name="valores_positivos"
-              startId="Package\Data Flow Task\Valores Negativos.Outputs[valores_positivos]" />
+              name="Mayor que cero"
+              startId="Package\Data Flow Task\Valores_Negativos.Outputs[Mayor que cero]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Menor que cero]"
+              endId="Package\Data Flow Task\Error de Negativos.Inputs[Flat File Destination Input]"
+              name="Menor que cero"
+              startId="Package\Data Flow Task\Valores_Negativos.Outputs[Menor que cero]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -1751,75 +2417,129 @@
     design-time-name="Package\Data Flow Task">
     <LayoutInfo>
       <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="110,42"
           Id="Package\Data Flow Task\Origen"
-          TopLeft="132.5,48" />
+          TopLeft="395.555555555555,12.2222222222222" />
         <NodeLayout
-          Size="128,42"
-          Id="Package\Data Flow Task\date_error"
-          TopLeft="525.071428571429,214.571428571429" />
+          Size="156,42"
+          Id="Package\Data Flow Task\Data Conversion"
+          TopLeft="380,91.1111111111111" />
         <NodeLayout
-          Size="142,42"
-          Id="Package\Data Flow Task\flat_file_error"
-          TopLeft="1,221.25" />
+          Size="167,42"
+          Id="Package\Data Flow Task\Error de Negativos"
+          TopLeft="544.444444444445,350" />
         <NodeLayout
-          Size="163,42"
-          Id="Package\Data Flow Task\Valores Negativos"
-          TopLeft="204.464285714286,262.5" />
+          Size="157,42"
+          Id="Package\Data Flow Task\Error Conversion"
+          TopLeft="716.5,86.0714285714286" />
         <NodeLayout
-          Size="141,42"
-          Id="Package\Data Flow Task\Conversiones"
-          TopLeft="223.035714285714,172.5" />
+          Size="165,42"
+          Id="Package\Data Flow Task\Valores_Negativos"
+          TopLeft="364.444444444445,268.888888888889" />
+        <NodeLayout
+          Size="148,42"
+          Id="Package\Data Flow Task\Error de Fecha"
+          TopLeft="725.555555555556,182.222222222222" />
+        <NodeLayout
+          Size="120,42"
+          Id="Package\Data Flow Task\Products"
+          TopLeft="241.111111111111,355.555555555556" />
+        <NodeLayout
+          Size="162,42"
+          Id="Package\Data Flow Task\Conversion Fecha"
+          TopLeft="371.111111111111,183.333333333333" />
+        <NodeLayout
+          Size="184,42"
+          Id="Package\Data Flow Task\Error de Archivo Plano"
+          TopLeft="101.111111111111,94.4444444444445" />
         <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Flat File Source Output]"
-          TopLeft="204.5,90">
+          Id="Package\Data Flow Task.Paths[Menor que cero]"
+          TopLeft="473.111111111111,310.888888888889">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="89.0357142857143,82.5"
+              EndConnector="154.833333333333,39.1111111111109"
               Start="0,0"
-              End="89.0357142857143,75">
+              End="154.833333333333,31.6111111111109">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,29.7096774193548" />
+                    End="0,11.8698145925036" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,29.7096774193548"
-                    Point2="0,33.7096774193548"
-                    Point3="4,33.7096774193548" />
+                    Point1="0,11.8698145925036"
+                    Point2="0,15.8698145925036"
+                    Point3="4,15.8698145925036" />
                   <mssgle:LineSegment
-                    End="85.0357142857143,33.7096774193548" />
+                    End="150.833333333333,15.8698145925036" />
                   <mssgle:CubicBezierSegment
-                    Point1="85.0357142857143,33.7096774193548"
-                    Point2="89.0357142857143,33.7096774193548"
-                    Point3="89.0357142857143,37.7096774193548" />
+                    Point1="150.833333333333,15.8698145925036"
+                    Point2="154.833333333333,15.8698145925036"
+                    Point3="154.833333333333,19.8698145925036" />
                   <mssgle:LineSegment
-                    End="89.0357142857143,75" />
+                    End="154.833333333333,31.6111111111109" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="42.3696354166667,20.8698145925036,70.0940625,11.2822265625"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Derived Column Output]"
-          TopLeft="289.75,214.5">
+          Id="Package\Data Flow Task.Paths[Mayor que cero]"
+          TopLeft="446.944444444445,310.888888888889">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,48"
+              EndConnector="-145.833333333333,44.6666666666666"
               Start="0,0"
-              End="0,40.5">
+              End="-145.833333333333,37.1666666666666">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,40.5" />
+                    End="0,18.3333333333333" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,18.3333333333333"
+                    Point2="0,22.3333333333333"
+                    Point3="-4,22.3333333333333" />
+                  <mssgle:LineSegment
+                    End="-141.833333333333,22.3333333333333" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-141.833333333333,22.3333333333333"
+                    Point2="-145.833333333333,22.3333333333333"
+                    Point3="-145.833333333333,26.3333333333333" />
+                  <mssgle:LineSegment
+                    End="-145.833333333333,37.1666666666666" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-107.658697916667,27.3333333333333,69.4840625,11.2822265625"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Flat File Source Output]"
+          TopLeft="454.277777777778,54.2222222222222">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,36.8888888888889"
+              Start="0,0"
+              End="0,29.3888888888889">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,29.3888888888889" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1830,153 +2550,129 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Flat File Source Error Output]"
-          TopLeft="170.5,90">
+          TopLeft="433.555555555555,54.2222222222222">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-98.5,131.25"
+              EndConnector="-240.444444444444,40.2222222222222"
               Start="0,0"
-              End="-98.5,123.75">
+              End="-240.444444444444,32.7222222222222">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,49.6290322580645" />
+                    End="0,12.4348864994026" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,49.6290322580645"
-                    Point2="0,53.6290322580645"
-                    Point3="-4,53.6290322580645" />
+                    Point1="0,12.4348864994026"
+                    Point2="0,16.4348864994026"
+                    Point3="-4,16.4348864994026" />
                   <mssgle:LineSegment
-                    End="-94.5,53.6290322580645" />
+                    End="-236.444444444444,16.4348864994026" />
                   <mssgle:CubicBezierSegment
-                    Point1="-94.5,53.6290322580645"
-                    Point2="-98.5,53.6290322580645"
-                    Point3="-98.5,57.6290322580645" />
+                    Point1="-236.444444444444,16.4348864994026"
+                    Point2="-240.444444444444,16.4348864994026"
+                    Point3="-240.444444444444,20.4348864994026" />
                   <mssgle:LineSegment
-                    End="-98.5,123.75" />
+                    End="-240.444444444444,32.7222222222222" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-112.87638671875,58.6290322580645,127.2527734375,11.609375"
+              BoundingBox="-183.848608940972,21.4348864994026,127.2527734375,11.609375"
               RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Derived Column Output]"
+          TopLeft="449.527777777778,225.333333333333">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,43.5555555555556"
+              Start="0,0"
+              End="0,36.0555555555556">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,36.0555555555556" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Derived Column Error Output]"
-          TopLeft="364.035714285714,193.5">
+          TopLeft="533.111111111111,203.777777777778">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="161.035714285714,42.0714285714286"
+              EndConnector="192.444444444444,0"
               Start="0,0"
-              End="153.535714285714,42.0714285714286">
+              End="184.944444444444,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="76.5178571428571,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="76.5178571428571,0"
-                    Point2="80.5178571428571,0"
-                    Point3="80.5178571428571,4" />
-                  <mssgle:LineSegment
-                    End="80.5178571428571,38.0714285714286" />
-                  <mssgle:CubicBezierSegment
-                    Point1="80.5178571428571,38.0714285714286"
-                    Point2="80.5178571428571,42.0714285714286"
-                    Point3="84.5178571428571,42.0714285714286" />
-                  <mssgle:LineSegment
-                    End="153.535714285714,42.0714285714286" />
+                    End="184.944444444444,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="15.5564704241071,-17.609375,129.9227734375,11.609375"
+              BoundingBox="27.5108355034722,5,129.9227734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="176,42"
-          Id="Package\Data Flow Task\negative_price_error"
-          TopLeft="370,365.892857142857" />
         <EdgeLayout
-          Id="Package\Data Flow Task.Paths[valores_negativos]"
-          TopLeft="311.797619047619,304.5">
+          Id="Package\Data Flow Task.Paths[Data Conversion Output]"
+          TopLeft="455.055555555556,133.111111111111">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="146.202380952381,61.3928571428572"
+              EndConnector="0,50.2222222222223"
               Start="0,0"
-              End="146.202380952381,53.8928571428572">
+              End="0,42.7222222222223">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,20.915205693456" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,20.915205693456"
-                    Point2="0,24.915205693456"
-                    Point3="4,24.915205693456" />
-                  <mssgle:LineSegment
-                    End="142.202380952381,24.915205693456" />
-                  <mssgle:CubicBezierSegment
-                    Point1="142.202380952381,24.915205693456"
-                    Point2="146.202380952381,24.915205693456"
-                    Point3="146.202380952381,28.915205693456" />
-                  <mssgle:LineSegment
-                    End="146.202380952381,53.8928571428572" />
+                    End="0,42.7222222222223" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="32.7846084449405,29.915205693456,80.6331640625,11.6630859375"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="120,42"
-          Id="Package\Data Flow Task\Products"
-          TopLeft="40,368.75" />
         <EdgeLayout
-          Id="Package\Data Flow Task.Paths[valores_positivos]"
-          TopLeft="260.130952380952,304.5">
+          Id="Package\Data Flow Task.Paths[Data Conversion Error Output]"
+          TopLeft="536,109.59126984127">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-160.130952380952,64.2500000000001"
+              EndConnector="180.5,0"
               Start="0,0"
-              End="-160.130952380952,56.7500000000001">
+              End="173,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,22.0747266099636" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,22.0747266099636"
-                    Point2="0,26.0747266099636"
-                    Point3="-4,26.0747266099636" />
-                  <mssgle:LineSegment
-                    End="-156.130952380952,26.0747266099636" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-156.130952380952,26.0747266099636"
-                    Point2="-160.130952380952,26.0747266099636"
-                    Point3="-160.130952380952,30.0747266099636" />
-                  <mssgle:LineSegment
-                    End="-160.130952380952,56.7500000000001" />
+                    End="173,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-118.427058221726,31.0747266099636,76.7231640625,11.609375"
+              BoundingBox="20.41361328125,5,132.1727734375,11.43359375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>

@@ -1,1 +1,1 @@
-Categoria,Producto,Marca,Cantidad,Unidad,Precio,Establecimiento,Direccion,Departamento,Municipio,Fecha Sondeo,fecha_sondeo_fixed
+Categoria,Producto,Marca,Cantidad,Unidad,Precio,Establecimiento,Direccion,Departamento,Municipio,Fecha Sondeo
