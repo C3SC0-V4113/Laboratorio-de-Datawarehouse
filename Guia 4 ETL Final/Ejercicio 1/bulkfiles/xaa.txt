@@ -90,7 +90,6 @@ Misceláneos,Bárra de silicón delgada (unidad),Sin Marca,1,Unidades,$0.25,"Librer
 Misceláneos,Bárra de silicón delgada (unidad),Sin Marca,1,Unidades,$0.25,"Librería Cervantes, Sucursal # 3 Metrosur","Centro Comercial Metrosur, 3a Etapa, Local #B-20, San Salvador",San Salvador,San Salvador,5/1/2018
 Misceláneos,Bárra de silicón delgada (unidad),Sin Marca,1,Unidades,$0.25,"Librería de Papel, 4a Avenida Norte",4a Avenida Norte N° 116,San Salvador,San Salvador,5/1/2018
 Misceláneos,Bárra de silicón delgada (unidad),Sin Marca,1,Unidades,$0.20,"Librería EDUCA, Soyapango","2a Av. Sur N° 1, Soyapango",San Salvador,Soyapango,5/1/2018
-=====================================================================================================================
 Misceláneos,Bárra de silicón delgada (unidad),Sin Marca,1,Unidades,$0.12,Librería El Angel Ahuachapán,"Avenida Francisco Menéndez Norte,Ahuachapán",Ahuachapan,Ahuachapan,5/1/2018
 Misceláneos,Bárra de silicón delgada (unidad),Sin Marca,1,Unidades,$0.20,"Librería El Castillo Musical, Sucursal","4a Avenida Norte, Edificio Presidente N° 118, local 1",San Salvador,San Salvador,5/1/2018
 Misceláneos,Bárra de silicón delgada (unidad),Sin Marca,1,Unidades,$0.16,Librería Escolar 1a Calle Oriente,1a Calle Oriente N° 115-A,San Salvador,San Salvador,5/1/2018
