@@ -11,8 +11,8 @@
   DTS:LocaleID="22538"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="37"
-  DTS:VersionGUID="{F7AB7286-FE72-418E-9CA0-2464BD6A47A6}">
+  DTS:VersionBuild="54"
+  DTS:VersionGUID="{30760CE1-E4AF-4C91-B627-BABE53CB11A8}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -173,7 +173,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Categoria"
-              DTS:DTSID="{5288B990-39D5-4E7E-ABA0-9FAAEC8D0C76}"
+              DTS:DTSID="{5B46ED4B-BCAC-4909-81B9-AB0B2269AE0C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -182,7 +182,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Producto"
-              DTS:DTSID="{8B69129D-A468-41DE-9045-606A53C9400F}"
+              DTS:DTSID="{F85B3ECE-6D19-42E0-AF03-E227329A5DA0}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -191,16 +191,15 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Marca"
-              DTS:DTSID="{5A1389F9-1DAD-40FE-BAD2-7A2BF0D83D5B}"
+              DTS:DTSID="{896501B5-56CF-4E36-B66F-4BA6737DD9B5}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="130"
+              DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="Cantidad"
-              DTS:DTSID="{F4F4F8FF-5FF2-431E-9E3D-325955FF52D4}"
+              DTS:DTSID="{FC2CBDB2-3487-40D8-958B-E7EC21AD29DA}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -209,7 +208,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Unidad"
-              DTS:DTSID="{40F9D96A-4143-41DC-9BD1-75F5919E47C2}"
+              DTS:DTSID="{D43A893C-D8F7-40D3-AF3C-DDDCA436786D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -218,7 +217,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Precio"
-              DTS:DTSID="{904303F1-A2A1-481C-8B5C-3E52FE06517E}"
+              DTS:DTSID="{0B717F61-C0A9-4EDD-BC57-444A328DB91A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -227,7 +226,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Establecimiento"
-              DTS:DTSID="{CE04F3E4-C073-4C5A-8263-F2AA16E0EB60}"
+              DTS:DTSID="{61C2552E-49A4-4ADF-B258-931287E9F5A5}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -236,7 +235,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Direccion"
-              DTS:DTSID="{F70064FE-5C6B-4014-BAFE-6AA65EDD8254}"
+              DTS:DTSID="{1A899959-2724-4B24-B94B-0DC99340BF48}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -245,7 +244,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="De partamento"
-              DTS:DTSID="{CE5CB38D-1967-4BC9-BDA5-F8B3ED89D8E7}"
+              DTS:DTSID="{995E3A81-03FC-4DC2-86D3-BD30585C6B82}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -254,7 +253,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Municipio"
-              DTS:DTSID="{E0D7196B-F22F-46E8-A170-474C3DE37F80}"
+              DTS:DTSID="{BE1E3650-83F7-41C6-8644-0C2CFBF88032}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -263,7 +262,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Fecha Sondeo"
-              DTS:DTSID="{3144DB49-79A1-418B-BD9F-B1A0608D8AAF}"
+              DTS:DTSID="{BB19B5AD-64A9-4FCE-8305-6D11A01DF249}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -697,8 +696,7 @@
                       lineageId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Marca]" />
                     <inputColumn
                       refId="Package\Data Flow Task\Data Conversion.Inputs[Data Conversion Input].Columns[Cantidad]"
-                      cachedDataType="wstr"
-                      cachedLength="50"
+                      cachedDataType="i8"
                       cachedName="Cantidad"
                       lineageId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Cantidad]" />
                     <inputColumn
@@ -707,12 +705,6 @@
                       cachedLength="100"
                       cachedName="Unidad"
                       lineageId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Unidad]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task\Data Conversion.Inputs[Data Conversion Input].Columns[Precio]"
-                      cachedDataType="wstr"
-                      cachedLength="50"
-                      cachedName="Precio"
-                      lineageId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Precio]" />
                     <inputColumn
                       refId="Package\Data Flow Task\Data Conversion.Inputs[Data Conversion Input].Columns[Establecimiento]"
                       cachedDataType="wstr"
@@ -743,6 +735,12 @@
                       cachedLength="50"
                       cachedName="Fecha Sondeo"
                       lineageId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Fecha Sondeo]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Data Conversion.Inputs[Data Conversion Input].Columns[Precio_fixed]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Precio_fixed"
+                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[Precio_fixed]" />
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
@@ -819,7 +817,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Cantidad]"
-                      dataType="r4"
+                      dataType="i8"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Cantidad]"
@@ -859,31 +857,11 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Precio]"
-                      dataType="cy"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="RedirectRow"
-                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Precio]"
-                      name="Copia de Precio"
-                      truncationRowDisposition="RedirectRow">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Precio]}</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
                       refId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Establecimiento]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
-                      length="4000"
+                      length="500"
                       lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Establecimiento]"
                       name="Copia de Establecimiento"
                       truncationRowDisposition="RedirectRow">
@@ -983,6 +961,26 @@
                           name="FastParse">false</property>
                       </properties>
                     </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Precio_fixed]"
+                      dataType="cy"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="RedirectRow"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Precio_fixed]"
+                      name="Copia de Precio_fixed"
+                      truncationRowDisposition="RedirectRow">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[Precio_fixed]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
                   </outputColumns>
                   <externalMetadataColumns />
                 </output>
@@ -1003,6 +1001,88 @@
                       refId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
                       dataType="i4"
                       lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\Derived Column"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Derived Column"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input].Columns[Precio]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Precio"
+                      lineageId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Precio]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[Precio_fixed]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="RedirectRow"
+                      length="50"
+                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[Precio_fixed]"
+                      name="Precio_fixed"
+                      truncationRowDisposition="RedirectRow">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[REPLACE](#{Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Precio]},"$","")</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">REPLACE(Precio,"$","")</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -1069,8 +1149,7 @@
                       lineageId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Marca]" />
                     <inputColumn
                       refId="Package\Data Flow Task\Error Conversion.Inputs[Flat File Destination Input].Columns[Cantidad]"
-                      cachedDataType="wstr"
-                      cachedLength="50"
+                      cachedDataType="i8"
                       cachedName="Cantidad"
                       externalMetadataColumnId="Package\Data Flow Task\Error Conversion.Inputs[Flat File Destination Input].ExternalColumns[Cantidad]"
                       lineageId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Cantidad]" />
@@ -1081,13 +1160,6 @@
                       cachedName="Unidad"
                       externalMetadataColumnId="Package\Data Flow Task\Error Conversion.Inputs[Flat File Destination Input].ExternalColumns[Unidad]"
                       lineageId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Unidad]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task\Error Conversion.Inputs[Flat File Destination Input].Columns[Precio]"
-                      cachedDataType="wstr"
-                      cachedLength="50"
-                      cachedName="Precio"
-                      externalMetadataColumnId="Package\Data Flow Task\Error Conversion.Inputs[Flat File Destination Input].ExternalColumns[Precio]"
-                      lineageId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Precio]" />
                     <inputColumn
                       refId="Package\Data Flow Task\Error Conversion.Inputs[Flat File Destination Input].Columns[Establecimiento]"
                       cachedDataType="wstr"
@@ -1135,6 +1207,13 @@
                       cachedName="ErrorColumn"
                       externalMetadataColumnId="Package\Data Flow Task\Error Conversion.Inputs[Flat File Destination Input].ExternalColumns[ErrorColumn]"
                       lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Error Conversion.Inputs[Flat File Destination Input].Columns[Precio_fixed]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Precio_fixed"
+                      externalMetadataColumnId="Package\Data Flow Task\Error Conversion.Inputs[Flat File Destination Input].ExternalColumns[Precio]"
+                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[Precio_fixed]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -1246,13 +1325,13 @@
                       cachedDataType="i4"
                       cachedName="ErrorCode"
                       externalMetadataColumnId="Package\Data Flow Task\Error de Archivo Plano.Inputs[Flat File Destination Input].ExternalColumns[ErrorCode]"
-                      lineageId="Package\Data Flow Task\Origen.Outputs[Flat File Source Error Output].Columns[ErrorCode]" />
+                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]" />
                     <inputColumn
                       refId="Package\Data Flow Task\Error de Archivo Plano.Inputs[Flat File Destination Input].Columns[ErrorColumn]"
                       cachedDataType="i4"
                       cachedName="ErrorColumn"
                       externalMetadataColumnId="Package\Data Flow Task\Error de Archivo Plano.Inputs[Flat File Destination Input].ExternalColumns[ErrorColumn]"
-                      lineageId="Package\Data Flow Task\Origen.Outputs[Flat File Source Error Output].Columns[ErrorColumn]" />
+                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -1327,7 +1406,7 @@
                       lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Marca]" />
                     <inputColumn
                       refId="Package\Data Flow Task\Error de Fecha.Inputs[Flat File Destination Input].Columns[Copia de Cantidad]"
-                      cachedDataType="r4"
+                      cachedDataType="i8"
                       cachedName="Copia de Cantidad"
                       externalMetadataColumnId="Package\Data Flow Task\Error de Fecha.Inputs[Flat File Destination Input].ExternalColumns[Cantidad]"
                       lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Cantidad]" />
@@ -1339,15 +1418,9 @@
                       externalMetadataColumnId="Package\Data Flow Task\Error de Fecha.Inputs[Flat File Destination Input].ExternalColumns[Unidad]"
                       lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Unidad]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\Error de Fecha.Inputs[Flat File Destination Input].Columns[Copia de Precio]"
-                      cachedDataType="cy"
-                      cachedName="Copia de Precio"
-                      externalMetadataColumnId="Package\Data Flow Task\Error de Fecha.Inputs[Flat File Destination Input].ExternalColumns[Precio]"
-                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Precio]" />
-                    <inputColumn
                       refId="Package\Data Flow Task\Error de Fecha.Inputs[Flat File Destination Input].Columns[Copia de Establecimiento]"
                       cachedDataType="wstr"
-                      cachedLength="4000"
+                      cachedLength="500"
                       cachedName="Copia de Establecimiento"
                       externalMetadataColumnId="Package\Data Flow Task\Error de Fecha.Inputs[Flat File Destination Input].ExternalColumns[Establecimiento]"
                       lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Establecimiento]" />
@@ -1391,6 +1464,12 @@
                       cachedName="ErrorColumn"
                       externalMetadataColumnId="Package\Data Flow Task\Error de Fecha.Inputs[Flat File Destination Input].ExternalColumns[ErrorColumn]"
                       lineageId="Package\Data Flow Task\Conversion Fecha.Outputs[Derived Column Error Output].Columns[ErrorColumn]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Error de Fecha.Inputs[Flat File Destination Input].Columns[Copia de Precio_fixed]"
+                      cachedDataType="cy"
+                      cachedName="Copia de Precio_fixed"
+                      externalMetadataColumnId="Package\Data Flow Task\Error de Fecha.Inputs[Flat File Destination Input].ExternalColumns[Precio]"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Precio_fixed]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -1531,7 +1610,7 @@
                       lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Marca]" />
                     <inputColumn
                       refId="Package\Data Flow Task\Error de Negativos.Inputs[Flat File Destination Input].Columns[Copia de Cantidad]"
-                      cachedDataType="r4"
+                      cachedDataType="i8"
                       cachedName="Copia de Cantidad"
                       externalMetadataColumnId="Package\Data Flow Task\Error de Negativos.Inputs[Flat File Destination Input].ExternalColumns[Cantidad]"
                       lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Cantidad]" />
@@ -1543,15 +1622,9 @@
                       externalMetadataColumnId="Package\Data Flow Task\Error de Negativos.Inputs[Flat File Destination Input].ExternalColumns[Unidad]"
                       lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Unidad]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\Error de Negativos.Inputs[Flat File Destination Input].Columns[Copia de Precio]"
-                      cachedDataType="cy"
-                      cachedName="Copia de Precio"
-                      externalMetadataColumnId="Package\Data Flow Task\Error de Negativos.Inputs[Flat File Destination Input].ExternalColumns[Precio]"
-                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Precio]" />
-                    <inputColumn
                       refId="Package\Data Flow Task\Error de Negativos.Inputs[Flat File Destination Input].Columns[Copia de Establecimiento]"
                       cachedDataType="wstr"
-                      cachedLength="4000"
+                      cachedLength="500"
                       cachedName="Copia de Establecimiento"
                       externalMetadataColumnId="Package\Data Flow Task\Error de Negativos.Inputs[Flat File Destination Input].ExternalColumns[Establecimiento]"
                       lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Establecimiento]" />
@@ -1576,6 +1649,12 @@
                       cachedName="Copia de Fecha Sondeo"
                       externalMetadataColumnId="Package\Data Flow Task\Error de Negativos.Inputs[Flat File Destination Input].ExternalColumns[Fecha Sondeo]"
                       lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Fecha Sondeo]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Error de Negativos.Inputs[Flat File Destination Input].Columns[Copia de Precio_fixed]"
+                      cachedDataType="cy"
+                      cachedName="Copia de Precio_fixed"
+                      externalMetadataColumnId="Package\Data Flow Task\Error de Negativos.Inputs[Flat File Destination Input].ExternalColumns[Precio]"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Precio_fixed]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -1684,12 +1763,12 @@
                       refId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Categoria]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="RedirectRow"
+                      errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].ExternalColumns[Categoria]"
                       length="100"
                       lineageId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Categoria]"
                       name="Categoria"
-                      truncationRowDisposition="RedirectRow">
+                      truncationRowDisposition="FailComponent">
                       <properties>
                         <property
                           dataType="System.Boolean"
@@ -1705,12 +1784,12 @@
                       refId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Producto]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="RedirectRow"
+                      errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].ExternalColumns[Producto]"
                       length="100"
                       lineageId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Producto]"
                       name="Producto"
-                      truncationRowDisposition="RedirectRow">
+                      truncationRowDisposition="FailComponent">
                       <properties>
                         <property
                           dataType="System.Boolean"
@@ -1726,12 +1805,12 @@
                       refId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Marca]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="RedirectRow"
+                      errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].ExternalColumns[Marca]"
                       length="100"
                       lineageId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Marca]"
                       name="Marca"
-                      truncationRowDisposition="RedirectRow">
+                      truncationRowDisposition="FailComponent">
                       <properties>
                         <property
                           dataType="System.Boolean"
@@ -1745,14 +1824,13 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Cantidad]"
-                      dataType="wstr"
+                      dataType="i8"
                       errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="RedirectRow"
+                      errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].ExternalColumns[Cantidad]"
-                      length="50"
                       lineageId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Cantidad]"
                       name="Cantidad"
-                      truncationRowDisposition="RedirectRow">
+                      truncationRowDisposition="FailComponent">
                       <properties>
                         <property
                           dataType="System.Boolean"
@@ -1768,12 +1846,12 @@
                       refId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Unidad]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="RedirectRow"
+                      errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].ExternalColumns[Unidad]"
                       length="100"
                       lineageId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Unidad]"
                       name="Unidad"
-                      truncationRowDisposition="RedirectRow">
+                      truncationRowDisposition="FailComponent">
                       <properties>
                         <property
                           dataType="System.Boolean"
@@ -1789,12 +1867,12 @@
                       refId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Precio]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="RedirectRow"
+                      errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].ExternalColumns[Precio]"
                       length="50"
                       lineageId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Precio]"
                       name="Precio"
-                      truncationRowDisposition="RedirectRow">
+                      truncationRowDisposition="FailComponent">
                       <properties>
                         <property
                           dataType="System.Boolean"
@@ -1810,12 +1888,12 @@
                       refId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Establecimiento]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="RedirectRow"
+                      errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].ExternalColumns[Establecimiento]"
                       length="4000"
                       lineageId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Establecimiento]"
                       name="Establecimiento"
-                      truncationRowDisposition="RedirectRow">
+                      truncationRowDisposition="FailComponent">
                       <properties>
                         <property
                           dataType="System.Boolean"
@@ -1831,12 +1909,12 @@
                       refId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Direccion]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="RedirectRow"
+                      errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].ExternalColumns[Direccion]"
                       length="400"
                       lineageId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Direccion]"
                       name="Direccion"
-                      truncationRowDisposition="RedirectRow">
+                      truncationRowDisposition="FailComponent">
                       <properties>
                         <property
                           dataType="System.Boolean"
@@ -1852,12 +1930,12 @@
                       refId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[De partamento]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="RedirectRow"
+                      errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].ExternalColumns[De partamento]"
                       length="100"
                       lineageId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[De partamento]"
                       name="De partamento"
-                      truncationRowDisposition="RedirectRow">
+                      truncationRowDisposition="FailComponent">
                       <properties>
                         <property
                           dataType="System.Boolean"
@@ -1873,12 +1951,12 @@
                       refId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Municipio]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="RedirectRow"
+                      errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].ExternalColumns[Municipio]"
                       length="100"
                       lineageId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Municipio]"
                       name="Municipio"
-                      truncationRowDisposition="RedirectRow">
+                      truncationRowDisposition="FailComponent">
                       <properties>
                         <property
                           dataType="System.Boolean"
@@ -1894,12 +1972,12 @@
                       refId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Fecha Sondeo]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="RedirectRow"
+                      errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].ExternalColumns[Fecha Sondeo]"
                       length="50"
                       lineageId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].Columns[Fecha Sondeo]"
                       name="Fecha Sondeo"
-                      truncationRowDisposition="RedirectRow">
+                      truncationRowDisposition="FailComponent">
                       <properties>
                         <property
                           dataType="System.Boolean"
@@ -1931,8 +2009,7 @@
                       name="Marca" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].ExternalColumns[Cantidad]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="i8"
                       name="Cantidad" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output].ExternalColumns[Unidad]"
@@ -2073,12 +2150,6 @@
                   name="OLE DB Destination Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Data Flow Task\Products.Inputs[OLE DB Destination Input].Columns[Copia de Precio]"
-                      cachedDataType="cy"
-                      cachedName="Copia de Precio"
-                      externalMetadataColumnId="Package\Data Flow Task\Products.Inputs[OLE DB Destination Input].ExternalColumns[Precio]"
-                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Precio]" />
-                    <inputColumn
                       refId="Package\Data Flow Task\Products.Inputs[OLE DB Destination Input].Columns[Copia de De partamento]"
                       cachedDataType="wstr"
                       cachedLength="100"
@@ -2114,7 +2185,7 @@
                       lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Marca]" />
                     <inputColumn
                       refId="Package\Data Flow Task\Products.Inputs[OLE DB Destination Input].Columns[Copia de Cantidad]"
-                      cachedDataType="r4"
+                      cachedDataType="i8"
                       cachedName="Copia de Cantidad"
                       externalMetadataColumnId="Package\Data Flow Task\Products.Inputs[OLE DB Destination Input].ExternalColumns[Cantidad]"
                       lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Cantidad]" />
@@ -2128,7 +2199,7 @@
                     <inputColumn
                       refId="Package\Data Flow Task\Products.Inputs[OLE DB Destination Input].Columns[Copia de Establecimiento]"
                       cachedDataType="wstr"
-                      cachedLength="4000"
+                      cachedLength="500"
                       cachedName="Copia de Establecimiento"
                       externalMetadataColumnId="Package\Data Flow Task\Products.Inputs[OLE DB Destination Input].ExternalColumns[Establecimiento]"
                       lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Establecimiento]" />
@@ -2146,6 +2217,12 @@
                       cachedName="Copia de Municipio"
                       externalMetadataColumnId="Package\Data Flow Task\Products.Inputs[OLE DB Destination Input].ExternalColumns[Municipio]"
                       lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Municipio]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Products.Inputs[OLE DB Destination Input].Columns[Copia de Precio_fixed]"
+                      cachedDataType="cy"
+                      cachedName="Copia de Precio_fixed"
+                      externalMetadataColumnId="Package\Data Flow Task\Products.Inputs[OLE DB Destination Input].ExternalColumns[Precio]"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Precio_fixed]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -2244,10 +2321,10 @@
                   name="Conditional Split Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Data Flow Task\Valores_Negativos.Inputs[Conditional Split Input].Columns[Copia de Precio]"
+                      refId="Package\Data Flow Task\Valores_Negativos.Inputs[Conditional Split Input].Columns[Copia de Precio_fixed]"
                       cachedDataType="cy"
-                      cachedName="Copia de Precio"
-                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Precio]" />
+                      cachedName="Copia de Precio_fixed"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Precio_fixed]" />
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
@@ -2267,13 +2344,13 @@
                       containsID="true"
                       dataType="System.String"
                       description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
-                      name="Expression">#{Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Precio]} &gt;= 0</property>
+                      name="Expression">#{Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Precio_fixed]} &gt;= 0</property>
                     <property
                       containsID="true"
                       dataType="System.String"
                       description="Specifies the friendly version of the expression. This expression version uses column names."
                       expressionType="Notify"
-                      name="FriendlyExpression">[Copia de Precio] &gt;= 0</property>
+                      name="FriendlyExpression">[Copia de Precio_fixed] &gt;= 0</property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
@@ -2295,13 +2372,13 @@
                       containsID="true"
                       dataType="System.String"
                       description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
-                      name="Expression">#{Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Precio]} &lt; 0</property>
+                      name="Expression">#{Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Precio_fixed]} &lt; 0</property>
                     <property
                       containsID="true"
                       dataType="System.String"
                       description="Specifies the friendly version of the expression. This expression version uses column names."
                       expressionType="Notify"
-                      name="FriendlyExpression">[Copia de Precio] &lt; 0</property>
+                      name="FriendlyExpression">[Copia de Precio_fixed] &lt; 0</property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
@@ -2365,18 +2442,23 @@
               name="Derived Column Error Output"
               startId="Package\Data Flow Task\Conversion Fecha.Outputs[Derived Column Error Output]" />
             <path
+              refId="Package\Data Flow Task.Paths[Derived Column Error Output1]"
+              endId="Package\Data Flow Task\Error de Archivo Plano.Inputs[Flat File Destination Input]"
+              name="Derived Column Error Output"
+              startId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Error Output]" />
+            <path
               refId="Package\Data Flow Task.Paths[Derived Column Output]"
               endId="Package\Data Flow Task\Valores_Negativos.Inputs[Conditional Split Input]"
               name="Derived Column Output"
               startId="Package\Data Flow Task\Conversion Fecha.Outputs[Derived Column Output]" />
             <path
-              refId="Package\Data Flow Task.Paths[Flat File Source Error Output]"
-              endId="Package\Data Flow Task\Error de Archivo Plano.Inputs[Flat File Destination Input]"
-              name="Flat File Source Error Output"
-              startId="Package\Data Flow Task\Origen.Outputs[Flat File Source Error Output]" />
+              refId="Package\Data Flow Task.Paths[Derived Column Output1]"
+              endId="Package\Data Flow Task\Data Conversion.Inputs[Data Conversion Input]"
+              name="Derived Column Output"
+              startId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output]" />
             <path
               refId="Package\Data Flow Task.Paths[Flat File Source Output]"
-              endId="Package\Data Flow Task\Data Conversion.Inputs[Data Conversion Input]"
+              endId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input]"
               name="Flat File Source Output"
               startId="Package\Data Flow Task\Origen.Outputs[Flat File Source Output]" />
             <path
@@ -2421,48 +2503,52 @@
         <NodeLayout
           Size="110,42"
           Id="Package\Data Flow Task\Origen"
-          TopLeft="395.555555555555,12.2222222222222" />
+          TopLeft="387.805555555555,6.2222222222222" />
         <NodeLayout
           Size="156,42"
           Id="Package\Data Flow Task\Data Conversion"
-          TopLeft="380,91.1111111111111" />
+          TopLeft="366.25,164.361111111111" />
         <NodeLayout
-          Size="167,42"
-          Id="Package\Data Flow Task\Error de Negativos"
-          TopLeft="544.444444444445,350" />
-        <NodeLayout
-          Size="157,42"
-          Id="Package\Data Flow Task\Error Conversion"
-          TopLeft="716.5,86.0714285714286" />
+          Size="154,42"
+          Id="Package\Data Flow Task\Derived Column"
+          TopLeft="366,82.5" />
         <NodeLayout
           Size="165,42"
           Id="Package\Data Flow Task\Valores_Negativos"
-          TopLeft="364.444444444445,268.888888888889" />
+          TopLeft="358.194444444445,322.138888888889" />
         <NodeLayout
-          Size="148,42"
-          Id="Package\Data Flow Task\Error de Fecha"
-          TopLeft="725.555555555556,182.222222222222" />
+          Size="167,42"
+          Id="Package\Data Flow Task\Error de Negativos"
+          TopLeft="538.194444444445,403.25" />
         <NodeLayout
           Size="120,42"
           Id="Package\Data Flow Task\Products"
-          TopLeft="241.111111111111,355.555555555556" />
+          TopLeft="234.861111111111,408.805555555556" />
+        <NodeLayout
+          Size="157,42"
+          Id="Package\Data Flow Task\Error Conversion"
+          TopLeft="704,164.321428571429" />
         <NodeLayout
           Size="162,42"
           Id="Package\Data Flow Task\Conversion Fecha"
-          TopLeft="371.111111111111,183.333333333333" />
+          TopLeft="357.361111111111,249.083333333333" />
         <NodeLayout
           Size="184,42"
           Id="Package\Data Flow Task\Error de Archivo Plano"
-          TopLeft="101.111111111111,94.4444444444445" />
+          TopLeft="97.361111111111,85.1944444444445" />
+        <NodeLayout
+          Size="148,42"
+          Id="Package\Data Flow Task\Error de Fecha"
+          TopLeft="716.805555555556,249.222222222222" />
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Menor que cero]"
-          TopLeft="473.111111111111,310.888888888889">
+          TopLeft="466.861111111111,364.138888888889">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="154.833333333333,39.1111111111109"
+              EndConnector="154.833333333333,39.111111111111"
               Start="0,0"
-              End="154.833333333333,31.6111111111109">
+              End="154.833333333333,31.611111111111">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -2479,67 +2565,67 @@
                     Point2="154.833333333333,15.8698145925036"
                     Point3="154.833333333333,19.8698145925036" />
                   <mssgle:LineSegment
-                    End="154.833333333333,31.6111111111109" />
+                    End="154.833333333333,31.611111111111" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="42.3696354166667,20.8698145925036,70.0940625,11.2822265625"
+              BoundingBox="42.3696354166665,20.8698145925036,70.0940625,11.2822265625"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Mayor que cero]"
-          TopLeft="446.944444444445,310.888888888889">
+          TopLeft="414.527777777778,364.138888888889">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-145.833333333333,44.6666666666666"
+              EndConnector="-119.666666666667,44.666666666667"
               Start="0,0"
-              End="-145.833333333333,37.1666666666666">
+              End="-119.666666666667,37.166666666667">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,18.3333333333333" />
+                    End="0,14.1240496198481" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,18.3333333333333"
-                    Point2="0,22.3333333333333"
-                    Point3="-4,22.3333333333333" />
+                    Point1="0,14.1240496198481"
+                    Point2="0,18.1240496198481"
+                    Point3="-4,18.1240496198481" />
                   <mssgle:LineSegment
-                    End="-141.833333333333,22.3333333333333" />
+                    End="-115.666666666667,18.1240496198481" />
                   <mssgle:CubicBezierSegment
-                    Point1="-141.833333333333,22.3333333333333"
-                    Point2="-145.833333333333,22.3333333333333"
-                    Point3="-145.833333333333,26.3333333333333" />
+                    Point1="-115.666666666667,18.1240496198481"
+                    Point2="-119.666666666667,18.1240496198481"
+                    Point3="-119.666666666667,22.1240496198481" />
                   <mssgle:LineSegment
-                    End="-145.833333333333,37.1666666666666" />
+                    End="-119.666666666667,37.166666666667" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-107.658697916667,27.3333333333333,69.4840625,11.2822265625"
+              BoundingBox="-94.5753645833335,23.1240496198481,69.4840625,11.2822265625"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Flat File Source Output]"
-          TopLeft="454.277777777778,54.2222222222222">
+          TopLeft="442.902777777777,48.2222222222222">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,36.8888888888889"
+              EndConnector="0,34.2777777777778"
               Start="0,0"
-              End="0,29.3888888888889">
+              End="0,26.7777777777778">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,29.3888888888889" />
+                    End="0,26.7777777777778" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2549,55 +2635,41 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Flat File Source Error Output]"
-          TopLeft="433.555555555555,54.2222222222222">
+          Id="Package\Data Flow Task.Paths[Derived Column Output1]"
+          TopLeft="443.625,124.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-240.444444444444,40.2222222222222"
+              EndConnector="0,39.861111111111"
               Start="0,0"
-              End="-240.444444444444,32.7222222222222">
+              End="0,32.361111111111">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,12.4348864994026" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,12.4348864994026"
-                    Point2="0,16.4348864994026"
-                    Point3="-4,16.4348864994026" />
-                  <mssgle:LineSegment
-                    End="-236.444444444444,16.4348864994026" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-236.444444444444,16.4348864994026"
-                    Point2="-240.444444444444,16.4348864994026"
-                    Point3="-240.444444444444,20.4348864994026" />
-                  <mssgle:LineSegment
-                    End="-240.444444444444,32.7222222222222" />
+                    End="0,32.361111111111" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-183.848608940972,21.4348864994026,127.2527734375,11.609375"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Derived Column Output]"
-          TopLeft="449.527777777778,225.333333333333">
+          TopLeft="439.527777777778,291.083333333333">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,43.5555555555556"
+              EndConnector="0,31.055555555556"
               Start="0,0"
-              End="0,36.0555555555556">
+              End="0,23.555555555556">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,36.0555555555556" />
+                    End="0,23.555555555556" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2607,43 +2679,67 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Derived Column Error Output]"
-          TopLeft="533.111111111111,203.777777777778">
+          Id="Package\Data Flow Task.Paths[Derived Column Error Output1]"
+          TopLeft="366,104.847222222222">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="192.444444444444,0"
+              EndConnector="-84.638888888889,0"
               Start="0,0"
-              End="184.944444444444,0">
+              End="-77.138888888889,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="184.944444444444,0" />
+                    End="-77.138888888889,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="27.5108355034722,5,129.9227734375,11.609375"
+              BoundingBox="-103.530831163195,5,129.9227734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Derived Column Error Output]"
+          TopLeft="519.361111111111,270.152777777778">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="197.444444444445,0"
+              Start="0,0"
+              End="189.944444444445,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="189.944444444445,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="30.0108355034725,5,129.9227734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Data Conversion Output]"
-          TopLeft="455.055555555556,133.111111111111">
+          TopLeft="441.305555555555,206.361111111111">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,50.2222222222223"
+              EndConnector="0,42.7222222222219"
               Start="0,0"
-              End="0,42.7222222222223">
+              End="0,35.2222222222219">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,42.7222222222223" />
+                    End="0,35.2222222222219" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2654,25 +2750,25 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Data Conversion Error Output]"
-          TopLeft="536,109.59126984127">
+          TopLeft="522.25,185.34126984127">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="180.5,0"
+              EndConnector="181.75,0"
               Start="0,0"
-              End="173,0">
+              End="174.25,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="173,0" />
+                    End="174.25,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="20.41361328125,5,132.1727734375,11.43359375"
+              BoundingBox="21.03861328125,5,132.1727734375,11.43359375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>

@@ -15,4 +15,6 @@ Departamento nchar(100),
 Municipio nchar(100),
 [Fecha Sondeo] date
 );
+select*from products
+--delete from products
 
