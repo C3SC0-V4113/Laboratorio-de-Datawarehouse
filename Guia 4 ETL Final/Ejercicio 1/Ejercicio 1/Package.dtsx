@@ -7,15 +7,132 @@
   DTS:CreatorName="LAPTOP-SEV4FTSO\valle"
   DTS:DTSID="{3E9986DD-DD12-4AAE-8DD6-5070B74FE468}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="15.0.2000.121"
+  DTS:LastModifiedProductVersion="15.0.2000.128"
   DTS:LocaleID="22538"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="67"
-  DTS:VersionGUID="{4B989D9F-028E-432C-B450-CE7AA613AC22}">
+  DTS:VersionBuild="71"
+  DTS:VersionGUID="{9AF39277-7956-4DB8-BD56-3922439E1775}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Administrador de conexiones de archivos planos]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{9E2AD046-1B5A-44CB-A5E8-AD670779BD52}"
+      DTS:ObjectName="Administrador de conexiones de archivos planos">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="17418"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x0022_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\Adilson\Documents\GitHub\Laboratorio-de-Datawarehouse\Guia 4 ETL Final\Ejercicio 1\bulkfiles\xaa.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Categoria"
+              DTS:DTSID="{C59406CD-1121-4C0E-9A9F-9F489BBB59C3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Producto"
+              DTS:DTSID="{AC1B4E35-75A5-4BA6-9C7D-EA5206B6B1CA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Marca"
+              DTS:DTSID="{F55BE2C3-CCBC-45C7-AA61-31DA1498FD8A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="4"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Cantidad"
+              DTS:DTSID="{78D79E3B-6EA7-4B3C-A5A7-BF188E31E77D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Unidad"
+              DTS:DTSID="{22DCA4B2-D591-4587-B41E-6F6E3C3887F0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="6"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Precio"
+              DTS:DTSID="{84172D5A-A827-4913-9978-111E503DD196}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Establecimiento"
+              DTS:DTSID="{F0F9A7FF-A48C-4BB3-BE2A-DDE86FABCEC9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Direccion"
+              DTS:DTSID="{52A880C6-61DB-4608-AEDC-57C1537D5657}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="De partamento"
+              DTS:DTSID="{AB0016C0-DDF1-4BC5-A568-260515AA4019}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Municipio"
+              DTS:DTSID="{DB5E42E5-E734-41BA-82D8-27975EC89972}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Fecha Sondeo"
+              DTS:DTSID="{0ABBFB52-C993-475C-911F-65D9E8E8BE6B}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[conversion_error]"
       DTS:CreationName="FLATFILE"
@@ -29,52 +146,51 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="F:\DOCUMENTOS CUQUIS\UNIVERSIDAD\CICLO 04\Dataware Y Mineria de datos\Laboratorio-de-Datawarehouse\Guia 4 ETL Final\Ejercicio 1\bulkfiles\error_output\data_conversion_error.txt">
+          DTS:ConnectionString="C:\Users\Adilson\Documents\GitHub\Laboratorio-de-Datawarehouse\Guia 4 ETL Final\Ejercicio 1\bulkfiles\error_output\data_conversion_error.txt">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Categoria"
-              DTS:DTSID="{21A8A270-9F6A-4A71-9167-B085A00E9D60}"
+              DTS:DTSID="{1619B9F3-7F1B-4D8E-8B11-67CA1FD67F00}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Producto"
-              DTS:DTSID="{612F1EE3-BC94-4A7C-99D6-2D36F057468A}"
+              DTS:DTSID="{E0D95011-1714-4098-BE4A-C1A49FDE29A5}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Marca"
-              DTS:DTSID="{3CD9D92C-E00E-4BF1-9FA7-43846115F2A4}"
+              DTS:DTSID="{D02EF4B0-FCF4-46EA-B9E2-69C60C8248A5}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="130"
+              DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="Cantidad"
-              DTS:DTSID="{04BE5EE8-D064-40AE-B4D2-207A720D5D3B}"
+              DTS:DTSID="{ED7DCBE8-04F8-40DA-86B3-8EE3375FD84F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Unidad"
-              DTS:DTSID="{D9869A54-FF51-41A1-A64D-2920ABA2F571}"
+              DTS:DTSID="{3A7EBA42-4C9D-48E6-AC1A-359F658CDD2F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -83,43 +199,43 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Precio"
-              DTS:DTSID="{6812DE54-D272-46A5-99AF-47ABE29EF9F7}"
+              DTS:DTSID="{5FC3292D-3725-4970-8FD1-203EC9F9D888}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="4000"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Establecimiento"
-              DTS:DTSID="{43B7C82A-EB01-4AB8-97BD-0DCAB6389D89}"
+              DTS:DTSID="{A7FD8BDE-1B2C-468F-B9FE-930B3E1208B2}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="400"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Direccion"
-              DTS:DTSID="{56905C06-198F-4695-9044-EA4FC6790064}"
+              DTS:DTSID="{8E821FC8-4309-4620-8CEF-530AACE0459E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="De partamento"
-              DTS:DTSID="{165DB74F-1D25-492C-8E05-5641E8AA9422}"
+              DTS:DTSID="{8250FE3D-FD0B-4FA7-AA2E-16A12FB95E81}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Municipio"
-              DTS:DTSID="{A4934457-F6FC-4532-A82E-7FCF0553440A}"
+              DTS:DTSID="{650A28CC-DDE4-43D5-A67F-74BE6DADF255}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -128,7 +244,16 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Fecha Sondeo"
-              DTS:DTSID="{E3604FB8-6BB6-4081-BFF7-857CD10EE5BA}"
+              DTS:DTSID="{37F61D1A-C54C-4CE5-9BEA-49D4E13A37CD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Precio_fixed"
+              DTS:DTSID="{110DF014-A9BD-4BC5-998C-4AB3BF78B01C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -136,7 +261,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="ErrorCode"
-              DTS:DTSID="{35D72FE3-AAE7-47A6-9E3F-4B853C21E19D}"
+              DTS:DTSID="{2086B30A-867D-4106-B47D-89F712BE5AC5}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -144,7 +269,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="ErrorColumn"
-              DTS:DTSID="{AECA9C61-4F4C-407B-BB81-DB6E7DEA5D78}"
+              DTS:DTSID="{3D303595-7AA6-4FAC-A4DB-6F262EF732AD}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -271,6 +396,16 @@
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-G8U2RB1\SQLEXPRESS.sv_school_products]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{53093A6F-335C-48D7-9B15-B61FDD0E2896}"
+      DTS:ObjectName="DESKTOP-G8U2RB1\SQLEXPRESS.sv_school_products">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=DESKTOP-G8U2RB1\SQLEXPRESS;Initial Catalog=sv_school_products;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[error de archivo plano]"
       DTS:CreationName="FLATFILE"
       DTS:DTSID="{2F7FDDE6-59C7-43A7-9FBD-EEF6DF77C573}"
@@ -283,15 +418,113 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="F:\DOCUMENTOS CUQUIS\UNIVERSIDAD\CICLO 04\Dataware Y Mineria de datos\Laboratorio-de-Datawarehouse\Guia 4 ETL Final\Ejercicio 1\bulkfiles\error_output\flat_file_error.txt">
+          DTS:ConnectionString="C:\Users\Adilson\Documents\GitHub\Laboratorio-de-Datawarehouse\Guia 4 ETL Final\Ejercicio 1\bulkfiles\error_output\flat_file_error.txt">
           <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Categoria"
+              DTS:DTSID="{B8298698-D613-43FD-B411-9A7D0ABB206F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Producto"
+              DTS:DTSID="{D2688E98-FE77-4AB2-A5DD-845CC411AF22}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Marca"
+              DTS:DTSID="{A56A7CCA-8486-4720-B48D-A284CC5EE886}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="20"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Cantidad"
+              DTS:DTSID="{66B0BAD9-1CDB-4217-BE5F-95BFD9068CFE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Unidad"
+              DTS:DTSID="{41F7439A-0C75-41D0-8B50-D3A3E8EF267D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Precio"
+              DTS:DTSID="{24CC082F-A076-4BB4-8CCA-D25955A1D825}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="4000"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Establecimiento"
+              DTS:DTSID="{5ADE0849-9D34-45D1-9337-CE11D68E4DDE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="400"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Direccion"
+              DTS:DTSID="{C362AA13-0FEB-49E2-BC16-4219E57DD396}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="De partamento"
+              DTS:DTSID="{8C9F318F-868A-456F-9CF5-CA8AD98BB2E5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Municipio"
+              DTS:DTSID="{53A9B9F4-3745-4C03-AA13-C393813167A8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Fecha Sondeo"
+              DTS:DTSID="{926A5006-ACFE-48B1-84EC-94BA489CC74F}"
+              DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="ErrorCode"
-              DTS:DTSID="{AEC648B9-1EFF-42E5-888D-04409CF0C797}"
+              DTS:DTSID="{0C181B7D-8161-4A6B-A8A5-F10C2938DEBD}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -299,7 +532,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="ErrorColumn"
-              DTS:DTSID="{1E8E75E2-6EDD-4263-A131-0AE5FD26963D}"
+              DTS:DTSID="{503D03A5-3E2D-4BBE-9CCB-43B28A954960}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -318,106 +551,211 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="F:\DOCUMENTOS CUQUIS\UNIVERSIDAD\CICLO 04\Dataware Y Mineria de datos\Laboratorio-de-Datawarehouse\Guia 4 ETL Final\Ejercicio 1\bulkfiles\error_output\date_error.txt">
+          DTS:ConnectionString="C:\Users\Adilson\Documents\GitHub\Laboratorio-de-Datawarehouse\Guia 4 ETL Final\Ejercicio 1\bulkfiles\error_output\date_error.txt">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Categoria"
-              DTS:DTSID="{A53DD1FE-D39D-45D9-B255-BF00367F6F00}"
+              DTS:DTSID="{92E7F253-72BF-41A9-B714-331890F1987F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Producto"
-              DTS:DTSID="{AD220EB9-7E4C-4B96-8312-5CB06F39CE1A}"
+              DTS:DTSID="{6AC2F652-7675-487E-9828-9C2B521D76D3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Marca"
-              DTS:DTSID="{7D6F1C71-1992-48C5-8F23-D772E1F58BB0}"
+              DTS:DTSID="{FDB2B4A7-B132-4A8F-A3B5-1F6812D72E34}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
+              DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="Cantidad"
-              DTS:DTSID="{01D1260F-4BC9-4BBD-8C52-E1261E257447}"
+              DTS:DTSID="{570C1917-F6FB-4697-973A-C3228212C89A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Unidad"
-              DTS:DTSID="{ACF58BE7-5F74-476B-87CE-76829718F6F3}"
+              DTS:DTSID="{111F2A65-3925-4C5C-BAE5-5FEC38DE0348}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
               DTS:MaximumWidth="50"
-              DTS:DataType="129"
+              DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Precio"
-              DTS:DTSID="{CC19D9BA-50F0-4B5D-80A0-E6CE870E4CAC}"
+              DTS:DTSID="{FB616942-55F8-4132-B31F-9EF45D521067}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
+              DTS:MaximumWidth="4000"
+              DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Establecimiento"
-              DTS:DTSID="{2688824E-2856-4374-B4DB-97DFF3D27BD1}"
+              DTS:DTSID="{8463B027-CEA3-4910-BE3D-75EC493CA151}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
+              DTS:MaximumWidth="400"
+              DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Direccion"
-              DTS:DTSID="{8E9215AC-7E75-4BF8-9CA6-09A6D5F80E8B}"
+              DTS:DTSID="{BD7B75CD-A33D-437E-BD3E-37EC815498C5}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="De partamento"
-              DTS:DTSID="{D6BC5156-C81A-47CE-B2AA-198D3C99B2BF}"
+              DTS:DTSID="{F59FAF23-8808-413A-82D9-ABFFEF00E8DB}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Municipio"
-              DTS:DTSID="{AA487FC5-4C38-4A7B-A53B-CAFA119F645F}"
+              DTS:DTSID="{D9D4D5CF-90FD-4873-BA95-F194C5B32225}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
               DTS:MaximumWidth="50"
-              DTS:DataType="129"
+              DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Fecha Sondeo"
-              DTS:DTSID="{CB951716-C960-42D3-9995-9A60AF83C71D}"
+              DTS:DTSID="{06ADFA05-DDC8-49D7-A89D-7A425C0A1C8D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Precio_fixed"
+              DTS:DTSID="{4440795D-5785-4A0B-8078-61F0913A9BBF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Copia de Categoria"
+              DTS:DTSID="{BD76B80D-6819-4FF1-9DDC-020E43418AB0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Copia de Producto"
+              DTS:DTSID="{9162431F-F991-4C8B-97DF-6303C045A832}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Copia de Marca"
+              DTS:DTSID="{728A610D-7541-4571-8DE9-63FCCE8A4A20}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="20"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Copia de Cantidad"
+              DTS:DTSID="{605014A9-62D6-488C-A058-D0E40BA10D16}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Copia de Unidad"
+              DTS:DTSID="{40D0FEB5-157C-47CF-9E12-7273DE84B281}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="500"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Copia de Establecimiento"
+              DTS:DTSID="{5C2744AE-CD4E-45FD-B441-B72A4D56F584}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="400"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Copia de Direccion"
+              DTS:DTSID="{2BA3D0C9-3C86-4A91-BA0A-D5335CDF32F6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Copia de De partamento"
+              DTS:DTSID="{A909CC79-FF18-4549-A7CC-7AE738C687E1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Copia de Municipio"
+              DTS:DTSID="{F8981941-C313-4ADF-BD4C-961986E7FADE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Copia de Fecha Sondeo"
+              DTS:DTSID="{1CE76189-DC63-4D4A-AE3D-761BAB67D6B7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="6"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Copia de Precio_fixed"
+              DTS:DTSID="{8D35FCD6-32E2-49D4-AAE6-785730EF3332}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -425,7 +763,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="ErrorCode"
-              DTS:DTSID="{33F6CFAE-5AE8-4D30-8D9E-4B19AD2DDE64}"
+              DTS:DTSID="{06F3F088-4E38-4EDF-A03D-305A12B493B7}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -433,7 +771,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="ErrorColumn"
-              DTS:DTSID="{0A4C072E-9D45-4DB8-AB17-283B3EC84FA3}"
+              DTS:DTSID="{77885BB0-25ED-4F90-8F6A-C987FA682E5A}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -453,106 +791,219 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="F:\DOCUMENTOS CUQUIS\UNIVERSIDAD\CICLO 04\Dataware Y Mineria de datos\Laboratorio-de-Datawarehouse\Guia 4 ETL Final\Ejercicio 1\bulkfiles\error_output\negative_price_error.txt">
+          DTS:ConnectionString="C:\Users\Adilson\Documents\GitHub\Laboratorio-de-Datawarehouse\Guia 4 ETL Final\Ejercicio 1\bulkfiles\error_output\negative_price_error.txt">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Categoria"
-              DTS:DTSID="{80FB2E86-35A9-49F0-8889-C7839C344794}"
+              DTS:DTSID="{F0A80FF7-2079-4795-96F9-3959523A9707}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Producto"
-              DTS:DTSID="{3D4EC4D2-1A05-4D55-85EF-7E2DC7C7ACAA}"
+              DTS:DTSID="{03B061A1-B0C3-422B-B54B-4CAFB32B2C5A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Marca"
-              DTS:DTSID="{0B0AE749-B69F-4EF9-B0D7-E1770AE1DC8B}"
+              DTS:DTSID="{73D4B5BB-FCB4-4E4B-8434-CD4D068BD284}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
+              DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="Cantidad"
-              DTS:DTSID="{A586F87F-32DA-4868-93B5-CDCA1B55ED16}"
+              DTS:DTSID="{D03DD57F-0BD3-434D-905F-60E8098F04E4}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Unidad"
-              DTS:DTSID="{0EB92E9C-C13C-43C6-85B3-3877283BD5A6}"
+              DTS:DTSID="{9B4C9569-592B-4C51-A7A9-50077D34C4AE}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
               DTS:MaximumWidth="50"
-              DTS:DataType="129"
+              DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Precio"
-              DTS:DTSID="{BCF3CDD4-3697-4B05-9241-61C122513816}"
+              DTS:DTSID="{B1EE65DE-A73B-40BB-B32A-08945919C495}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
+              DTS:MaximumWidth="4000"
+              DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Establecimiento"
-              DTS:DTSID="{8B4C5F97-0083-4EC8-827B-7358D710BF43}"
+              DTS:DTSID="{4E23A7AB-C286-4112-8A46-089394CF19AD}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
+              DTS:MaximumWidth="400"
+              DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Direccion"
-              DTS:DTSID="{92AB7A65-1BE8-4431-B322-962AD6B3F9A1}"
+              DTS:DTSID="{9D6FE355-98BF-4D94-8E0E-47B1101E5EA7}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
               DTS:TextQualified="True"
-              DTS:ObjectName="Departamento"
-              DTS:DTSID="{54248F5A-33DC-4CE9-B50C-293C0FFD93AB}"
+              DTS:ObjectName="De partamento"
+              DTS:DTSID="{A6F68439-D681-42D3-BEB5-AA77852B9622}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Municipio"
-              DTS:DTSID="{DADD6624-535A-4A28-A602-671C9F8BBC9E}"
+              DTS:DTSID="{E06B704D-871E-4B3D-A959-5C9F60FF836E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Fecha Sondeo"
+              DTS:DTSID="{332A4558-17F5-4F8B-93D9-0EF90180FABB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Precio_fixed"
+              DTS:DTSID="{AFB512BC-D89E-45F2-A8CE-9A4953DA6D9F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Copia de Categoria"
+              DTS:DTSID="{A0EFB808-1427-4A12-98BD-8EB8C2FB1957}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Copia de Producto"
+              DTS:DTSID="{A9BFA220-F0E9-410D-A1DD-3F30754D0DCC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Copia de Marca"
+              DTS:DTSID="{F997F7FC-483F-4119-91A2-9081139C366E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="20"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Copia de Cantidad"
+              DTS:DTSID="{56A02FE5-F918-41DA-A9D1-C92D3949F2DF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Copia de Unidad"
+              DTS:DTSID="{1C4A4085-E576-4681-8051-F8A5C5F8EDEA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="500"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Copia de Establecimiento"
+              DTS:DTSID="{797DC117-FABA-4A93-8CE8-5CF5F0032098}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="400"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Copia de Direccion"
+              DTS:DTSID="{D57C376F-41AB-4CA1-95EF-6C419711CCAA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Copia de De partamento"
+              DTS:DTSID="{A2D471A0-0130-4648-BD2E-EC83392751CF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Copia de Municipio"
+              DTS:DTSID="{0A502EC1-124A-4D57-BE5E-DD2F28B0395B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Copia de Fecha Sondeo"
+              DTS:DTSID="{10C41F0C-48E5-4C99-AA67-0BD04C9B7D1B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="6"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Copia de Precio_fixed"
+              DTS:DTSID="{21CC85D1-77A3-46BF-A5B2-BFDA42C7B9FC}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x000D__x000A_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
+              DTS:DataType="133"
               DTS:TextQualified="True"
-              DTS:ObjectName="Fecha Sondeo"
-              DTS:DTSID="{605C5075-B810-4F42-A0C3-6C09B677F97E}"
+              DTS:ObjectName="fecha_sondeo_fixed"
+              DTS:DTSID="{50BB72CF-C7FA-4A5C-A706-1DAA9319C67E}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -596,7 +1047,7 @@
         <DTS:ObjectData>
           <ForEachFileEnumeratorProperties>
             <FEFEProperty
-              Folder="C:\Users\valle\OneDrive\Desktop\bulkfiles" />
+              Folder="C:\Users\Adilson\Documents\GitHub\Laboratorio-de-Datawarehouse\Guia 4 ETL Final\Ejercicio 1\bulkfiles" />
             <FEFEProperty
               FileSpec="*.txt" />
             <FEFEProperty
@@ -1259,27 +1710,26 @@
                         <externalMetadataColumn
                           refId="Package\Contenedor de bucles Foreach\Data Flow Task\Error Conversion.Inputs[Flat File Destination Input].ExternalColumns[Categoria]"
                           dataType="wstr"
-                          length="50"
+                          length="100"
                           name="Categoria" />
                         <externalMetadataColumn
                           refId="Package\Contenedor de bucles Foreach\Data Flow Task\Error Conversion.Inputs[Flat File Destination Input].ExternalColumns[Producto]"
                           dataType="wstr"
-                          length="50"
+                          length="100"
                           name="Producto" />
                         <externalMetadataColumn
                           refId="Package\Contenedor de bucles Foreach\Data Flow Task\Error Conversion.Inputs[Flat File Destination Input].ExternalColumns[Marca]"
                           dataType="wstr"
-                          length="50"
+                          length="100"
                           name="Marca" />
                         <externalMetadataColumn
                           refId="Package\Contenedor de bucles Foreach\Data Flow Task\Error Conversion.Inputs[Flat File Destination Input].ExternalColumns[Cantidad]"
-                          dataType="wstr"
-                          length="50"
+                          dataType="i8"
                           name="Cantidad" />
                         <externalMetadataColumn
                           refId="Package\Contenedor de bucles Foreach\Data Flow Task\Error Conversion.Inputs[Flat File Destination Input].ExternalColumns[Unidad]"
                           dataType="wstr"
-                          length="50"
+                          length="100"
                           name="Unidad" />
                         <externalMetadataColumn
                           refId="Package\Contenedor de bucles Foreach\Data Flow Task\Error Conversion.Inputs[Flat File Destination Input].ExternalColumns[Precio]"
@@ -1289,22 +1739,22 @@
                         <externalMetadataColumn
                           refId="Package\Contenedor de bucles Foreach\Data Flow Task\Error Conversion.Inputs[Flat File Destination Input].ExternalColumns[Establecimiento]"
                           dataType="wstr"
-                          length="50"
+                          length="4000"
                           name="Establecimiento" />
                         <externalMetadataColumn
                           refId="Package\Contenedor de bucles Foreach\Data Flow Task\Error Conversion.Inputs[Flat File Destination Input].ExternalColumns[Direccion]"
                           dataType="wstr"
-                          length="50"
+                          length="400"
                           name="Direccion" />
                         <externalMetadataColumn
                           refId="Package\Contenedor de bucles Foreach\Data Flow Task\Error Conversion.Inputs[Flat File Destination Input].ExternalColumns[De partamento]"
                           dataType="wstr"
-                          length="50"
+                          length="100"
                           name="De partamento" />
                         <externalMetadataColumn
                           refId="Package\Contenedor de bucles Foreach\Data Flow Task\Error Conversion.Inputs[Flat File Destination Input].ExternalColumns[Municipio]"
                           dataType="wstr"
-                          length="50"
+                          length="100"
                           name="Municipio" />
                         <externalMetadataColumn
                           refId="Package\Contenedor de bucles Foreach\Data Flow Task\Error Conversion.Inputs[Flat File Destination Input].ExternalColumns[Fecha Sondeo]"
@@ -1319,6 +1769,11 @@
                           refId="Package\Contenedor de bucles Foreach\Data Flow Task\Error Conversion.Inputs[Flat File Destination Input].ExternalColumns[ErrorColumn]"
                           dataType="i4"
                           name="ErrorColumn" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Data Flow Task\Error Conversion.Inputs[Flat File Destination Input].ExternalColumns[Precio_fixed]"
+                          dataType="wstr"
+                          length="50"
+                          name="Precio_fixed" />
                       </externalMetadataColumns>
                     </input>
                   </inputs>
@@ -1382,6 +1837,60 @@
                           refId="Package\Contenedor de bucles Foreach\Data Flow Task\Error de Archivo Plano.Inputs[Flat File Destination Input].ExternalColumns[ErrorColumn]"
                           dataType="i4"
                           name="ErrorColumn" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Data Flow Task\Error de Archivo Plano.Inputs[Flat File Destination Input].ExternalColumns[Categoria]"
+                          dataType="wstr"
+                          length="100"
+                          name="Categoria" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Data Flow Task\Error de Archivo Plano.Inputs[Flat File Destination Input].ExternalColumns[Producto]"
+                          dataType="wstr"
+                          length="100"
+                          name="Producto" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Data Flow Task\Error de Archivo Plano.Inputs[Flat File Destination Input].ExternalColumns[Marca]"
+                          dataType="wstr"
+                          length="100"
+                          name="Marca" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Data Flow Task\Error de Archivo Plano.Inputs[Flat File Destination Input].ExternalColumns[Cantidad]"
+                          dataType="i8"
+                          name="Cantidad" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Data Flow Task\Error de Archivo Plano.Inputs[Flat File Destination Input].ExternalColumns[Unidad]"
+                          dataType="wstr"
+                          length="100"
+                          name="Unidad" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Data Flow Task\Error de Archivo Plano.Inputs[Flat File Destination Input].ExternalColumns[Precio]"
+                          dataType="wstr"
+                          length="50"
+                          name="Precio" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Data Flow Task\Error de Archivo Plano.Inputs[Flat File Destination Input].ExternalColumns[Establecimiento]"
+                          dataType="wstr"
+                          length="4000"
+                          name="Establecimiento" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Data Flow Task\Error de Archivo Plano.Inputs[Flat File Destination Input].ExternalColumns[Direccion]"
+                          dataType="wstr"
+                          length="400"
+                          name="Direccion" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Data Flow Task\Error de Archivo Plano.Inputs[Flat File Destination Input].ExternalColumns[De partamento]"
+                          dataType="wstr"
+                          length="100"
+                          name="De partamento" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Data Flow Task\Error de Archivo Plano.Inputs[Flat File Destination Input].ExternalColumns[Municipio]"
+                          dataType="wstr"
+                          length="100"
+                          name="Municipio" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Data Flow Task\Error de Archivo Plano.Inputs[Flat File Destination Input].ExternalColumns[Fecha Sondeo]"
+                          dataType="wstr"
+                          length="50"
+                          name="Fecha Sondeo" />
                       </externalMetadataColumns>
                     </input>
                   </inputs>
@@ -1514,68 +2023,56 @@
                         isUsed="True">
                         <externalMetadataColumn
                           refId="Package\Contenedor de bucles Foreach\Data Flow Task\Error de Fecha.Inputs[Flat File Destination Input].ExternalColumns[Categoria]"
-                          codePage="1252"
-                          dataType="str"
-                          length="50"
+                          dataType="wstr"
+                          length="100"
                           name="Categoria" />
                         <externalMetadataColumn
                           refId="Package\Contenedor de bucles Foreach\Data Flow Task\Error de Fecha.Inputs[Flat File Destination Input].ExternalColumns[Producto]"
-                          codePage="1252"
-                          dataType="str"
-                          length="50"
+                          dataType="wstr"
+                          length="100"
                           name="Producto" />
                         <externalMetadataColumn
                           refId="Package\Contenedor de bucles Foreach\Data Flow Task\Error de Fecha.Inputs[Flat File Destination Input].ExternalColumns[Marca]"
-                          codePage="1252"
-                          dataType="str"
-                          length="50"
+                          dataType="wstr"
+                          length="100"
                           name="Marca" />
                         <externalMetadataColumn
                           refId="Package\Contenedor de bucles Foreach\Data Flow Task\Error de Fecha.Inputs[Flat File Destination Input].ExternalColumns[Cantidad]"
-                          codePage="1252"
-                          dataType="str"
-                          length="50"
+                          dataType="i8"
                           name="Cantidad" />
                         <externalMetadataColumn
                           refId="Package\Contenedor de bucles Foreach\Data Flow Task\Error de Fecha.Inputs[Flat File Destination Input].ExternalColumns[Unidad]"
-                          codePage="1252"
-                          dataType="str"
-                          length="50"
+                          dataType="wstr"
+                          length="100"
                           name="Unidad" />
                         <externalMetadataColumn
                           refId="Package\Contenedor de bucles Foreach\Data Flow Task\Error de Fecha.Inputs[Flat File Destination Input].ExternalColumns[Precio]"
-                          codePage="1252"
-                          dataType="str"
+                          dataType="wstr"
                           length="50"
                           name="Precio" />
                         <externalMetadataColumn
                           refId="Package\Contenedor de bucles Foreach\Data Flow Task\Error de Fecha.Inputs[Flat File Destination Input].ExternalColumns[Establecimiento]"
-                          codePage="1252"
-                          dataType="str"
-                          length="50"
+                          dataType="wstr"
+                          length="4000"
                           name="Establecimiento" />
                         <externalMetadataColumn
                           refId="Package\Contenedor de bucles Foreach\Data Flow Task\Error de Fecha.Inputs[Flat File Destination Input].ExternalColumns[Direccion]"
-                          codePage="1252"
-                          dataType="str"
-                          length="50"
+                          dataType="wstr"
+                          length="400"
                           name="Direccion" />
                         <externalMetadataColumn
                           refId="Package\Contenedor de bucles Foreach\Data Flow Task\Error de Fecha.Inputs[Flat File Destination Input].ExternalColumns[De partamento]"
-                          codePage="1252"
-                          dataType="str"
-                          length="50"
+                          dataType="wstr"
+                          length="100"
                           name="De partamento" />
                         <externalMetadataColumn
                           refId="Package\Contenedor de bucles Foreach\Data Flow Task\Error de Fecha.Inputs[Flat File Destination Input].ExternalColumns[Municipio]"
-                          codePage="1252"
-                          dataType="str"
-                          length="50"
+                          dataType="wstr"
+                          length="100"
                           name="Municipio" />
                         <externalMetadataColumn
                           refId="Package\Contenedor de bucles Foreach\Data Flow Task\Error de Fecha.Inputs[Flat File Destination Input].ExternalColumns[Fecha Sondeo]"
-                          codePage="1252"
-                          dataType="str"
+                          dataType="wstr"
                           length="50"
                           name="Fecha Sondeo" />
                         <externalMetadataColumn
@@ -1586,6 +2083,64 @@
                           refId="Package\Contenedor de bucles Foreach\Data Flow Task\Error de Fecha.Inputs[Flat File Destination Input].ExternalColumns[ErrorColumn]"
                           dataType="i4"
                           name="ErrorColumn" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Data Flow Task\Error de Fecha.Inputs[Flat File Destination Input].ExternalColumns[Precio_fixed]"
+                          dataType="wstr"
+                          length="50"
+                          name="Precio_fixed" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Data Flow Task\Error de Fecha.Inputs[Flat File Destination Input].ExternalColumns[Copia de Categoria]"
+                          dataType="wstr"
+                          length="100"
+                          name="Copia de Categoria" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Data Flow Task\Error de Fecha.Inputs[Flat File Destination Input].ExternalColumns[Copia de Producto]"
+                          dataType="wstr"
+                          length="100"
+                          name="Copia de Producto" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Data Flow Task\Error de Fecha.Inputs[Flat File Destination Input].ExternalColumns[Copia de Marca]"
+                          dataType="wstr"
+                          length="100"
+                          name="Copia de Marca" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Data Flow Task\Error de Fecha.Inputs[Flat File Destination Input].ExternalColumns[Copia de Cantidad]"
+                          dataType="i8"
+                          name="Copia de Cantidad" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Data Flow Task\Error de Fecha.Inputs[Flat File Destination Input].ExternalColumns[Copia de Unidad]"
+                          dataType="wstr"
+                          length="100"
+                          name="Copia de Unidad" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Data Flow Task\Error de Fecha.Inputs[Flat File Destination Input].ExternalColumns[Copia de Establecimiento]"
+                          dataType="wstr"
+                          length="500"
+                          name="Copia de Establecimiento" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Data Flow Task\Error de Fecha.Inputs[Flat File Destination Input].ExternalColumns[Copia de Direccion]"
+                          dataType="wstr"
+                          length="400"
+                          name="Copia de Direccion" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Data Flow Task\Error de Fecha.Inputs[Flat File Destination Input].ExternalColumns[Copia de De partamento]"
+                          dataType="wstr"
+                          length="100"
+                          name="Copia de De partamento" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Data Flow Task\Error de Fecha.Inputs[Flat File Destination Input].ExternalColumns[Copia de Municipio]"
+                          dataType="wstr"
+                          length="100"
+                          name="Copia de Municipio" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Data Flow Task\Error de Fecha.Inputs[Flat File Destination Input].ExternalColumns[Copia de Fecha Sondeo]"
+                          dataType="wstr"
+                          length="50"
+                          name="Copia de Fecha Sondeo" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Data Flow Task\Error de Fecha.Inputs[Flat File Destination Input].ExternalColumns[Copia de Precio_fixed]"
+                          dataType="cy"
+                          name="Copia de Precio_fixed" />
                       </externalMetadataColumns>
                     </input>
                   </inputs>
@@ -1699,70 +2254,120 @@
                         isUsed="True">
                         <externalMetadataColumn
                           refId="Package\Contenedor de bucles Foreach\Data Flow Task\Error de Negativos.Inputs[Flat File Destination Input].ExternalColumns[Categoria]"
-                          codePage="1252"
-                          dataType="str"
-                          length="50"
+                          dataType="wstr"
+                          length="100"
                           name="Categoria" />
                         <externalMetadataColumn
                           refId="Package\Contenedor de bucles Foreach\Data Flow Task\Error de Negativos.Inputs[Flat File Destination Input].ExternalColumns[Producto]"
-                          codePage="1252"
-                          dataType="str"
-                          length="50"
+                          dataType="wstr"
+                          length="100"
                           name="Producto" />
                         <externalMetadataColumn
                           refId="Package\Contenedor de bucles Foreach\Data Flow Task\Error de Negativos.Inputs[Flat File Destination Input].ExternalColumns[Marca]"
-                          codePage="1252"
-                          dataType="str"
-                          length="50"
+                          dataType="wstr"
+                          length="100"
                           name="Marca" />
                         <externalMetadataColumn
                           refId="Package\Contenedor de bucles Foreach\Data Flow Task\Error de Negativos.Inputs[Flat File Destination Input].ExternalColumns[Cantidad]"
-                          codePage="1252"
-                          dataType="str"
-                          length="50"
+                          dataType="i8"
                           name="Cantidad" />
                         <externalMetadataColumn
                           refId="Package\Contenedor de bucles Foreach\Data Flow Task\Error de Negativos.Inputs[Flat File Destination Input].ExternalColumns[Unidad]"
-                          codePage="1252"
-                          dataType="str"
-                          length="50"
+                          dataType="wstr"
+                          length="100"
                           name="Unidad" />
                         <externalMetadataColumn
                           refId="Package\Contenedor de bucles Foreach\Data Flow Task\Error de Negativos.Inputs[Flat File Destination Input].ExternalColumns[Precio]"
-                          codePage="1252"
-                          dataType="str"
+                          dataType="wstr"
                           length="50"
                           name="Precio" />
                         <externalMetadataColumn
                           refId="Package\Contenedor de bucles Foreach\Data Flow Task\Error de Negativos.Inputs[Flat File Destination Input].ExternalColumns[Establecimiento]"
-                          codePage="1252"
-                          dataType="str"
-                          length="50"
+                          dataType="wstr"
+                          length="4000"
                           name="Establecimiento" />
                         <externalMetadataColumn
                           refId="Package\Contenedor de bucles Foreach\Data Flow Task\Error de Negativos.Inputs[Flat File Destination Input].ExternalColumns[Direccion]"
-                          codePage="1252"
-                          dataType="str"
-                          length="50"
+                          dataType="wstr"
+                          length="400"
                           name="Direccion" />
                         <externalMetadataColumn
                           refId="Package\Contenedor de bucles Foreach\Data Flow Task\Error de Negativos.Inputs[Flat File Destination Input].ExternalColumns[Municipio]"
-                          codePage="1252"
-                          dataType="str"
-                          length="50"
+                          dataType="wstr"
+                          length="100"
                           name="Municipio" />
                         <externalMetadataColumn
                           refId="Package\Contenedor de bucles Foreach\Data Flow Task\Error de Negativos.Inputs[Flat File Destination Input].ExternalColumns[Fecha Sondeo]"
-                          codePage="1252"
-                          dataType="str"
+                          dataType="wstr"
                           length="50"
                           name="Fecha Sondeo" />
                         <externalMetadataColumn
-                          refId="Package\Contenedor de bucles Foreach\Data Flow Task\Error de Negativos.Inputs[Flat File Destination Input].ExternalColumns[Departamento]"
-                          codePage="1252"
-                          dataType="str"
+                          refId="Package\Contenedor de bucles Foreach\Data Flow Task\Error de Negativos.Inputs[Flat File Destination Input].ExternalColumns[De partamento]"
+                          dataType="wstr"
+                          length="100"
+                          name="De partamento" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Data Flow Task\Error de Negativos.Inputs[Flat File Destination Input].ExternalColumns[Precio_fixed]"
+                          dataType="wstr"
                           length="50"
-                          name="Departamento" />
+                          name="Precio_fixed" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Data Flow Task\Error de Negativos.Inputs[Flat File Destination Input].ExternalColumns[Copia de Categoria]"
+                          dataType="wstr"
+                          length="100"
+                          name="Copia de Categoria" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Data Flow Task\Error de Negativos.Inputs[Flat File Destination Input].ExternalColumns[Copia de Producto]"
+                          dataType="wstr"
+                          length="100"
+                          name="Copia de Producto" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Data Flow Task\Error de Negativos.Inputs[Flat File Destination Input].ExternalColumns[Copia de Marca]"
+                          dataType="wstr"
+                          length="100"
+                          name="Copia de Marca" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Data Flow Task\Error de Negativos.Inputs[Flat File Destination Input].ExternalColumns[Copia de Cantidad]"
+                          dataType="i8"
+                          name="Copia de Cantidad" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Data Flow Task\Error de Negativos.Inputs[Flat File Destination Input].ExternalColumns[Copia de Unidad]"
+                          dataType="wstr"
+                          length="100"
+                          name="Copia de Unidad" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Data Flow Task\Error de Negativos.Inputs[Flat File Destination Input].ExternalColumns[Copia de Establecimiento]"
+                          dataType="wstr"
+                          length="500"
+                          name="Copia de Establecimiento" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Data Flow Task\Error de Negativos.Inputs[Flat File Destination Input].ExternalColumns[Copia de Direccion]"
+                          dataType="wstr"
+                          length="400"
+                          name="Copia de Direccion" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Data Flow Task\Error de Negativos.Inputs[Flat File Destination Input].ExternalColumns[Copia de De partamento]"
+                          dataType="wstr"
+                          length="100"
+                          name="Copia de De partamento" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Data Flow Task\Error de Negativos.Inputs[Flat File Destination Input].ExternalColumns[Copia de Municipio]"
+                          dataType="wstr"
+                          length="100"
+                          name="Copia de Municipio" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Data Flow Task\Error de Negativos.Inputs[Flat File Destination Input].ExternalColumns[Copia de Fecha Sondeo]"
+                          dataType="wstr"
+                          length="50"
+                          name="Copia de Fecha Sondeo" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Data Flow Task\Error de Negativos.Inputs[Flat File Destination Input].ExternalColumns[Copia de Precio_fixed]"
+                          dataType="cy"
+                          name="Copia de Precio_fixed" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Data Flow Task\Error de Negativos.Inputs[Flat File Destination Input].ExternalColumns[fecha_sondeo_fixed]"
+                          dataType="dbDate"
+                          name="fecha_sondeo_fixed" />
                       </externalMetadataColumns>
                     </input>
                   </inputs>
@@ -1772,7 +2377,7 @@
                   componentClassID="Microsoft.FlatFileSource"
                   contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
                   description="Flat File Source"
-                  localeId="22538"
+                  localeId="17418"
                   name="Origen"
                   usesDispositions="true"
                   version="1">
@@ -1789,8 +2394,8 @@
                   <connections>
                     <connection
                       refId="Package\Contenedor de bucles Foreach\Data Flow Task\Origen.Connections[FlatFileConnection]"
-                      connectionManagerID="Package.ConnectionManagers[Data]"
-                      connectionManagerRefId="Package.ConnectionManagers[Data]"
+                      connectionManagerID="Package.ConnectionManagers[Administrador de conexiones de archivos planos]"
+                      connectionManagerRefId="Package.ConnectionManagers[Administrador de conexiones de archivos planos]"
                       name="FlatFileConnection" />
                   </connections>
                   <outputs>
@@ -2033,52 +2638,54 @@
                         isUsed="True">
                         <externalMetadataColumn
                           refId="Package\Contenedor de bucles Foreach\Data Flow Task\Origen.Outputs[Flat File Source Output].ExternalColumns[Categoria]"
-                          dataType="wstr"
-                          length="100"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
                           name="Categoria" />
                         <externalMetadataColumn
                           refId="Package\Contenedor de bucles Foreach\Data Flow Task\Origen.Outputs[Flat File Source Output].ExternalColumns[Producto]"
-                          dataType="wstr"
-                          length="100"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
                           name="Producto" />
                         <externalMetadataColumn
                           refId="Package\Contenedor de bucles Foreach\Data Flow Task\Origen.Outputs[Flat File Source Output].ExternalColumns[Marca]"
                           dataType="wstr"
-                          length="100"
+                          length="50"
                           name="Marca" />
                         <externalMetadataColumn
                           refId="Package\Contenedor de bucles Foreach\Data Flow Task\Origen.Outputs[Flat File Source Output].ExternalColumns[Cantidad]"
-                          dataType="i8"
+                          dataType="r4"
                           name="Cantidad" />
                         <externalMetadataColumn
                           refId="Package\Contenedor de bucles Foreach\Data Flow Task\Origen.Outputs[Flat File Source Output].ExternalColumns[Unidad]"
                           dataType="wstr"
-                          length="100"
+                          length="50"
                           name="Unidad" />
                         <externalMetadataColumn
                           refId="Package\Contenedor de bucles Foreach\Data Flow Task\Origen.Outputs[Flat File Source Output].ExternalColumns[Precio]"
-                          dataType="wstr"
-                          length="50"
+                          dataType="cy"
                           name="Precio" />
                         <externalMetadataColumn
                           refId="Package\Contenedor de bucles Foreach\Data Flow Task\Origen.Outputs[Flat File Source Output].ExternalColumns[Establecimiento]"
-                          dataType="wstr"
-                          length="4000"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
                           name="Establecimiento" />
                         <externalMetadataColumn
                           refId="Package\Contenedor de bucles Foreach\Data Flow Task\Origen.Outputs[Flat File Source Output].ExternalColumns[Direccion]"
                           dataType="wstr"
-                          length="400"
+                          length="50"
                           name="Direccion" />
                         <externalMetadataColumn
                           refId="Package\Contenedor de bucles Foreach\Data Flow Task\Origen.Outputs[Flat File Source Output].ExternalColumns[De partamento]"
                           dataType="wstr"
-                          length="100"
+                          length="50"
                           name="De partamento" />
                         <externalMetadataColumn
                           refId="Package\Contenedor de bucles Foreach\Data Flow Task\Origen.Outputs[Flat File Source Output].ExternalColumns[Municipio]"
                           dataType="wstr"
-                          length="100"
+                          length="50"
                           name="Municipio" />
                         <externalMetadataColumn
                           refId="Package\Contenedor de bucles Foreach\Data Flow Task\Origen.Outputs[Flat File Source Output].ExternalColumns[Fecha Sondeo]"
@@ -2175,8 +2782,8 @@
                   <connections>
                     <connection
                       refId="Package\Contenedor de bucles Foreach\Data Flow Task\Products.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[LAPTOP-SEV4FTSO.sv_school_products]"
-                      connectionManagerRefId="Package.ConnectionManagers[LAPTOP-SEV4FTSO.sv_school_products]"
+                      connectionManagerID="Package.ConnectionManagers[DESKTOP-G8U2RB1\SQLEXPRESS.sv_school_products]"
+                      connectionManagerRefId="Package.ConnectionManagers[DESKTOP-G8U2RB1\SQLEXPRESS.sv_school_products]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -2302,7 +2909,7 @@
                         <externalMetadataColumn
                           refId="Package\Contenedor de bucles Foreach\Data Flow Task\Products.Inputs[OLE DB Destination Input].ExternalColumns[Direccion]"
                           dataType="wstr"
-                          length="4000"
+                          length="400"
                           name="Direccion" />
                         <externalMetadataColumn
                           refId="Package\Contenedor de bucles Foreach\Data Flow Task\Products.Inputs[OLE DB Destination Input].ExternalColumns[Departamento]"
@@ -2518,8 +3125,8 @@
       <DTS:ForEachVariableMappings>
         <DTS:ForEachVariableMapping
           DTS:CreationName=""
-          DTS:DTSID="{96F505C2-C681-48D4-A1DD-1D6683739579}"
-          DTS:ObjectName="{96F505C2-C681-48D4-A1DD-1D6683739579}"
+          DTS:DTSID="{D1A18E9B-26D6-4DC1-BBF2-1A84E09AE1B3}"
+          DTS:ObjectName="{D1A18E9B-26D6-4DC1-BBF2-1A84E09AE1B3}"
           DTS:ValueIndex="0"
           DTS:VariableName="User::bulkfiles" />
       </DTS:ForEachVariableMappings>
@@ -2577,7 +3184,7 @@
           Id="Package\Contenedor de bucles Foreach\Data Flow Task\Error de Fecha"
           TopLeft="716.805555555556,249.222222222222" />
         <NodeLayout
-          Size="120,42"
+          Size="125,42"
           Id="Package\Contenedor de bucles Foreach\Data Flow Task\Products"
           TopLeft="234.861111111111,408.805555555556" />
         <NodeLayout
@@ -2585,9 +3192,9 @@
           Id="Package\Contenedor de bucles Foreach\Data Flow Task\Error Conversion"
           TopLeft="704,164.321428571429" />
         <NodeLayout
-          Size="110,42"
+          Size="116,42"
           Id="Package\Contenedor de bucles Foreach\Data Flow Task\Origen"
-          TopLeft="387.805555555555,6.2222222222222" />
+          TopLeft="381.805555555555,6.2222222222222" />
         <NodeLayout
           Size="162,42"
           Id="Package\Contenedor de bucles Foreach\Data Flow Task\Conversion Fecha"
@@ -2602,9 +3209,9 @@
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-119.666666666667,44.666666666667"
+              EndConnector="-117.166666666667,44.666666666667"
               Start="0,0"
-              End="-119.666666666667,37.166666666667">
+              End="-117.166666666667,37.166666666667">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -2615,26 +3222,26 @@
                     Point2="0,18.1240496198481"
                     Point3="-4,18.1240496198481" />
                   <mssgle:LineSegment
-                    End="-115.666666666667,18.1240496198481" />
+                    End="-113.166666666667,18.1240496198481" />
                   <mssgle:CubicBezierSegment
-                    Point1="-115.666666666667,18.1240496198481"
-                    Point2="-119.666666666667,18.1240496198481"
-                    Point3="-119.666666666667,22.1240496198481" />
+                    Point1="-113.166666666667,18.1240496198481"
+                    Point2="-117.166666666667,18.1240496198481"
+                    Point3="-117.166666666667,22.1240496198481" />
                   <mssgle:LineSegment
-                    End="-119.666666666667,37.166666666667" />
+                    End="-117.166666666667,37.166666666667" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-94.5753645833335,23.1240496198481,69.4840625,11.2822265625"
+              BoundingBox="-93.3253645833337,23.1240496198481,69.4840625,11.2822265625"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Contenedor de bucles Foreach\Data Flow Task.Paths[Flat File Source Output]"
-          TopLeft="442.902777777777,48.2222222222222">
+          TopLeft="441.402777777777,48.2222222222222">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
