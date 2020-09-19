@@ -52,14 +52,14 @@
           <ConfigurationSetting>
             <Id>Adventure Works2012</Id>
             <Name>Adventure Works2012</Name>
-            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=127.0.0.1;Integrated Security=SSPI;Initial Catalog=AdventureWorksDW2012</Value>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=127.0.0.1;Password=;User ID=;Initial Catalog=AdventureWorksDW2012</Value>
           </ConfigurationSetting>
         </ConnectionMappings>
         <ConnectionSecurityMappings>
           <ConfigurationSetting>
             <Id>Adventure Works2012</Id>
             <Name>Adventure Works2012</Name>
-            <Value xsi:type="xsd:int">0</Value>
+            <Value xsi:type="xsd:int">1</Value>
           </ConfigurationSetting>
         </ConnectionSecurityMappings>
       </Options>
