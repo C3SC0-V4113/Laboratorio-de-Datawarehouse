@@ -20,20 +20,24 @@
   </Cubes>
   <Dimensions>
     <ProjectItem>
-      <Name>Proveedor.dim</Name>
-      <FullPath>Proveedor.dim</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Empleado.dim</Name>
-      <FullPath>Empleado.dim</FullPath>
+      <Name>Producto.dim</Name>
+      <FullPath>Producto.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>Cliente.dim</Name>
       <FullPath>Cliente.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Producto.dim</Name>
-      <FullPath>Producto.dim</FullPath>
+      <Name>Empleado.dim</Name>
+      <FullPath>Empleado.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Proveedor.dim</Name>
+      <FullPath>Proveedor.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Tiempo.dim</Name>
+      <FullPath>Tiempo.dim</FullPath>
     </ProjectItem>
   </Dimensions>
   <DataSources>
