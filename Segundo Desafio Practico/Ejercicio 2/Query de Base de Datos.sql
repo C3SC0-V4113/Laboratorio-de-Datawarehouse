@@ -85,8 +85,11 @@ REFERENCES DIM_Porcentajes(Cod_Porcentajes)
 Select*from DIM_Fecha
 select*from DIM_Pais
 select*from DIM_Porcentajes
-
+select*from DIM_Region
+select*from FACTS_DATOS
 --
 DELETE FROM DIM_Fecha
 DELETE FROM DIM_Pais
 DELETE FROM DIM_Porcentajes
+DELETE FROM DIM_Region
+DELETE FROM FACTS_DATOS
