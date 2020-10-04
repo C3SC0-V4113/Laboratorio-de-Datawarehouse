@@ -60,7 +60,7 @@
           <ConfigurationSetting>
             <Id>Northwind Data Mart</Id>
             <Name>Northwind Data Mart</Name>
-            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=DESKTOP-G8U2RB1\SQLEXPRESS;Persist Security Info=True;Password=;User ID=;Initial Catalog=NorthwindDataMart</Value>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=127.0.0.1;Persist Security Info=True;Password=;User ID=;Initial Catalog=NorthwindDataMart</Value>
           </ConfigurationSetting>
         </ConnectionMappings>
         <ConnectionSecurityMappings>
