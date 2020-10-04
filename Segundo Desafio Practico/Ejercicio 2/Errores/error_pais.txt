@@ -1,2 +1,1 @@
 Copia de country_region_code,Copia de country_region,ErrorCode,ErrorColumn
-SV,El Salvador,-1071607685,0
