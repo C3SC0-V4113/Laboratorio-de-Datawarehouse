@@ -41,7 +41,7 @@ CREATE TABLE FACTS_DATOS
 Cod_Porcentajes varchar(50) not null,
 Fecha date not null,
 Cod_pais varchar(2) not null,
-Total varchar(50)
+CambioBaseTotal float,
 )
 
 --Creando Primarias
