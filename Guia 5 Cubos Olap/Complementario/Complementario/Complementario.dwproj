@@ -52,14 +52,21 @@
           <ConfigurationSetting>
             <Id>Chinook</Id>
             <Name>Chinook</Name>
-            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=127.0.0.1;Password=;User ID=;Initial Catalog=Chinook</Value>
+            <Value xsi:type="xsd:string">Data Source=DESKTOP-G8U2RB1;Initial Catalog=Chinook;Integrated Security=True</Value>
           </ConfigurationSetting>
         </ConnectionMappings>
+        <ConnectionProviderMappings>
+          <ConfigurationSetting>
+            <Id>Chinook</Id>
+            <Name>Chinook</Name>
+            <Value xsi:type="xsd:string">System.Data.SqlClient</Value>
+          </ConfigurationSetting>
+        </ConnectionProviderMappings>
         <ConnectionSecurityMappings>
           <ConfigurationSetting>
             <Id>Chinook</Id>
             <Name>Chinook</Name>
-            <Value xsi:type="xsd:int">1</Value>
+            <Value xsi:type="xsd:int">0</Value>
           </ConfigurationSetting>
         </ConnectionSecurityMappings>
       </Options>

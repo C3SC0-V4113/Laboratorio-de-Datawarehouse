@@ -52,7 +52,7 @@
           <ConfigurationSetting>
             <Id>Adventure Works2012</Id>
             <Name>Adventure Works2012</Name>
-            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=127.0.0.1;Persist Security Info=True;Password=;User ID=;Initial Catalog=AdventureWorksDW2012</Value>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=localhost;Persist Security Info=True;Password=;User ID=;Initial Catalog=AdventureWorksDW2012</Value>
           </ConfigurationSetting>
         </ConnectionMappings>
         <ConnectionSecurityMappings>
