@@ -51,6 +51,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Report Include="Reporte 1 Agregado.rdl" />
+    <Report Include="Ventas por año (Matriz).rdl" />
     <Report Include="VentasPorProducto.rdl" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Reporting Services\Microsoft.ReportingServices.MSBuilder.targets" />
