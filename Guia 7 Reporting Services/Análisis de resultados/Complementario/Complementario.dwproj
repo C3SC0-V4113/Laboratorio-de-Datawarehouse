@@ -20,16 +20,12 @@
   </Cubes>
   <Dimensions>
     <ProjectItem>
-      <Name>Customer.dim</Name>
-      <FullPath>Customer.dim</FullPath>
+      <Name>Track.dim</Name>
+      <FullPath>Track.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>Invoice.dim</Name>
       <FullPath>Invoice.dim</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Track.dim</Name>
-      <FullPath>Track.dim</FullPath>
     </ProjectItem>
   </Dimensions>
   <DataSources>
