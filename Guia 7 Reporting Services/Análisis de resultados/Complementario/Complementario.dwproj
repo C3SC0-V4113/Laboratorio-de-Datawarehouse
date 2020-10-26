@@ -48,7 +48,7 @@
           <ConfigurationSetting>
             <Id>Chinook</Id>
             <Name>Chinook</Name>
-            <Value xsi:type="xsd:string">Data Source=localhost;Initial Catalog=Chinook;User ID=;Password=</Value>
+            <Value xsi:type="xsd:string">Data Source=localhost;Initial Catalog=Chinook;Persist Security Info=True;User ID=;Password=</Value>
           </ConfigurationSetting>
         </ConnectionMappings>
         <ConnectionProviderMappings>
