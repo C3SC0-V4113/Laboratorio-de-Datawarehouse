@@ -56,14 +56,14 @@
           <ConfigurationSetting>
             <Id>Esquelas Desafío Practico</Id>
             <Name>Esquelas Desafío Practico</Name>
-            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=localhost;Integrated Security=SSPI;Initial Catalog=Esquelas_Desafío_Practico</Value>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=127.0.0.1;Password=;User ID=;Initial Catalog=Esquelas_Desafío_Practico</Value>
           </ConfigurationSetting>
         </ConnectionMappings>
         <ConnectionSecurityMappings>
           <ConfigurationSetting>
             <Id>Esquelas Desafío Practico</Id>
             <Name>Esquelas Desafío Practico</Name>
-            <Value xsi:type="xsd:int">0</Value>
+            <Value xsi:type="xsd:int">1</Value>
           </ConfigurationSetting>
         </ConnectionSecurityMappings>
       </Options>
