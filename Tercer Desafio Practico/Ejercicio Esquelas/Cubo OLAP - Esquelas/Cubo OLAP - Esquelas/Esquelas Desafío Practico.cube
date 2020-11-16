@@ -1,0 +1,215 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="56dd26d6-170e-4db9-a343-4e28852aa55a" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Esquelas Desafío Practico</ID>
+  <Name>Esquelas Desafío Practico</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="6dc39fc2-9d96-45b7-ae08-7cd9f63146e3">
+      <ID>Dim Departamentos</ID>
+      <Name>Dim Departamentos</Name>
+      <DimensionID>Dim Departamentos</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="ccf1878e-fb94-4cda-b635-1da297e50849">
+          <AttributeID>ID Departamento</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="5332df6a-8c6f-4c71-8dd4-42a6368ddf98">
+      <ID>Dim Estado</ID>
+      <Name>Dim Estado</Name>
+      <DimensionID>Dim Estado</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="371c89f8-a3c1-4f52-9a1b-7912b1d566bf">
+          <AttributeID>Ves Estado</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="dc8db4da-15f0-42c1-a577-693d6124a855">
+      <ID>Dim Falta</ID>
+      <Name>Dim Falta</Name>
+      <DimensionID>Dim Falta</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="8fa97c49-d9ea-4fca-95ea-0cd214cb5b10">
+          <AttributeID>Ves Nro</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="2b086bf5-31a2-4c36-b9cd-eeb514e2c25c">
+      <ID>Dim Fecha</ID>
+      <Name>Dim Fecha</Name>
+      <DimensionID>Dim Fecha</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="d9f2e9a8-d097-42b4-ae96-13934ec2d04a">
+          <AttributeID>Ves Fecha</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="dec3e094-3239-4fe5-aa20-760ec4832b37">
+      <ID>Facts Esquelas</ID>
+      <Name>Facts Esquelas</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="ae0d16bc-b14d-4810-9929-2194e2f89894">
+          <ID>Ves Valor</ID>
+          <Name>Ves Valor</Name>
+          <Source dwd:design-time-name="55ce07c0-155b-41e0-8a50-01da88d875b3">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="35f4fe69-b07a-4f40-9fb1-72ffc0ebe6ac">
+              <TableID>dbo_Facts_Esquelas</TableID>
+              <ColumnID>Ves_Valor</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="3fd3a68a-85eb-4349-af7c-92299b71de6a">
+          <ID>Ves Interés</ID>
+          <Name>Ves Interés</Name>
+          <Source dwd:design-time-name="b82cd911-acee-465a-ae2e-ac6e76528b22">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="ddbc81de-5656-43a2-bc69-9a9aa8538520">
+              <TableID>dbo_Facts_Esquelas</TableID>
+              <ColumnID>Ves_Interés</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="b237ed67-7b82-49d0-a398-8f0b02860e4c">
+          <ID>Recuento Facts Esquelas</ID>
+          <Name>Recuento Facts Esquelas</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="85e82f05-c79b-43f9-b60f-7ea231ce37da">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="ac2270d6-5738-4c59-8b8b-80e931db0984">
+              <TableID>dbo_Facts_Esquelas</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="55fd0f59-c93e-42f0-96ac-a02c7db93578">
+          <CubeDimensionID>Dim Departamentos</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="4263ab03-18b9-45a4-89a1-809bc6dd3aa9">
+              <AttributeID>ID Departamento</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="0a3b39e0-2f62-46a5-aa93-b44335fd8d13">
+                  <DataType>WChar</DataType>
+                  <DataSize>5</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a2a1d7f1-86e4-4c09-8205-7c33b78774dd">
+                    <TableID>dbo_Facts_Esquelas</TableID>
+                    <ColumnID>ID_Departamento</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="ed563fec-a454-48fe-91ab-cc99c09f57ea">
+          <CubeDimensionID>Dim Estado</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="779eb673-7ad5-43a2-b75a-643d7ecf867e">
+              <AttributeID>Ves Estado</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="0811d638-6e10-4249-92ca-9ea400dbe66f">
+                  <DataType>WChar</DataType>
+                  <DataSize>6</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="23370d2a-fdf5-4148-977f-cc65cdbdcd4b">
+                    <TableID>dbo_Facts_Esquelas</TableID>
+                    <ColumnID>Ves_Estado</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="99916a00-a9c7-44ba-b7cc-c346f2385e9a">
+          <CubeDimensionID>Dim Falta</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="7807e628-5d04-41f3-8973-02050bf2222a">
+              <AttributeID>Ves Nro</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="7fc20c2b-0402-484b-862f-e512c57ec824">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="3de243c9-ee9f-4e1f-9147-c8beec76f35f">
+                    <TableID>dbo_Facts_Esquelas</TableID>
+                    <ColumnID>ves_Nro</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="5b29bf81-5e9f-4de8-95f8-2a9a973a0462">
+          <CubeDimensionID>Dim Fecha</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="4d702582-3fec-46ff-8eaf-9f494a2be0f7">
+              <AttributeID>Ves Fecha</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="dc4ee53a-6e3e-47d2-9767-d942f97571fa">
+                  <DataType>Date</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="2c26b624-9268-4f30-b0d6-dffac9c5dfa2">
+                    <TableID>dbo_Facts_Esquelas</TableID>
+                    <ColumnID>Ves_Fecha</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="1e805598-dddb-43f5-9917-0d0732fe3b52">
+    <DataSourceViewID>Esquelas Desafío Practico</DataSourceViewID>
+  </Source>
+</Cube>
